@@ -20,10 +20,26 @@
     <p>Já Estou livre da Maldição!</p>
     <!-- Comentário em HTMl-->
     <script>
-        var num1 = window.prompt('Digite um número?'); //recebe sempre uma string mesmo o valor sendo numérico
-        var num2 =window.prompt('Digite outro número?'); //recebe sempre uma string mesmo o valor sendo numérico
+        var num1 = window.prompt('Digite o Primeiro número?'); //recebe sempre uma string mesmo o valor sendo numérico
+        var num2 = window.prompt('Digite o segundo número?'); //recebe sempre uma string mesmo o valor sendo numérico
+        var num3 = window.prompt('Digite o terceiro número'); //recebe sempre uma string mesmo o valor sendo numérico
+
+        //utilizando o Number.parseFloat ou Number.parseFloat
+        num1 = Number.parseFloat(num1);//Conversão de string para numero real (ponto flutuante)
+        num2 = Number.parseInt(num2);//Conversão de string Para inteiro
+        
+        //utilização de Number <- ************* ->
+        num3 = Number(num3);//conversão de string para valor numérico (Inteiro ou Real(Ponto Flutuante))
+
+
         var soma = num1 + num2;
-        window.alert ('A soma dos valores é ' + soma);
+        window.alert ('A soma dos valores '+ num1 + 'com' + num2 +'é: '  + soma);
+       
+        //Utilização da conversão por number <- ************* ->
+        var soma2 = num2 + num3;
+
+        window.alert ('A soma de' + num2 'com' + num3 + 'é: '+ soma2);
+
         // (número + número) adição
         // (string + string) para concatenação        
     </script>
