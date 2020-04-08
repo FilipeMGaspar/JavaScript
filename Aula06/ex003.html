@@ -24,6 +24,11 @@
         var num2 = window.prompt('Digite o segundo número?'); //recebe sempre uma string mesmo o valor sendo numérico
         var num3 = window.prompt('Digite o terceiro número'); //recebe sempre uma string mesmo o valor sendo numérico
 
+        // (número + número) adição
+        // (string + string) para concatenação 
+
+        //Conversão de -> "String" para valor Numérico (Int ou double)
+
         //utilizando o Number.parseFloat ou Number.parseFloat
         num1 = Number.parseFloat(num1);//Conversão de string para numero real (ponto flutuante)
         num2 = Number.parseInt(num2);//Conversão de string Para inteiro
@@ -37,10 +42,15 @@
        
         //Utilização da conversão por number <- ************* ->
         var soma2 = num2 + num3;
-        window.alert ('A soma de ' + num2 + ' com ' + num3 + ' é: '+ soma2);
-
-        // (número + número) adição
-        // (string + string) para concatenação        
+        //window.alert ('A soma de ' + num2 + ' com ' + num3 + ' é: '+ soma2);
+        
+        //Template strings são envolvidas por (acentos graves) (` `) em vez de aspas simples ou duplas.
+        window.alert(`A soma de ${num2} com ${num3} tem o valor de ${soma2}`);//utilização de template Strings versão  mais recente 
+               
+        // Conversão de Número para "String"
+    
+         // String (n); Versão mais recente
+         //n.toString(num1);       
     </script>
 </body>
 </html>
