@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-PT">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,11 +13,22 @@
 <body>
     <script>
         var nome = window.prompt('Qual é o seu nome?');
-        document.write(`Olá ${nome} o seu nome tem ${nome.length} letras`);//nome.length conta o número de letras da variavel nome
-        document.write(`O seu nome em Letras Maiúsculas ${nome.toUpperCase()}`);// nome.toUpperCase() converte a string para letras Maiusculas
-        document.write(`O seu nome em letras Minúsculas ${nome.toLocaleLowerCase()}`);//nome.toLocaleLowerCase() converte a string para letras Minusculas
+        document.write(`Olá <strong> ${nome}</strong> o seu nome tem ${nome.length} letras<br>`);//nome.length conta o número de letras da variavel nome
+        document.write(`O seu nome em Letras Maiúsculas ${nome.toUpperCase()}<br>`);// nome.toUpperCase() converte a string para letras Maiusculas
+        document.write(`O seu nome em letras Minúsculas ${nome.toLocaleLowerCase()}<br>`);//nome.toLocaleLowerCase() converte a string para letras Minusculas
 
         
+        var num1 = 1545.5
+
+        var num2 = num1.toFixed(2);//coloca duas casas décimais
+
+        var num3 = num1.toFixed(2).replace('.',',');// Coloca com duas casa decimais e subtitui o ponto . pela virgula ,
+
+        num1 = num1.toLocaleString('pt-PT', {style: 'currency', currency: 'EUR'});// Coloca todos os valores de moeda em Euros (€)
+        document.writeln(`<br>Valor formatado Com duas casas décimais ${num2}<br>`);
+        document.writeln(`Valor formatado com Virgula no lugar do Ponto ${num3}<br>`);
+        document.writeln(`Valor Formatado em EUR: ${num1}`);
+
     </script>
 </body>
 </html>
