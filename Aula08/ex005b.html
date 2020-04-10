@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write('<h1>Operadores Parte 2 - Relacionais, lógicos e ternário</h1><br>');
+        document.write('<h2> Menor < <br> Maior > <br> Nemor ou Igual <= <br> Maior ou Igual >= <br> Igual = = <br> Diferente !=  </h2>');
+        document.write('<h3>Operadores Relacionais</h3>');
+        document.write(` 5 > 2 = `, 5>2,  '<br>');
+        document.write(` 7 < 4 = `, 7<4,  '<br>');
+        document.write(` 8 >= 8 =`, 8>=8, '<br>');
+        document.write(` 9 <= 7 =`, 9<=7, '<br>');
+        document.write(` 5 == 5 =`, 5==5, '<br>');
+        document.write(` 4 != 4 =`, 4!=4, '<br>');
+        document.write('<h3>Operadores de identidade</h3>');    
+        document.write('O operador de igualdade == não verifica se os valores são do mesmo tipo ou não verifica apenas o seu valor<br><br>');
+        document.write('5 == 5 = ', 5==5,'<br>');
+        document.write('5 ==`5` = ',5=='5','<br>');//== Não testa se são de tipos diferentes
+        document.write('<br>O operador identico verifica se os valores têm o mesmo valor e se tem o mesmo tipo<br><br>');
+        document.write('5 ===`5` = ',5==='5','<br>');//=== verifica se são do mesmo tipo    
+        document.write('<h2>Operadores Lógicos</h2>');
+        document.write('! negação <br> && conjunção <br> || disjunção<br>');
+       
+        document.write('<br><h2>! negação</h2> !true = false<br> !false = false<br>');
+        
+        document.write('<br><h2>&& Conjunção</h2> true && true = true <br>true && false = false <br> false && true = false <br> false && false = false<br> ');
+      
+        document.write('<br><h2>|| Disjunção</h2> true || true = true<br> true || false = true <br> false || true = true <br> false || false = false <br>');
+
+        document.write('<h2>Precedencia de operações</h2>');
+        document.write('Operadores Aritméticos: () ** / * + -<br>Operadores Relacionais: > < >= <br>');
+        document.write('Operadores Lógicos: ! <br>$$<br>||<br>');
+        document.write('<h2>Operador ternário</h2>');
+        document.write('Teste ? Valor se verdadeiro : Valor se falso <br>');
+        var media = 5.5;
+        document.write(`${media} >= 7 ? "Aprovado" : "Reprovado"<br>`, media>=7 ? "Aprovado" : "Reprovado",'<br>');
+    </script>
+</body>
+</html>
