@@ -16,7 +16,7 @@
     <p>Aqui vai o resultado</p>
     <p>Aprendender a utilizar o <strong>DOM</strong> am JavaScript</p>
     <p>DOM é o acrónimo de :<br><br><strong>D</strong>ocument<br><strong>O</strong>bject<br><strong>M</strong>odel<br></p>
-    <div>Clique em mim</div>
+    <div id="msg">Clique em mim</div>
     <script>
         document.write('<br>Selecionando por Marca document.getElementsByTagName<br>');
         var p1 = window.document.getElementsByTagName('p')[0];
@@ -29,7 +29,11 @@
         document.write('<br>O segundo parágrafo Contém:<br> ' + p2.innerHTML+'<br>' );
         //window.alert(p2.innerHTML);//Coloca também as tags filhas como o <strong></strong>
         //window.alert(p2.innerText);
-        
+
+        document.write('<br> Seleção por ID: document.getElementById<br>');
+        var d = window.document.getElementById('msg');//selecionar a div através do ID
+        d.style.background = "green";
+        d.innerText = 'Vamos lá';
     </script>
 </body>
 </html>
