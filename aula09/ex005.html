@@ -21,7 +21,9 @@
         document.write('<br>Selecionando por Marca document.getElementsByTagName<br>');
         var p1 = window.document.getElementsByTagName('p')[0];
         document.write('<br>O primeiro parágrafo Contém o seguinte: ' + p1.innerText+'<br>' );
-        
+        p1.style.color = 'blue';//altera o estilo do paragrafo para cor de texto para azul
+        var corpo = window.document.body;
+        corpo.style.background ='grey';//altera a cor de fundo através do style
     </script>
 </body>
 </html>
