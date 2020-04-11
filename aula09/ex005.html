@@ -17,6 +17,7 @@
     <p>Aprendender a utilizar o <strong>DOM</strong> am JavaScript</p>
     <p>DOM é o acrónimo de :<br><br><strong>D</strong>ocument<br><strong>O</strong>bject<br><strong>M</strong>odel<br></p>
     <div id="msg">Clique em mim</div>
+    <div name="msg1">JavaScript</div>
     <script>
         document.write('<br>Selecionando por Marca document.getElementsByTagName<br>');
         var p1 = window.document.getElementsByTagName('p')[0];
@@ -34,6 +35,17 @@
         var d = window.document.getElementById('msg');//selecionar a div através do ID
         d.style.background = "green";
         d.innerText = 'Vamos lá';
+
+        
+        document.write('<br>Seleção por name: document.getElementsByName <br>');
+        var d1 = window.document.getElementsByName('msg1')[0];
+        d1.style.background='red';
+        d1.innerText='Clique em Mim';
+       //window.alert(d1.innerHTML);
+
+       
+
+
     </script>
 </body>
 </html>
