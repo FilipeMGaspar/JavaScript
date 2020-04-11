@@ -19,6 +19,7 @@
     <div id="msg">Clique em mim</div>
     <div name="msg1">JavaScript</div>
     <div class="msg2">no CEV</div>
+    <div id="msg3">do Duanabara</div>
     <script>
         document.write('<br>Selecionando por Marca document.getElementsByTagName<br>');
         var p1 = window.document.getElementsByTagName('p')[0];
@@ -49,9 +50,12 @@
 
         document.write('<br>Seleção por class: document.getElementsByClassName<br>');
 
-        document.write('<br>Seleção por Selector:<br>querySelector()<br>querySelector()All');
+        document.write('<br>Seleção por Selector:<br>querySelector()<br>querySelectorAll()');
 
-        
+        var d4 = window.document.querySelector('div#msg3');
+        d4.style.background = 'blue';
+        d4.innerText= 'No Canal do Curso em Video';
+
     </script>
 </body>
 </html>
