@@ -23,7 +23,13 @@
         document.write('<br>O primeiro parágrafo Contém o seguinte: ' + p1.innerText+'<br>' );
         p1.style.color = 'blue';//altera o estilo do paragrafo para cor de texto para azul
         var corpo = window.document.body;
-        corpo.style.background ='grey';//altera a cor de fundo através do style
+        corpo.style.background ='black';//altera a cor de fundo através do style com DOM
+        corpo.style.color ='white';//alteração da cor de letra através do style com DOM
+        var p2 = window.document.getElementsByTagName('p')[1];
+        document.write('<br>O segundo parágrafo Contém:<br> ' + p2.innerHTML+'<br>' );
+        //window.alert(p2.innerHTML);//Coloca também as tags filhas como o <strong></strong>
+        //window.alert(p2.innerText);
+        
     </script>
 </body>
 </html>
