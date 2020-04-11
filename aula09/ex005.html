@@ -18,6 +18,9 @@
     <p>DOM é o acrónimo de :<br><br><strong>D</strong>ocument<br><strong>O</strong>bject<br><strong>M</strong>odel<br></p>
     <div>Clique em mim</div>
     <script>
+        document.write('<br>Selecionando por Marca document.getElementsByTagName<br>');
+        var p1 = window.document.getElementsByTagName('p')[0];
+        document.write('<br>O primeiro parágrafo Contém o seguinte: ' + p1.innerText+'<br>' );
         
     </script>
 </body>
