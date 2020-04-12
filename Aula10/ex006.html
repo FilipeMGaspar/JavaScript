@@ -17,7 +17,7 @@
     </style>
 </head>
 <body>
-    <div id="area" onclick="clicar()" onmouseenter= "entrar()">
+    <div id="area" onclick="clicar()" onmouseenter= "entrar()" onmouseout="sair()">
         Interaja...
     </div>
     <script>
@@ -26,8 +26,12 @@
             area.innerText='Clicou!';
         }
         function entrar(){
-           var area = document.getElementById('area');
+           var area = window.document.getElementById('area');
            area.innerText="Entrei!";
+        }
+        function sair(){
+            var area = window.document.getElementById('area');
+            area.innerText='Já de Saida!';
         }
     </script>
 </body>
