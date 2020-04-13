@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio da Aula 11 - ex009.js</title>
+    <style>
+        body{
+            font: normal 16pt Arial;
+        }
+        div#naci{
+            margin-top: 20px;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Verificador de Nacionalidade</h1>
+    <p>Verificação se é Português ou estrangeiro</p>
+    Qual é o seu Pais: <input type="text" name="txtpais" id="txtpais" value="">
+    <input type="button" value="Selecionar" onclick="verifica()">
+    <div id="naci">
+
+    </div>
+    <script>
+        function verifica() {
+            var txtpais = window.document.getElementById('txtpais').value;
+       
+            var naci = document.getElementById('naci');
+            naci.innerHTML = `O seu Pais é <strong>${txtpais}</strong>`;
+        }
+    </script>
+</body>
+</html>
