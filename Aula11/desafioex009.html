@@ -14,16 +14,17 @@
         }
         div#bandeira{
             width: 250px;
-            height: 225px;
-            margin-left: 25px;
-            line-height: 225px;
+            height: 175px;
+            margin-left: 25px;                   
+            margin-top: 25px;
             text-align: center; 
-            margin-top: 15px;           
+            vertical-align: middle;  
+            line-height: 175px;              
         }
         img{
             width: 225px;
-            height: 150px;
-            vertical-align: middle;
+            height: 150px;   
+            vertical-align: middle;         
         }
     </style>
 </head>
@@ -65,7 +66,7 @@
             }else{
                 bandeira.innerHTML = `<img src="img/${txtpais}.png">`;
                 naci.innerHTML += 'Você é Estrageiro'; 
-                bandeira.style.background = 'grey';           
+                bandeira.style.background = 'lightgrey';           
             }
         }
     </script>
