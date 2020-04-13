@@ -12,6 +12,17 @@
             margin-top: 20px;
             font: normal 18pt Arial;
         }
+        div#bandeira{
+            width: 225px;
+            height: 225px;
+            margin-left: 25px;
+            line-height: 225px;
+            text-align: center;            
+        }
+        img{
+            width: 225px;
+            height: 150px;
+        }
     </style>
 </head>
 <body>
@@ -36,15 +47,22 @@
     <div id="naci">
 
     </div>
+    <div id="bandeira">
+        
+    </div>
     <script>
         function verifica() {
             var txtpais = window.document.getElementById('selpais').value;       
             var naci = document.getElementById('naci');
-            naci.innerHTML = `<p>O seu Pais é <strong>${txtpais}</strong></p>`;
+            var bandeira = document.getElementById('bandeira');
+            naci.innerHTML = `<p>O seu País é <strong>${txtpais}</strong></p>`;
             if (txtpais == 'Portugal'){
                 naci.innerHTML += `<p>Você é Português</p>`;
+                bandeira.innerHTML = `<img src="img/${txtpais}.png">`
+               
             }else{
                 naci.innerHTML += '<p>Você é Estrageiro</p>';
+                bandeira.innerHTML = `<img src="img/${txtpais}.png">`;
             }
         }
     </script>
