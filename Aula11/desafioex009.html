@@ -13,15 +13,17 @@
             font: normal 18pt Arial;
         }
         div#bandeira{
-            width: 225px;
+            width: 250px;
             height: 225px;
             margin-left: 25px;
             line-height: 225px;
-            text-align: center;            
+            text-align: center; 
+            margin-top: 15px;           
         }
         img{
             width: 225px;
             height: 150px;
+            vertical-align: middle;
         }
     </style>
 </head>
@@ -55,14 +57,15 @@
             var txtpais = window.document.getElementById('selpais').value;       
             var naci = document.getElementById('naci');
             var bandeira = document.getElementById('bandeira');
-            naci.innerHTML = `<p>O seu País é <strong>${txtpais}</strong></p>`;
+            naci.innerHTML = `O seu País, <strong>${txtpais}</strong>! `;
             if (txtpais == 'Portugal'){
-                naci.innerHTML += `<p>Você é Português</p>`;
+                naci.innerHTML += `Você é Português`;
                 bandeira.innerHTML = `<img src="img/${txtpais}.png">`
                
             }else{
-                naci.innerHTML += '<p>Você é Estrageiro</p>';
                 bandeira.innerHTML = `<img src="img/${txtpais}.png">`;
+                naci.innerHTML += 'Você é Estrageiro'; 
+                bandeira.style.background = 'grey';           
             }
         }
     </script>
