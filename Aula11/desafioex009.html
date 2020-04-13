@@ -24,10 +24,14 @@
     </div>
     <script>
         function verifica() {
-            var txtpais = window.document.getElementById('txtpais').value;
-       
+            var txtpais = window.document.getElementById('txtpais').value;       
             var naci = document.getElementById('naci');
-            naci.innerHTML = `O seu Pais é <strong>${txtpais}</strong>`;
+            naci.innerHTML = `<p>O seu Pais é <strong>${txtpais}</strong></p>`;
+            if (txtpais == 'Portugal' || txtpais == 'portugal'){
+                naci.innerHTML += `<p>Você é Português</p>`;
+            }else{
+                naci.innerHTML += '<p>Você é Estrageiro</p>';
+            }
         }
     </script>
 </body>
