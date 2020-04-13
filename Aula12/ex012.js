@@ -1,5 +1,5 @@
 
-var agora = new Date();//Obtém a hora atual do cliente
+var agora = new Date();//Obtém a hora atual do cliente ou do servidor se for nodejs
 
 var hora = agora.getHours();
 console.log(`Agora são ${hora} horas`);
