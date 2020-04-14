@@ -8,6 +8,7 @@ section{
     padding: 15px;
     width: 500px;
     margin: auto;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.363);
 }
 header{
     color: whitesmoke;
@@ -17,4 +18,5 @@ header{
 footer{
     color: whitesmoke;
     text-align: center;
+    font-style: italic;
 }
