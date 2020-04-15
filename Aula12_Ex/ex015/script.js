@@ -24,7 +24,7 @@ function validar(){
                 imagem.setAttribute('src','imgs/adolecenteM.png');
             }else if(idade <30){
                 //jovem adulto
-
+                imagem.setAttribute('src','imgs/JvadultoM.png');
             }else if(idade<65){
                 //Adulto
                 imagem.setAttribute('src','imgs/adultoM.png')
@@ -46,6 +46,7 @@ function validar(){
                 imagem.setAttribute('src','imgs/adolecenteF.png');
             }else if(idade <30){
                 //jovem Adulto
+                imagem.setAttribute('src','imgs/JvadultoF.png');
             }else if(idade<65){
                 //Adulto
                 imagem.setAttribute('src','imgs/adultoF.png')
