@@ -8,8 +8,9 @@ function validar(){
         alert('[ERRO!] Verifique os dados e tente novamente');     
     }else {
         var fsex = document.getElementsByName('radsex')
-        var idade = ano - fano;
-        result.innerHTML = `Idade Calculada ${idade}`
+        var idade = ano - Number(fano.value);
+        
+        //result.innerHTML = `Você tem ${idade} anos`
     }   
 
 }
