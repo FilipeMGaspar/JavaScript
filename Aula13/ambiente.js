@@ -1,5 +1,5 @@
 var contador = 1;
-do{//Estrutura de repetição com teste lógico no FIM
+do{//Estrutura de Repetição com teste lógico no FIM
     //console.log('Tudo bem!');
     console.log(`Passo ${contador}`);
     contador ++;//contador = contador+1
