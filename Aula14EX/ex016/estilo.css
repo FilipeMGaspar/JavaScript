@@ -20,3 +20,6 @@ footer{
     text-align: center;
     font-style: italic;
 }
+div#result{
+    margin-top: 15px;
+}
