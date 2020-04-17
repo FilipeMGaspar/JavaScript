@@ -51,20 +51,21 @@
     <div id="bandeira">
         
     </div>
+
     <script>
         function verifica() {
-            var txtpais = window.document.getElementById('selpais').value;       
-            var naci = document.getElementById('naci');
-            var bandeira = document.getElementById('bandeira');
-            naci.innerHTML = `O seu País, <strong>${txtpais}</strong>! `;
+            var txtpais = window.document.getElementById('selpais').value       
+            var naci = document.getElementById('naci')
+            var bandeira = document.getElementById('bandeira')
+            naci.innerHTML = `O seu País, <strong>${txtpais}</strong>! `
             if (txtpais == 'Portugal'){
-                naci.innerHTML += `Você é Português`;
+                naci.innerHTML += `Você é Português`
                 bandeira.innerHTML = `<img src="img/${txtpais}.png">`
                
             }else{
-                bandeira.innerHTML = `<img src="img/${txtpais}.png">`;
-                naci.innerHTML += 'Você é Estrageiro'; 
-                bandeira.style.background = 'lightgrey';           
+                bandeira.innerHTML = `<img src="img/${txtpais}.png">`
+                naci.innerHTML += 'Você é Estrageiro'
+                bandeira.style.background = 'lightgrey'           
             }
         }
     </script>
