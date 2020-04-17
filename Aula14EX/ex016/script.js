@@ -1,3 +1,6 @@
 function contar(){
-    alert("Vamos contar!");
+    //txtini
+    //txtfim
+    //txtpasso
+    //result
 }
