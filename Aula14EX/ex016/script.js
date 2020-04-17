@@ -1,4 +1,5 @@
 function contar(){
+
     //txtini
     var txtini = document.getElementById('txtini')//recebe o valor da caixa de texto Inicio do HTML
     var inicio = Number(txtini.value)//conversão para valor numérico 
@@ -13,10 +14,17 @@ function contar(){
    
     //result
     var result = document.getElementById('result')//recebe o elemento <div< com id result
-
-    while (inicio < fim){
-        passo+= inicio;
-        result.innerHTML= `teste${passo}`
+    result.innerHTML = ''
+    if (inicio < fim){
+        while (inicio < fim){                      
+            result.innerHTML += `cresce${inicio}, `
+            inicio = inicio + passo  
+        }
+    }else{
+        while(fim <= inicio){           
+            result.innerHTML += `decresce${inicio}; `
+            inicio = inicio - passo
+        }
     }
 
 }
