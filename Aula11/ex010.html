@@ -12,16 +12,17 @@
     <div id="res">
 
     </div>
+
     <script>       
         function calcula() {
-            var result = window.document.getElementById('res');         
-            var txtvel = window.document.getElementById('txtvel');
-            var vel = Number(txtvel.value);            
-            result.innerHTML = `<p>A sua Velocidade Atual é de: <strong>${vel} Kmh</strong><p>`;
+            var result = window.document.getElementById('res')         
+            var txtvel = window.document.getElementById('txtvel')
+            var vel = Number(txtvel.value)
+            result.innerHTML = `<p>A sua Velocidade Atual é de: <strong>${vel} Kmh</strong><p>`
             if (vel > 60){
                 result.innerHTML += '<p>Voce está <strong>MULTADO</strong> por excesso de Velocidade</p>'
             }
-            result.innerHTML += '<p>Conduza sempre com cinto de Segurança</p>';
+            result.innerHTML += '<p>Conduza sempre com cinto de Segurança</p>'
         }
     </script>
 </body>
