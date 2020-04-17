@@ -1,5 +1,5 @@
-var agora = new Date();
-var diasem = agora.getDay();
+var agora = new Date()
+var diasem = agora.getDay()
 /* 
     0 - Domingo
     1 - Segunda
@@ -11,27 +11,27 @@ var diasem = agora.getDay();
 */
 switch(diasem){
     case 0:
-        console.log('Domingo');
-        break;
+        console.log('Domingo')
+        break
     case 1:
-        console.log('Segunda-Feira');
-        break;
+        console.log('Segunda-Feira')
+        break
     case 2:
-        console.log('Terça-Feira');
-        break;
+        console.log('Terça-Feira')
+        break
     case 3:
-        console.log('Quarta-Feira');
-        break;
+        console.log('Quarta-Feira')
+        break
     case 4:
-        console.log('Quinta-Feira');
-        break;
+        console.log('Quinta-Feira')
+        break
     case 5:
-        console.log('Sexta-Feira');
-        break;
+        console.log('Sexta-Feira')
+        break
     case 6:
-        console.log('Sábado');
-        break;
+        console.log('Sábado')
+        break
      default:
-         console.log('[ERRO] Dia Inválido!');
-        break;                           
+         console.log('[ERRO] Dia Inválido!')
+        break
 }
