@@ -12,6 +12,7 @@ function tabuada(){
         while(cont<=10){
             let iten = document.createElement('option')//document.createElement('option') cria o elemento (<option></option>)
             iten.text=`${num} x ${cont} = ${num*cont}`
+            iten.value=`tab${cont}`
             seletab.appendChild(iten)//cria o objeto  (<option>  1x1=1 </option>) e sucessivamente
             cont++
         }
