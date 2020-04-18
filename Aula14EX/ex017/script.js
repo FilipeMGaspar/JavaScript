@@ -8,6 +8,7 @@ function tabuada(){
     }else{
         num = Number(num.value)
         let cont=1
+        seletab.innerHTML = ''//limpa a área da tabuada
         while(cont<=10){
             let iten = document.createElement('option')//document.createElement('option') cria o elemento (<option></option>)
             iten.text=`${num} x ${cont} = ${num*cont}`
