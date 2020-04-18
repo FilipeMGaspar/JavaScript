@@ -9,9 +9,9 @@ function tabuada(){
         num = Number(num.value)
         let cont=1
         while(cont<=10){
-            let iten = document.createElement('option')//document.createElement('option') cria o elemento option
+            let iten = document.createElement('option')//document.createElement('option') cria o elemento (<option></option>)
             iten.text=`${num} x ${cont} = ${num*cont}`
-            seletab.appendChild(iten)//cria o objeto dentro da div
+            seletab.appendChild(iten)//cria o objeto  (<option>  1x1=1 </option>) e sucessivamente
             cont++
         }
     }
