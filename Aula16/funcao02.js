@@ -1,4 +1,4 @@
-function soma(num1, num2){
+function soma(num1=0, num2=0){//com parametros opcionais
     return num1+num2
 }
 
