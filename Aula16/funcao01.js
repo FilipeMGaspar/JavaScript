@@ -6,5 +6,9 @@ function parimpar(num) {
     }
 }
 
-let res = parimpar(4) //chamadad da função
+console.log(parimpar(11))
+
+/*
+let res = parimpar(4) //chamada da função
 console.log(res)
+*/
