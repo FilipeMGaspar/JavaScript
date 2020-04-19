@@ -1,5 +1,5 @@
 let valores = [8, 1, 7, 4, 2, 9]
-
+valores.sort() // Coloca o vetor por ordem crecente
 /*
     Forma padrão 
     
@@ -28,4 +28,14 @@ let valores = [8, 1, 7, 4, 2, 9]
 
 for(let pos in valores){//para cada posição na variavel valores[] array
     console.log(`A posição ${pos} tem o valor ${valores[pos]} `)
+}
+
+//procurar valores dentro de vetores 
+
+let pos = valores.indexOf(3) //procura o valor 7 dentro do vetor se o valor não for encontrado é devolvido -1
+
+if(pos == -1){
+    console.log('O valor 3 não foi Encontrado')
+}else{
+    console.log(`O valor 7 está na posição ${pos} do vetor`)
 }
