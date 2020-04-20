@@ -6,7 +6,7 @@ o botão Adicionar adiciona o valor a um array
 Apresentando num <select> <option></option> </select>
 
 botão finalizar:
-    apresenta o total de valores no Array
+    apresenta número de valores no Array
     Mostra o maior e o menor valor 
     a Soma de  todo os valores
     e a média dos valores no array
@@ -39,12 +39,10 @@ function adic(){
 
 function fim(){
 
-    let selnum =document.getElementById('selnum')
-
     if(val.length==0){
         alert("\u{2639} [ERRO] Nenhum Valor Detectado. Impossivel Finalizar")
     }else{
-        alert('Tudo ok, falta bloco do programa.')
+        calcula()//chamada para a função que calcula a soma a média o maior e o menor, imprimindo na tela
     }
 }
 
@@ -54,4 +52,18 @@ function adiciona(numer){
     let item = document.createElement('option')
     item.text = `Valor ${numer} foi adicionado`    
     selnum.appendChild(item) 
+}
+
+function calcula(){
+    let divres = document.getElementById('result')
+    let nrelem = val.length;
+
+     if(nrelem== 1){
+        divres.innerHTML = `<p> No total registámos 
+    <strong>${nrelem}</strong> número</p>`
+     }else{
+        divres.innerHTML = `<p> No total registámos 
+    <strong>${nrelem}</strong> números</p>`
+     }   
+    
 }
