@@ -18,6 +18,8 @@ No caso de a caixa de texto onde o número é adicionado estar vazia vai ser emi
 O programa verifica se tentar finalizar sem dados introduzidos emite o Alerta de ERRO
 
 */
+let val=[] // criaçaõ de variavel global
+
 function adic(){
     let num = document.getElementById('txtnum')
 
@@ -26,6 +28,20 @@ function adic(){
     if(num.value.length == 0){
         alert('[ERRO] Nenhum número detectado. Impossivel Adicionar!')
     }else{
-        alert('Tudo OK!')
+        let nr = Number(num.value)
+        if(nr>=1 && nr<=100){
+            
+        }else{
+            alert('[!! ERRO !!] Número Inválido. Insira entre 1 e 100')
+        }
+
+    }
+}
+
+function fim(){
+    let selnum =document.getElementById('selnum')
+
+    if(selnum.value.length==0){
+        alert("[ERRO] Nenhum Valor Detectado. Impossivel Finalizar")
     }
 }
