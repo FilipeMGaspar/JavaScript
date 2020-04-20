@@ -23,16 +23,11 @@ let val=[] // criaçaõ de variavel global
 function adic(){
     let num = document.getElementById('txtnum')
 
-    let res = document.getElementById('result')
-
-    let selnum =document.getElementById('selnum')
-
     if(num.value.length == 0){
         alert(`\u{2639} [ERRO] Nenhum número detectado. Impossivel Adicionar! `)
     }else{
         let nr = Number(num.value)
-        if(nr>=1 && nr<=100){
-            
+        if(nr>=1 && nr<=100){            
             adiciona(nr)//função adiciona os valores ao Vetor e os itens ao select
 
         }else{
@@ -43,6 +38,7 @@ function adic(){
 }
 
 function fim(){
+    
     let selnum =document.getElementById('selnum')
 
     if(val.length==0){
@@ -53,7 +49,7 @@ function fim(){
 }
 
 function adiciona(numer){
-    let result =document.getElementById('result')
+    let selnum =document.getElementById('selnum')
     val.push(numer)    
     let item = document.createElement('option')
     item.text = `Valor ${numer} foi adicionado`    
