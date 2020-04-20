@@ -18,3 +18,14 @@ No caso de a caixa de texto onde o número é adicionado estar vazia vai ser emi
 O programa verifica se tentar finalizar sem dados introduzidos emite o Alerta de ERRO
 
 */
+function adic(){
+    let num = document.getElementById('txtnum')
+
+    let res = document.getElementById('result')
+
+    if(num.value.lenght == 0){
+        alert('[ERRO] Nenhum número detectado. Impossivel   adicionar')
+    }else{
+        alert('Tudo OK!')
+    }
+}
