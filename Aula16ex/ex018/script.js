@@ -25,12 +25,22 @@ function adic(){
 
     let res = document.getElementById('result')
 
+    let selnum =document.getElementById('selnum')
+
     if(num.value.length == 0){
         alert(`\u{2639} [ERRO] Nenhum número detectado. Impossivel Adicionar! `)
     }else{
         let nr = Number(num.value)
         if(nr>=1 && nr<=100){
             
+            adiciona(nr)
+           /* 
+                let item = document.createElement('option')
+                item.text = `Valor ${nr} foi adicionado`
+           
+                selnum.appendChild(item)
+            */
+
         }else{
             alert(`\u{2639} [ERRO] Número Inválido. Insira entre 1 e 100`)
         }
@@ -44,4 +54,11 @@ function fim(){
     if(selnum.value.length==0){
         alert("\u{2639} [ERRO] Nenhum Valor Detectado. Impossivel Finalizar")
     }
+}
+
+function adiciona(numer){
+
+    let item = document.createElement('option')
+    item.text = `Valor ${numer} foi adicionado`    
+   return selnum.appendChild(item)
 }
