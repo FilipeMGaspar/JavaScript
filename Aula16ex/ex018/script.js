@@ -33,13 +33,7 @@ function adic(){
         let nr = Number(num.value)
         if(nr>=1 && nr<=100){
             
-            adiciona(nr)
-           /* 
-                let item = document.createElement('option')
-                item.text = `Valor ${nr} foi adicionado`
-           
-                selnum.appendChild(item)
-            */
+            adiciona(nr)//função adiciona os valores ao Vetor e os itens ao select
 
         }else{
             alert(`\u{2639} [ERRO] Número Inválido. Insira entre 1 e 100`)
@@ -57,8 +51,9 @@ function fim(){
 }
 
 function adiciona(numer){
-
+    let result =document.getElementById('result')
+    val.push(numer)    
     let item = document.createElement('option')
     item.text = `Valor ${numer} foi adicionado`    
-   return selnum.appendChild(item)
+    selnum.appendChild(item) 
 }
