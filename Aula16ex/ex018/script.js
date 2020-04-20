@@ -45,8 +45,10 @@ function adic(){
 function fim(){
     let selnum =document.getElementById('selnum')
 
-    if(selnum.value.length==0){
+    if(val.length==0){
         alert("\u{2639} [ERRO] Nenhum Valor Detectado. Impossivel Finalizar")
+    }else{
+        alert('Tudo ok, falta bloco do programa.')
     }
 }
 
