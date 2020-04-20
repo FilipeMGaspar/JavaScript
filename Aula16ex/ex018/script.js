@@ -23,8 +23,8 @@ function adic(){
 
     let res = document.getElementById('result')
 
-    if(num.value.lenght == 0){
-        alert('[ERRO] Nenhum número detectado. Impossivel   adicionar')
+    if(num.value.length == 0){
+        alert('[ERRO] Nenhum número detectado. Impossivel Adicionar!')
     }else{
         alert('Tudo OK!')
     }
