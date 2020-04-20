@@ -1,23 +1,4 @@
-/*
-Adicionar Números entre 1 e 100 validando 
 
-o botão Adicionar adiciona o valor a um array
-
-Apresentando num <select> <option></option> </select>
-
-botão finalizar:
-    apresenta número de valores no Array
-    Mostra o maior e o menor valor 
-    a Soma de  todo os valores
-    e a média dos valores no array
-
-Adicionando novo valor válido através do botão Adicionar    limpa a informação apresentada na segunda div
-
-No caso de a caixa de texto onde o número é adicionado estar vazia vai ser emitido um erro
-
-O programa verifica se tentar finalizar sem dados introduzidos emite o Alerta de ERRO
-
-*/
 let val=[] // criaçaõ de variavel global
 
 function adic(){
@@ -47,7 +28,11 @@ function fim(){
 }
 
 function adiciona(numer){
+    let divres = document.getElementById('result')
     let selnum =document.getElementById('selnum')
+
+    divres.innerHTML = ''
+
     val.push(numer)    
     let item = document.createElement('option')
     item.text = `Valor ${numer} foi adicionado`    
@@ -65,5 +50,11 @@ function calcula(){
         divres.innerHTML = `<p> No total registámos 
     <strong>${nrelem}</strong> números</p>`
      }   
+
+     /*
+        Mostra o maior e o menor valor 
+        a Soma de  todo os valores
+        e a média dos valores no array
+     */
     
 }
