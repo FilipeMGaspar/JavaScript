@@ -38,7 +38,7 @@ function adic(){
 }
 
 function fim(){
-    
+
     let selnum =document.getElementById('selnum')
 
     if(val.length==0){
