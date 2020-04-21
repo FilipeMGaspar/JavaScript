@@ -10,7 +10,6 @@ function adic(){
         let nr = Number(num.value)
         if(nr>=1 && nr<=100){            
             adiciona(nr)//função adiciona os valores ao Vetor e os itens ao select
-
         }else{
             alert(`\u{2639} [ERRO] Número Inválido. Insira entre 1 e 100`)
         }
@@ -27,9 +26,13 @@ function fim(){
     }
 }
 
+//função para adicionar valores ao array e adicionar elementos ao select
 function adiciona(numer){
+
     let divres = document.getElementById('result')
     let selnum =document.getElementById('selnum')
+
+    let num = document.getElementById('txtnum')
 
     divres.innerHTML = ''
 
@@ -37,8 +40,10 @@ function adiciona(numer){
     let item = document.createElement('option')
     item.text = `Valor ${numer} foi adicionado`    
     selnum.appendChild(item) 
+
 }
 
+//Função para calcular a soma, a média, o maior e o menor dos elementos do vetor e o número de elementos inseridos no array
 function calcula(){
     let divres = document.getElementById('result')
     let nrelem = val.length;
