@@ -1,6 +1,7 @@
 
 let val=[] // criaçaõ de variavel global
 
+
 function adic(){
     let num = document.getElementById('txtnum')
 
