@@ -20,6 +20,6 @@ footer{
     text-align: center;
     font-style: italic;
 }
-select{
+select#selnum{
     width: 150px;
 }
