@@ -56,26 +56,32 @@ function calcula(){
     
     let soma = 0, media
     let maior=val[0]//vamos iniciar o maior com o primeiro valor do vetor
+    
+    let menor = val[0] //vamos iniciar o menor com o primeiro valor do vetor
+
     for (pos in val){
         soma += val[pos]//calculo da soma
         divres.innerHTML += `${val[pos]}; `//blobo de testes
         
-        //Bloco para verificar qual é o maior valor dentro do array
+        //Bloco para verificar qual é o Maior valor dentro do array
         if(maior<val[pos]){
             maior = val[pos]
+        }
+
+        //Bloco para verificar qual é o Menor valor dentro do array
+        if(menor>val[pos]){
+            menor = val[pos]
         }
 
     }
     media =soma/val.length//calculo da média
     
-    divres.innerHTML+=`<p>O maior valor é: ${maior}</p>`
+    divres.innerHTML+=`<p>O Maior valor é: ${maior}</p>`
+
+    divres.innerHTML+= `<p>O Menor valor é: ${menor}</p>`
 
     divres.innerHTML += `<p> A soma de todos os valores tem o valor de ${
         soma} <p>`
     divres.innerHTML += `<p>A média dos valores digitados é: ${media}</p>`    
-     /*
-        Mostra o maior e o menor valor 
-        
-     */
     
 }
