@@ -36,11 +36,11 @@ function adiciona(numer){
     let selnum =document.getElementById('selnum')
 
     divres.innerHTML = ''//Limpa a div onde surgem os resultados
-  
+
     val.push(numer)    
     let item = document.createElement('option')
     item.text = `Valor ${numer} foi adicionado`    
-    selnum.appendChild(item) 
+    selnum.appendChild(item)     
 }
 
 //Função para calcular a soma, a média, o maior e o menor dos elementos do vetor e o número de elementos inseridos no array
