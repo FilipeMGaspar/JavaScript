@@ -54,17 +54,19 @@ function calcula(){
     <strong>${nrelem}</strong> números</p>`
      }   
     
-    let soma = 0
+    let soma = 0, media
     for (pos in val){
-        soma += val[pos]
+        soma += val[pos]//calculo da soma
         divres.innerHTML += `${val[pos]}; `//blobo de testes
     }
-    divres.innerHTML += ` A soma é: ${
-        soma}; `
+    media =soma/val.length//calculo da média
+    
+    divres.innerHTML += `<p> A soma é: ${
+        soma} <p>`
+    divres.innerHTML += `<p>A média é de: ${media}</p>`    
      /*
         Mostra o maior e o menor valor 
-        a Soma de  todo os valores
-        e a média dos valores no array
+        
      */
     
 }
