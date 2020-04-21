@@ -14,7 +14,7 @@ function adic(){
             if(nr>=1 && nr<=100){  
                                  
                 adiciona(nr)//chamada da função adiciona os valores ao Vetor e os itens ao select
-                num.value = ''
+                num.value = ''//limpa a caixa do número
 
             }else{
                 alert(`\u{2639} [ERRO] Número Inválido. Insira entre 1 e 100`)
