@@ -45,14 +45,15 @@ function adiciona(numer){
 function calcula(){
     let divres = document.getElementById('result')
     let nrelem = val.length;
-
-     if(nrelem== 1){
+    
+    if(nrelem== 1){
         divres.innerHTML = `<p> No total registámos 
     <strong>${nrelem}</strong> número</p>`
      }else{
         divres.innerHTML = `<p> No total registámos 
     <strong>${nrelem}</strong> números</p>`
-     }   
+     }
+       
     
     let soma = 0, media
     let maior=val[0]//vamos iniciar o maior com o primeiro valor do vetor
@@ -61,8 +62,7 @@ function calcula(){
 
     for (pos in val){
         soma += val[pos]//calculo da soma
-        divres.innerHTML += `${val[pos]}; `//blobo de testes
-        
+
         //Bloco para verificar qual é o Maior valor dentro do array
         if(maior<val[pos]){
             maior = val[pos]
@@ -76,9 +76,9 @@ function calcula(){
     }
     media =soma/val.length//calculo da média
     
-    divres.innerHTML+=`<p>O Maior valor é: ${maior}</p>`
+    divres.innerHTML+=`<p>O <strong>Maior</strong> valor inserido foi: ${maior}</p>`
 
-    divres.innerHTML+= `<p>O Menor valor é: ${menor}</p>`
+    divres.innerHTML+= `<p>O Menor valor inserido foi: ${menor}</p>`
 
     divres.innerHTML += `<p> A soma de todos os valores tem o valor de ${
         soma} <p>`
