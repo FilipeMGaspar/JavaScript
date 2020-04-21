@@ -1,5 +1,6 @@
 
-let val=[] // criaçaõ de variavel global
+let val=[] // criaçaõ de variavel global do tipo array.
+let divres = document.getElementById('result')
 
 
 function adic(){
@@ -20,7 +21,7 @@ function adic(){
 }
 
 function fim(){
-
+    
     if(val.length==0){
         alert("\u{2639} [ERRO] Nenhum Valor Detectado. Impossivel Finalizar")
     }else{
@@ -30,8 +31,6 @@ function fim(){
 
 //função para adicionar valores ao array e adicionar elementos ao select
 function adiciona(numer){
-
-    let divres = document.getElementById('result')
     let selnum =document.getElementById('selnum')
 
     divres.innerHTML = ''
@@ -44,7 +43,6 @@ function adiciona(numer){
 
 //Função para calcular a soma, a média, o maior e o menor dos elementos do vetor e o número de elementos inseridos no array
 function calcula(){
-    let divres = document.getElementById('result')
     let nrelem = val.length;
     
     if(nrelem== 1){
