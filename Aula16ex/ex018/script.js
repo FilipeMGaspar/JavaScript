@@ -46,10 +46,14 @@ function adiciona(numer){
         let item = document.createElement('option')
         item.text = `Valor ${numer} foi adicionado`    
         selnum.appendChild(item)
-        num.value = ''//limpa o valor contido na caixa de texto
+        
     }else{
         alert(`\u{2639} [ERRO] O Número ${numer} já foi inserido`)
     }
+
+    num.value = ''//limpa o valor contido na caixa de texto
+
+    num.focus()//coloca o cursor a piscar dentro da caixa de texto
 }
 
 
