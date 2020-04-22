@@ -24,6 +24,7 @@ function adicionar(){
        valores.push(Number(num.value))
        let item = document.createElement('option')
        item.text = `Valor ${num.value} adicionado`
+       lista.appendChild(item)
     }else{
         alert('Valor inválido ou já encontrado na lista')
     }
