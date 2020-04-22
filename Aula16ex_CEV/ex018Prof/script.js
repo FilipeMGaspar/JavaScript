@@ -31,3 +31,14 @@ function adicionar(){
     num.value = ''
     num.focus()
 }
+
+function finalizar(){
+    if (valores.length == 0){
+        alert('Adicionar valores antes de finalizar')
+    }else{
+        let tot = valores.length
+
+        res.innerHTML = ''
+        res.innerHTML += `<p>Ao todo, temos ${tot} números cadastrados</p>`
+    }
+}
