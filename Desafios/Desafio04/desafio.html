@@ -15,6 +15,10 @@
 
         if(Number(num2)>maior && Number(num2)>Number(num3)){
             maior = Number(num2)
+        }else if(Number(num3)>maior && Number(num2)<Number(num3)){
+            maior=Number(num3)
+        }else{
+            maior= Number(num1)
         }
         alert(`O Maior entre ${Number(num1)}, ${Number(num2)} e ${Number(num3)} é: ${maior}`)
     </script> 
