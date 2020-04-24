@@ -24,10 +24,13 @@
         
         if(Number(num2) < menor && Number(num2) < Number(num3)){
             menor= Number(num2)
+        }else if (Number(num3) < menor && Number(num3)<Number(num2)){
+            menor = Number(num3)
+        }else{
+            menor = Number(num1)
         }
-        alert(`O Menor entre ${Number(num1)}, ${Number(num2)} e ${Number(num3)} é: ${maior}`)
+        alert(`O Menor entre ${Number(num1)}, ${Number(num2)} e ${Number(num3)} é: ${menor}`)
          
-
     </script> 
 </body>
 </html>
