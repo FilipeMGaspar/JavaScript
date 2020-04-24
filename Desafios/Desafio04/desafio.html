@@ -10,7 +10,13 @@
         let num1 = prompt('Insira o Primeiro Número')
         let num2 = prompt('Insira o segundo Número')
         let num3 = prompt('Insira o Terceiro Número')
-        
+        let maior = Number(num1)
+        let menor = Number(num1)
+
+        if(Number(num2)>maior && Number(num2)>Number(num3)){
+            maior = Number(num2)
+        }
+        alert(`O Maior entre ${Number(num1)}, ${Number(num2)} e ${Number(num3)} é: ${maior}`)
     </script> 
 </body>
 </html>
