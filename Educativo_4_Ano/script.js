@@ -20,6 +20,13 @@ function carregar() {
     resp4.innerHTML=`<p>Beber água, fazer limonada, fechar a torneira </p>`
 }
 
-function verificar(){
-    resp1.style.background = 'green' 
+function verificar(n){
+   switch (n){
+       case 1:
+           resp1.style.background = 'green'
+           break
+       default:
+           break
+   }
+ 
 }
