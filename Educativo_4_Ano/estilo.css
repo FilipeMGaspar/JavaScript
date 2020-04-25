@@ -39,6 +39,33 @@ div#questao{
 div#resp1{
     background: aquamarine;
     border-radius: 10px;
-    float: left;
+    margin-top: 15px;
     margin-right: 20px;
+    text-align: center;
+    width: 250px;
+    float: left;
 }
+div#resp2{
+    background: aquamarine;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-right: 20px;
+    width: 250px;
+    float: left;
+}
+div#resp3{
+    background: aquamarine;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-right: 20px;
+    float: right;
+}
+div#resp4{
+    background: aquamarine;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-right: 20px;
+    float: right;
+}
+
+
