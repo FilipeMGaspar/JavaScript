@@ -24,7 +24,20 @@ function verificar(n){
    switch (n){
        case 1:
            resp1.style.background = 'green'
-           break
+           resp2.style.display = 'none'
+           resp3.style.display = 'none'
+           resp4.style.display = 'none'
+           break        
+        case 2:
+            resp2.style.background = 'red'
+            break            
+        case 3:
+            resp3.style.background = 'red'
+            break
+        case 4:
+            resp4.style.background = 'red'
+            break    
+        
        default:
            break
    }
