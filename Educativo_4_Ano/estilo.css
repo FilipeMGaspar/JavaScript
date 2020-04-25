@@ -29,5 +29,10 @@ footer{
 div#conteudo{
     text-align: center;
     margin-top: 15px;
+    font: normal 15pt Arial;
+}
+div#questao{
+    text-align: center;
+    margin-top: 15px;
     font: normal 13pt Arial;
 }
