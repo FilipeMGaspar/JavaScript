@@ -36,3 +36,9 @@ div#questao{
     margin-top: 15px;
     font: normal 13pt Arial;
 }
+div#resp1{
+    background: aquamarine;
+    border-radius: 10px;
+    float: left;
+    margin-right: 20px;
+}
