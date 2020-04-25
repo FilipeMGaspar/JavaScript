@@ -1,4 +1,8 @@
-//let conteudo = document.getElementById('conteudo')
+/* 
+    Melhorar este código
+*/
+
+
 let conteudo = document.querySelector('div#conteudo')
 let questao = document.querySelector('div#questao')
 let resp1 = document.querySelector('div#resp1')
@@ -30,14 +34,23 @@ function verificar(n){
            break        
         case 2:
             resp2.style.background = 'red'
+            resp2.style.float ='right'
+            resp1.style.background = 'green'
+            resp3.style.display = 'none'
+            resp4.style.display = 'none'
             break            
         case 3:
             resp3.style.background = 'red'
+            resp1.style.background = 'green'
+            resp2.style.display = 'none'
+            resp4.style.display = 'none'
             break
-        case 4:
+        case 4:           
             resp4.style.background = 'red'
-            break    
-        
+            resp1.style.background = 'green'
+            resp2.style.display = 'none'
+            resp3.style.display = 'none'
+            break         
        default:
            break
    }
