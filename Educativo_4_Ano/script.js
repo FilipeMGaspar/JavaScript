@@ -2,8 +2,9 @@
 let conteudo = document.querySelector('div#conteudo')
 
 function carregar() {
+    conteudo.innerHTML=''
     let imagem = document.createElement('img')
     imagem.setAttribute('id', 'foto')
-    imagem.setAttribute('src', '')
-    conteudo.innerHTML = `Maria Inês Gaspar`
+    imagem.setAttribute('src', 'imagens/Pulagua.png')
+    conteudo.appendChild(imagem)
 }
