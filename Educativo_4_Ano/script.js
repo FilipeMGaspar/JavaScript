@@ -5,6 +5,7 @@ let resp1 = document.querySelector('div#resp1')
 let resp2 = document.querySelector('div#resp2')
 let resp3 = document.querySelector('div#resp3')
 let resp4 = document.querySelector('div#resp4')
+
 function carregar() {
     conteudo.innerHTML=''
     conteudo.innerHTML+= `<p>Poluição Aquática!</p>`
@@ -17,4 +18,8 @@ function carregar() {
     resp2.innerHTML = '<p>Esgoto, resíduos sólidos, estações de tratamento, reciclagem Etc...<p>'
     resp3.innerHTML = '<p>Fumo, barulho excessivo, um Livro, Estações de Tratamento, Etc...<p>'
     resp4.innerHTML=`<p>Beber água, fazer limonada, fechar a torneira </p>`
+}
+
+function verificar(){
+    resp1.style.background = 'green' 
 }
