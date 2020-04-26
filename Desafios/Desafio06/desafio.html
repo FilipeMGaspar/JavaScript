@@ -12,22 +12,20 @@
  </div>   
 <script>
     let result = document.querySelector('div#resultado')
-    
-    for (let cont = 1; cont<=5; cont++){
+    result.innerHTML = `<h1>Números primos Entre <strong>0</strong> e <strong>200<Strong> </h1>`
+    for (let cont = 1; cont<=200; cont++){
         let nrdivisoes = 0
         let num = cont
-        for(let conta = 1;conta<=5;conta++){
+        for(let conta = 1;conta<=200;conta++){
             if(num % conta == 0){
                 nrdivisoes++
-                result.innerHTML += `${nrdivisoes}; `
-                result.innerHTML+= `<p>O número ${num} é Divisivel por ${conta} </p>`
-            }
-            
+            }            
+        }
+        if(nrdivisoes ==2 ){
+            result.innerHTML += `${num};  `
         }
         
     }
-    
-    //result.innerHTML = `${num} é Divisivel ${nrdivisoes}`
 </script>
 </body>
 </html>
