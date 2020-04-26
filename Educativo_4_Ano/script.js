@@ -2,7 +2,6 @@
     Melhorar este código
 */
 
-
 let conteudo = document.querySelector('div#conteudo')
 let questao = document.querySelector('div#questao')
 let resp1 = document.querySelector('div#resp1')
