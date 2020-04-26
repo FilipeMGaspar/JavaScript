@@ -12,7 +12,22 @@
  </div>   
 <script>
     let result = document.querySelector('div#resultado')
-    result.innerHTML = `Testando a DIV de Resultado`
+    
+    for (let cont = 1; cont<=5; cont++){
+        let nrdivisoes = 0
+        let num = cont
+        for(let conta = 1;conta<=5;conta++){
+            if(num % conta == 0){
+                nrdivisoes++
+                result.innerHTML += `${nrdivisoes}; `
+                result.innerHTML+= `<p>O número ${num} é Divisivel por ${conta} </p>`
+            }
+            
+        }
+        
+    }
+    
+    //result.innerHTML = `${num} é Divisivel ${nrdivisoes}`
 </script>
 </body>
 </html>
