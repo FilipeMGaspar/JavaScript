@@ -2,6 +2,7 @@
 let valores = []
 let num = document.getElementById('txtnum')
 
+
 function inserir(){
      
     if(num.value.length == 0){
@@ -18,8 +19,6 @@ function adicionar(nr){
     valores.push(nr)
     item.text = `Recebi: ${nr}`
     selnum.appendChild(item)
-    num.value = ''
-    num.focus()
 }
 
 
@@ -31,6 +30,15 @@ function verNaLista(n, l){
     }else{
         alert(`O Número ${n} já se encontra na lista`)
     }
+    num.value = ''
+    num.focus()
 }
 
 /* Falta a Função para finalizar */
+function termina(){
+    if (valores.length == 0){
+        alert('[ERRO] - Impossivel Terminar! Sem Valores na Lista')
+    }else{
+        alert('Vamos lá rebentar!!!')
+    }
+}
