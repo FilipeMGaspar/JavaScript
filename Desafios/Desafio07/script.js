@@ -39,6 +39,6 @@ function termina(){
     if (valores.length == 0){
         alert('[ERRO] - Impossivel Terminar! Sem Valores na Lista')
     }else{
-        alert('Vamos lá rebentar!!!')
+        alert('Vamos trabalhar sempre.Vamos chatiar o pai e a mãe.Feliz dia da mãe \u{1F60D}')
     }
 }
