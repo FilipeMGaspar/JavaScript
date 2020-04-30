@@ -18,3 +18,11 @@ footer{
     text-align: center;
     margin-top: 25px;
 }
+select#selnum{
+    width: 122px;
+}
+div#result{
+    margin-top: 10px;
+    font: normal 14pt Arial;
+    color: rgb(20, 20, 75);
+}
