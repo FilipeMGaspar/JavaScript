@@ -32,3 +32,5 @@ function verNaLista(n, l){
         alert(`O Número ${n} já se encontra na lista`)
     }
 }
+
+/* Falta a Função para finalizar */
