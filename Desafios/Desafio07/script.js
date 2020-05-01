@@ -39,6 +39,16 @@ function termina(){
     if (valores.length == 0){
         alert('[ERRO] - Impossivel Terminar! Sem Valores na Lista')
     }else{
-        alert('Vamos trabalhar sempre.Vamos chatiar o pai e a mãe.Feliz dia da mãe \u{1F60D}')
+        calcula(valores)       
     }
+}
+
+function calcula(l){
+    let somaPares = 0
+        for (pos in l){
+            if(l[pos]%2 == 0){
+                alert(`O número ${l[pos]} é par`)
+            }
+        }
+        alert('Vamos trabalhar sempre.Vamos chatiar o pai e a mãe.Feliz dia da mãe \u{1F60D}')
 }
