@@ -1,6 +1,7 @@
 
 let valores = []
 let num = document.getElementById('txtnum')
+let divResult = document.querySelector('div#result')
 
 
 function inserir(){
@@ -32,9 +33,9 @@ function verNaLista(n, l){
     }
     num.value = ''
     num.focus()
+    divResult.innerHTML = ''
 }
 
-/* Falta a Função para finalizar */
 function termina(){
     if (valores.length == 0){
         alert('[ERRO] - Impossivel Terminar! Sem Valores na Lista')
@@ -47,26 +48,34 @@ function calcula(l){
     let somaPares = 0
     let somaprimos = 0 
     let nrdivisoes = 0
+
         for (pos in l){
            
             if(l[pos]%2 == 0){
                 //Número PAR
                 somaPares += l[pos]
-                alert(`O NR: ${l[pos]} é PAR`)
             }
 
             let auxdiv = l[pos]
-            for(let conta=1;conta<=l[pos];conta++){
-                if(auxdiv %conta == 0){
+            for(let conta=1; conta<=l[pos];conta++){
+                if(auxdiv % conta == 0){
                     nrdivisoes ++
                 }
             }
             if(nrdivisoes == 2){
-                alert(`O número ${l[pos]} é primo`)
-            }else{
-                alert(`O Número ${l[pos]} NÃO É PRIMO`)
+                somaprimos += l[pos]
             }
-           
-        }
-        alert('Vamos trabalhar sempre.Vamos chatiar o pai e a mãe.Feliz dia da mãe \u{1F60D}')    
+           nrdivisoes = 0
+        } 
+       mostraNaTela(somaPares, somaprimos) 
+}
+function mostraNaTela(par, primo){
+    
+   divResult.innerHTML += `<p>o Número de valores <strong>Inseridos</strong> e: ${valores.length}</p>`
+   
+    divResult.innerHTML += `<p>A soma dos Números <strong>Pares</strong> é: ${par}</p>`
+   
+    divResult.innerHTML += `<p>A soma dos números <strong>Primos</strong> é: ${primo}</p>`
+    
+    //alert('Vamos trabalhar sempre.Vamos chatiar o pai e a mãe.Feliz dia da mãe \u{1F60D}') 
 }
