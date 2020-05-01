@@ -50,12 +50,13 @@ function calcula(l){
     let nrdivisoes = 0
 
         for (pos in l){
-           
+            
+            //Verifica se é Número PAR
             if(l[pos]%2 == 0){
-                //Número PAR
                 somaPares += l[pos]
             }
 
+             //Verifica se é Número PRIMO
             let auxdiv = l[pos]
             for(let conta=1; conta<=l[pos];conta++){
                 if(auxdiv % conta == 0){
@@ -67,8 +68,10 @@ function calcula(l){
             }
            nrdivisoes = 0
         } 
+        
        mostraNaTela(somaPares, somaprimos) 
 }
+
 function mostraNaTela(par, primo){
     
    divResult.innerHTML += `<p>o Número de valores <strong>Inseridos</strong> e: ${valores.length}</p>`
