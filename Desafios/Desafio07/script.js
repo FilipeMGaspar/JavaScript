@@ -45,10 +45,28 @@ function termina(){
 
 function calcula(l){
     let somaPares = 0
+    let somaprimos = 0 
+    let nrdivisoes = 0
         for (pos in l){
+           
             if(l[pos]%2 == 0){
-                alert(`O número ${l[pos]} é par`)
+                //Número PAR
+                somaPares += l[pos]
+                alert(`O NR: ${l[pos]} é PAR`)
             }
+
+            let auxdiv = l[pos]
+            for(let conta=1;conta<=l[pos];conta++){
+                if(auxdiv %conta == 0){
+                    nrdivisoes ++
+                }
+            }
+            if(nrdivisoes == 2){
+                alert(`O número ${l[pos]} é primo`)
+            }else{
+                alert(`O Número ${l[pos]} NÃO É PRIMO`)
+            }
+           
         }
-        alert('Vamos trabalhar sempre.Vamos chatiar o pai e a mãe.Feliz dia da mãe \u{1F60D}')
+        alert('Vamos trabalhar sempre.Vamos chatiar o pai e a mãe.Feliz dia da mãe \u{1F60D}')    
 }
