@@ -75,7 +75,5 @@ function mostraNaTela(par, primo){
    
     divResult.innerHTML += `<p>A soma dos Números <strong>Pares</strong> é: ${par}</p>`
    
-    divResult.innerHTML += `<p>A soma dos números <strong>Primos</strong> é: ${primo}</p>`
-    
-    //alert('Vamos trabalhar sempre.Vamos chatiar o pai e a mãe.Feliz dia da mãe \u{1F60D}') 
+    divResult.innerHTML += `<p>A soma dos números <strong>Primos</strong> é: ${primo}</p>` 
 }
