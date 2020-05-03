@@ -23,9 +23,25 @@ function verificaNota(valNota){
 function adicionaElemento(recebNota){
     let selectNotas = document.querySelector('select#selectNotas')
     let itemNota = document.createElement('option')
-    
     itemNota.text = `Recebi de nota: ${recebNota}`
     selectNotas.appendChild(itemNota)
     nota.value = ''
     nota.focus()
+    notaAluno.push(recebNota)
+    
+    let divResultado = document.querySelector('div#resultado')
+    divResultado.innerHTML = `${notaAluno}`
+}
+
+function calculaMedia(){
+    if (notaAluno.length==0){
+        alert('!! [ERRO] !! Sem notas adicionadas! Impossivel calcular a Média!')
+        nota.focus()
+    }else{
+        alert('Todo ok podemos continuar')
+    }
+}
+
+function estaNaLista(notaObtida , ntAluno){
+   
 }
