@@ -29,7 +29,7 @@ function adicionaElemento(recebNota){
     txtnota.value = ''
     txtnota.focus()
     notaAluno.push(recebNota)
-    divResultado = ''
+    divResultado.innerHTML = ''
 }
 
 function calculaMedia(){
@@ -50,8 +50,8 @@ function calculaMedia(){
     }
 }
 
-function sitacaoDoAluno(nota){
+function sitacaoDoAluno(mediaDaNota){
 
- alert('Vou Verificar a sua Situação')
+    alert(`A média da sua nota ${mediaDaNota}` )
 
 }
