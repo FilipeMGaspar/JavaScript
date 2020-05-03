@@ -47,15 +47,19 @@ function mostraFormDeNotas(ntestes){
 }
 
 function verificaNotas(){
+   // alert('O botão Calcular Média foi clicado')
     let nrtestes = Number(NrTestes.value)
-    let str = ''
-    for (let con = 1; con <=nrtestes; con++){
-        str = `txtnota${con}`
-        divResult.innerHTML += `${str} `
-    }
-    //divResult.innerHTML += `Variaveis Criadas ${str}`
+    let nomevar = []
 
-    alert(`Calculo da Média de Notas fez ${nrtestes} testes`)
+    for (let con = 1; con <= nrtestes ; con++){
+        alert('O botão Calcular Média foi clicado')
+       nomevar.push(`txtnota${con}`)
+        //alert(nomevar[c])
+    }
+    
+    divResult.innerHTML += `Variaveis Criadas ${nomevar}`
+
+    //alert(`Calculo da Média de Notas fez ${nrtestes} testes`)
 
 }
 
