@@ -1,4 +1,5 @@
 let numtestes = document.querySelector('div#notas')
+let divResult = document.querySelector('div#resultado')
 
 function registanotas(){
     let   NrTestes = document.getElementById('txtNrTestes')
@@ -17,8 +18,25 @@ function registanotas(){
 }
 
 function mostraFormDeNotas(ntestes){
+    
     numtestes.innerHTML = ''
+    
     numtestes.innerHTML += `<h1>Gestor de Notas</h1>`
-    numtestes.innerHTML += `<P>A sua turma fez ${ntestes} Testes.</p>`  
+    
+    for(let c=1; c<=ntestes; c++){
+        let txtnota = document.createElement('input')
+        txtnota.setAttribute('type', 'number')
+        txtnota.setAttribute('id' , `txtnota${c}`)
+        numtestes.appendChild(txtnota)    
+    }
+
+    let selnotas = document.createElement('select')
+    selnotas.setAttribute('id', 'selnotas')
+    selnotas.setAttribute('size', `${ntestes}`)
+    selnotas.style.width = '150px'
+    numtestes.appendChild(selnotas)
+   
     alert (`A sua turma fez ${ntestes} Testes`)
+
+    divResult.innerHTML += `<p>A sua turma fez ${ntestes} Testes.</p>` 
 }
