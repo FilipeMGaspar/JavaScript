@@ -60,6 +60,12 @@ function sitacaoDoAluno(mediaDaNota){
         divResultado.innerHTML += `<p>A média dos seus ${notaAluno.length} testes foi de: ${mediaDaNota} Regular</p>`
         divResultado.innerHTML += 'Situação do Aluno: encaminhado para <strong>Apoio</strong>'
 
+    }else if(mediaDaNota<=7.9){
+        divResultado.innerHTML += `<p>A média dos seus ${notaAluno.length} testes foi de: ${mediaDaNota} Bom</p>`
+        divResultado.innerHTML += 'Situação do Aluno: encaminhado para <strong>Atividade Lúdica</strong>'
+    }else if(mediaDaNota<=8.9){
+        divResultado.innerHTML += `<p>A média dos seus ${notaAluno.length} testes foi de: ${mediaDaNota} muiyo Bom</p>`
+        divResultado.innerHTML += 'Situação do Aluno: encaminhado para <strong>Sala de jogos</strong>'
     }
 
 }
