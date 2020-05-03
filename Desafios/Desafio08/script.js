@@ -1,22 +1,23 @@
 let notaAluno = []
-let nota = document.querySelector('input#txtNota') 
+let txtnota = document.querySelector('input#txtNota') 
+let divResultado = document.querySelector('div#resultado')
 
 function registanotas(){
-    if(nota.value.length == 0){
+    if(txtnota.value.length == 0){
         alert('!! [ERRO] !! Nenhoma nota foi informada.')
-        nota.focus()
+        txtnota.focus()
     }else{
-        verificaNota(Number(nota.value))
+        verificaNota(Number(txtnota.value))
     }
 }
 
 function verificaNota(valNota){
     if(valNota < 0 || valNota > 10){
         alert(`!! [ERRO] !! A Nota indicada ${valNota} é Inválida insira de 0 a 10`)
-        nota.focus()
-        nota.value = ''
+        txtnota.focus()
+        txtnota.value = ''
     }else{
-        adicionaElemento(Number(nota.value))
+        adicionaElemento(Number(txtnota.value))
     }
 }
 
@@ -25,23 +26,32 @@ function adicionaElemento(recebNota){
     let itemNota = document.createElement('option')
     itemNota.text = `Recebi de nota: ${recebNota}`
     selectNotas.appendChild(itemNota)
-    nota.value = ''
-    nota.focus()
+    txtnota.value = ''
+    txtnota.focus()
     notaAluno.push(recebNota)
-    
-    let divResultado = document.querySelector('div#resultado')
-    divResultado.innerHTML = `${notaAluno}`
+    divResultado = ''
 }
 
 function calculaMedia(){
+
     if (notaAluno.length==0){
         alert('!! [ERRO] !! Sem notas adicionadas! Impossivel calcular a Média!')
-        nota.focus()
+        txtnota.focus()
     }else{
-        alert('Todo ok podemos continuar')
+        
+        let soma = 0
+        let media = 0
+        
+        for(pos in notaAluno){
+            soma += notaAluno[pos] 
+        }
+        media = soma/notaAluno.length
+        sitacaoDoAluno(media)
     }
 }
 
-function estaNaLista(notaObtida , ntAluno){
-   
+function sitacaoDoAluno(nota){
+
+ alert('Vou Verificar a sua Situação')
+
 }
