@@ -35,16 +35,33 @@ function mostraFormDeNotas(ntestes){
         numtestes.appendChild(lblnota)
         numtestes.appendChild(txtnota)    
     }
-    
+    let btnAdiciNota = document.createElement('input')
+    btnAdiciNota.setAttribute('type' , 'button')
+    btnAdiciNota.setAttribute('value', 'Calcular Média')
+    btnAdiciNota.setAttribute('onclick', 'verificaNotas()')
+    numtestes.appendChild(btnAdiciNota)
+
+  
+}
+
+function verificaNotas(){
+
+    alert('Estrei aqui no calculo da média')
+
+}
+
+function teste(numT){
+
     numtestes.innerHTML += '<br>'
     let selnotas = document.createElement('select')
     selnotas.setAttribute('id', 'selnotas')
-    selnotas.setAttribute('size', `${ntestes}`)
+    selnotas.setAttribute('size', `${numT}`)
     selnotas.style.width = '150px'
     selnotas.style.marginTop = '15px'
     numtestes.appendChild(selnotas)
    
-    alert (`A sua turma fez ${ntestes} Testes`)
+    alert (`A sua turma fez ${numT} Testes`)
 
-    divResult.innerHTML += `<p>A sua turma fez ${ntestes} Testes.</p>` 
+    divResult.innerHTML += `<p>A sua turma fez ${numT} Testes.</p>` 
+
 }
