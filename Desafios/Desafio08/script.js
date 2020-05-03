@@ -52,20 +52,22 @@ function calculaMedia(){
 
 function sitacaoDoAluno(mediaDaNota){
 
-    alert(`A média da sua nota ${mediaDaNota}` )
     if(mediaDaNota>=0 && mediaDaNota<=4.9){        
-        divResultado.innerHTML += `<p>A média dos seus ${notaAluno.length} testes foi de: ${mediaDaNota} Insuficiente</p>`
-        divResultado.innerHTML += 'Situação do Aluno: encaminhado para <strong>Recuperação</strong>'
+        divResultado.innerHTML += `<p>A média dos seus ${notaAluno.length} testes foi de: ${mediaDaNota} <em>Insuficiente</em></p>`
+        divResultado.innerHTML += 'Situação do Aluno: encaminhado para: <strong>Recuperação</strong>'
     }else if(mediaDaNota<=6.4){
-        divResultado.innerHTML += `<p>A média dos seus ${notaAluno.length} testes foi de: ${mediaDaNota} Regular</p>`
-        divResultado.innerHTML += 'Situação do Aluno: encaminhado para <strong>Apoio</strong>'
+        divResultado.innerHTML += `<p>A média dos seus ${notaAluno.length} testes foi de: ${mediaDaNota} <em><Regular</em></p>`
+        divResultado.innerHTML += 'Situação do Aluno: encaminhado para: <strong>Apoio</strong>'
 
     }else if(mediaDaNota<=7.9){
-        divResultado.innerHTML += `<p>A média dos seus ${notaAluno.length} testes foi de: ${mediaDaNota} Bom</p>`
-        divResultado.innerHTML += 'Situação do Aluno: encaminhado para <strong>Atividade Lúdica</strong>'
+        divResultado.innerHTML += `<p>A média dos seus ${notaAluno.length} testes foi de: ${mediaDaNota} <em>Bom</em></p>`
+        divResultado.innerHTML += 'Situação do Aluno: encaminhado para: <strong>Atividade Lúdica</strong>'
     }else if(mediaDaNota<=8.9){
-        divResultado.innerHTML += `<p>A média dos seus ${notaAluno.length} testes foi de: ${mediaDaNota} muiyo Bom</p>`
-        divResultado.innerHTML += 'Situação do Aluno: encaminhado para <strong>Sala de jogos</strong>'
+        divResultado.innerHTML += `<p>A média dos seus ${notaAluno.length} testes foi de: ${mediaDaNota} <em>Muito Bom</em></p>`
+        divResultado.innerHTML += 'Situação do Aluno: encaminhado para: <strong>Sala de jogos</strong>'
+    }else{
+        divResultado.innerHTML += `<p>A média dos seus ${notaAluno.length} testes foi de: ${mediaDaNota} <em>Excelente</em></p>`
+        divResultado.innerHTML += 'Situação do Aluno: encaminhado para: <strong>Acesso ao Spa</strong>'
     }
 
 }
