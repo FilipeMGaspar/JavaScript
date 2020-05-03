@@ -1,6 +1,6 @@
 let numtestes = document.querySelector('div#notas')
 let divResult = document.querySelector('div#resultado')
-let   NrTestes = document.getElementById('txtNrTestes')
+let NrTestes = document.getElementById('txtNrTestes')
 
 function registanotas(){
     
@@ -37,19 +37,25 @@ function mostraFormDeNotas(ntestes){
         numtestes.appendChild(lblnota)
         numtestes.appendChild(txtnota)    
     }
+
     numtestes.innerHTML +='<br>'
     let btnAdiciNota = document.createElement('input')
     btnAdiciNota.setAttribute('type' , 'button')
     btnAdiciNota.setAttribute('value', 'Calcular Média')
     btnAdiciNota.setAttribute('onclick', 'verificaNotas()')
     numtestes.appendChild(btnAdiciNota)
-
-
 }
 
 function verificaNotas(){
+    let nrtestes = Number(NrTestes.value)
+    let str = ''
+    for (let con = 1; con <=nrtestes; con++){
+        str = `txtnota${con}`
+        divResult.innerHTML += `${str} `
+    }
+    //divResult.innerHTML += `Variaveis Criadas ${str}`
 
-    alert('Estrei aqui no calculo da média')
+    alert(`Calculo da Média de Notas fez ${nrtestes} testes`)
 
 }
 
