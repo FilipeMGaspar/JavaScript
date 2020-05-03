@@ -11,12 +11,12 @@ function registanotas(){
             NrTestes.focus()
             NrTestes.value = ''
         }else{ 
-            mostraNaTela(Number(NrTestes.value))
+            mostraFormDeNotas(Number(NrTestes.value))
         }
     }
 }
 
-function mostraNaTela(ntestes){
+function mostraFormDeNotas(ntestes){
     numtestes.innerHTML = ''
     numtestes.innerHTML += `<h1>Gestor de Notas</h1>`
     numtestes.innerHTML += `<P>A sua turma fez ${ntestes} Testes.</p>`  
