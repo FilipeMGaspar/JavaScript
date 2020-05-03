@@ -49,19 +49,25 @@ function mostraFormDeNotas(ntestes){
 function verificaNotas(){
    
     let nrtestes = Number(NrTestes.value)
-    let nomevar = []
-
-    for (let con = 1; con <= nrtestes ; con++){
-        alert('O botão Calcular Média foi clicado')
-       nomevar.push(`txtnota${con}`)
+    if(campoNotaTemVal(nrtestes)){
+        alert('Vazio')
+    }else{
+        alert('Com Dados')
     }
-    
-    divResult.innerHTML += `Variaveis Criadas ${nomevar}`
+}
 
+function campoNotaTemVal(nrel){
+  
 }
 
 
 
+
+
+
+
+
+/*
 function teste(numT){
 
     numtestes.innerHTML += '<br>'
@@ -76,4 +82,4 @@ function teste(numT){
 
     divResult.innerHTML += `<p>A sua turma fez ${numT} Testes.</p>` 
 
-}
+}*/
