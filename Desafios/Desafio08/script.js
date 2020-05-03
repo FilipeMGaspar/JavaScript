@@ -1,8 +1,9 @@
 let numtestes = document.querySelector('div#notas')
 let divResult = document.querySelector('div#resultado')
+let   NrTestes = document.getElementById('txtNrTestes')
 
 function registanotas(){
-    let   NrTestes = document.getElementById('txtNrTestes')
+    
     if(NrTestes.value.length == 0){
        alert('[ERRO] Número de Testes. Não preenchido!!!')
         NrTestes.focus()
@@ -30,18 +31,20 @@ function mostraFormDeNotas(ntestes){
         lblnota.innerText = `${c}ª Nota: `
         txtnota.setAttribute('type', 'number')
         txtnota.setAttribute('id' , `txtnota${c}`)
-        txtnota.style.width = '40px'
-        txtnota.style.marginRight = '10px'
+        txtnota.style.width = '60px'
+        txtnota.style.marginRight = '25px'
+        txtnota.style.marginBottom = '15px'
         numtestes.appendChild(lblnota)
         numtestes.appendChild(txtnota)    
     }
+    numtestes.innerHTML +='<br>'
     let btnAdiciNota = document.createElement('input')
     btnAdiciNota.setAttribute('type' , 'button')
     btnAdiciNota.setAttribute('value', 'Calcular Média')
     btnAdiciNota.setAttribute('onclick', 'verificaNotas()')
     numtestes.appendChild(btnAdiciNota)
 
-  
+
 }
 
 function verificaNotas(){
@@ -49,6 +52,8 @@ function verificaNotas(){
     alert('Estrei aqui no calculo da média')
 
 }
+
+
 
 function teste(numT){
 
