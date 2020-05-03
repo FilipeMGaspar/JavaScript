@@ -53,5 +53,13 @@ function calculaMedia(){
 function sitacaoDoAluno(mediaDaNota){
 
     alert(`A média da sua nota ${mediaDaNota}` )
+    if(mediaDaNota>=0 && mediaDaNota<=4.9){        
+        divResultado.innerHTML += `<p>A média dos seus ${notaAluno.length} testes foi de: ${mediaDaNota} Insuficiente</p>`
+        divResultado.innerHTML += 'Situação do Aluno: encaminhado para <strong>Recuperação</strong>'
+    }else if(mediaDaNota<=6.4){
+        divResultado.innerHTML += `<p>A média dos seus ${notaAluno.length} testes foi de: ${mediaDaNota} Regular</p>`
+        divResultado.innerHTML += 'Situação do Aluno: encaminhado para <strong>Apoio</strong>'
+
+    }
 
 }
