@@ -6,6 +6,26 @@ function registanotas(){
         alert('!! [ERRO] !! Nenhoma nota foi informada.')
         nota.focus()
     }else{
-        alert('Vamos continuar')
+        verificaNota(Number(nota.value))
     }
+}
+
+function verificaNota(valNota){
+    if(valNota < 0 || valNota > 10){
+        alert(`!! [ERRO] !! A Nota indicada ${valNota} é Inválida insira de 0 a 10`)
+        nota.focus()
+        nota.value = ''
+    }else{
+        adicionaElemento(Number(nota.value))
+    }
+}
+
+function adicionaElemento(recebNota){
+    let selectNotas = document.querySelector('select#selectNotas')
+    let itemNota = document.createElement('option')
+    
+    itemNota.text = `Recebi de nota: ${recebNota}`
+    selectNotas.appendChild(itemNota)
+    nota.value = ''
+    nota.focus()
 }
