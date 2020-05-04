@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo Para os Desafios!</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body onload="iniciar()">
+    <header>
+        <h1>Números ao Quadrado!</h1>
+    </header>
+    
+    <section>
+        <div>
+            <p>Calculadore de números ao Quadrado. 5 operações</p>
+            <p>
+                Insira um número: 
+                <input type="number" id="txtnum" name="txtnum">
+                <input type="button" value="Inserir" onclick="inserir()" id="btninsert">
+            </p>
+            <p>
+                <select name="selnum" id="selnum" size="5">
+
+                </select>
+            </p>
+            <input type="button" value="Calcular" id="btnCalc" onclick="calcular()">
+        </div>
+        <div id="resultado">
+            
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Filipe Gaspar </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
