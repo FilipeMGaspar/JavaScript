@@ -46,4 +46,5 @@ function calcular(){
     for(pos in nrinserido){
         divresultado.innerHTML += `<p>O número ${nrinserido[pos]} elevado a ${expoente[pos]} tem o valor de: ${Math.pow(nrinserido[pos], expoente[pos])}</p>`
     }
+    btnCalc.style.display = 'none'
 }
