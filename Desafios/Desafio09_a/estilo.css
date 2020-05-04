@@ -21,3 +21,7 @@ footer{
 select{
     width: 140px;
 }
+input.txtbase{
+    width: 70px;
+    margin-right: 20px;
+}
