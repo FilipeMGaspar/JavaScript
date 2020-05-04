@@ -1,3 +1,4 @@
+let divresultado = document.querySelector('div#resultado')
 let txtnum = document.querySelector('input#txtnum')
 let selnum = document.querySelector('select#selnum')
 let btnCalc = document.querySelector('input#btnCalc')
@@ -31,8 +32,12 @@ function adicionarNaLista(num){
     nrinserido.push(num)
     if(nrinserido.length == 5){
         txtnum.style.display = 'none'
-        btninsert.style.display = 'none'    
+        btninsert.style.display = 'none'
+        btnCalc.style.display = 'block'    
     }
-    
-    //alert(`Número ${num}`)
+    divresultado.innerHTML = ''
+}
+
+function calcular(){
+    alert('Vamos lá ao calculo')
 }
