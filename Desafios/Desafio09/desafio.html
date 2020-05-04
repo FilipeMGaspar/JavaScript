@@ -6,24 +6,25 @@
     <title>Modelo Para os Desafios!</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
-<body>
+<body onload="iniciar()">
     <header>
         <h1>Números ao Quadrado!</h1>
     </header>
     
     <section>
         <div>
+            <p>Calculadore de números ao Quadrado. 5 operações</p>
             <p>
                 Insira um número: 
                 <input type="number" id="txtnum" name="txtnum">
-                <input type="button" value="Inserir" onclick="inserir()">
+                <input type="button" value="Inserir" onclick="inserir()" id="btninsert">
             </p>
             <p>
                 <select name="selnum" id="selnum" size="5">
 
                 </select>
             </p>
-            <input type="button" value="Calcular">
+            <input type="button" value="Calcular" id="btnCalc">
         </div>
         <div id="resultado">
             
