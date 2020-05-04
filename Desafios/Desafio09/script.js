@@ -35,9 +35,10 @@ function adicionarNaLista(num){
         btninsert.style.display = 'none'
         btnCalc.style.display = 'block'    
     }
-    divresultado.innerHTML = ''
 }
 
 function calcular(){
-    alert('Vamos lá ao calculo')
+    for(pos in nrinserido){
+        divresultado.innerHTML += `<p>O quadrado de ${nrinserido[pos]} é: ${Math.pow(nrinserido[pos], 2)}</p>`
+    }
 }
