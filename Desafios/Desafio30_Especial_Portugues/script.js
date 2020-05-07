@@ -21,23 +21,23 @@ function verificar(){
     if(respondido){
         alert(`Parabéns!!!`)
     }else{
-        /*
+        
         valselresp.text = 'a'   
         valselresp2.text = 'a'
         valselresp3.text = 'Há'   
         valselresp4.text = 'há' 
         valselresp5.text = 'a'
-        */ 
+         
         alert('!! [ERRO] !! Verifica de novo')
     }
 
 }
 
 function verrespostas(r1, r2, r3, r4, r5){
-    alert(`Resposta 1: ${r1} seguida de: ${r2}`)
+   /*alert(`Resposta 1: ${r1} seguida de: ${r2}`)
     alert(`Resposta 2: ${r3}`)
     alert(`Resposta 3: ${r4}`)
-    alert(`Resposta 4: ${r5}`)
+    alert(`Resposta 4: ${r5}`)*/
     
     if(r1 === 'a' && r2 === 'a' && r3 === 'Há' && r4 === 'há' && r5 === 'a'){
         return true
