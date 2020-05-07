@@ -54,7 +54,7 @@ function verificar(){
         valselresp9.text = 'há'
         valselresp10.text = 'A'
         valselresp11.text = 'há'
-        valselresp11.text = 'Há'
+        valselresp12.text = 'Há'
         alert('!! [ERRO] !! Verifica de novo')
     }
 
