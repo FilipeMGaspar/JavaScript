@@ -57,15 +57,7 @@ function verificar(){
 }
 
 function verrespostas(r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11){
-   /*
-    alert(`Resposta 1: ${r1} seguida de: ${r2}`)
-    alert(`Resposta 2: ${r3}`)
-    alert(`Resposta 3: ${r4}`)
-    alert(`Resposta 4: ${r5}`)
-    alert(`Resposta 5: ${r6}`)
-    alert(`Resposta 6: ${r7}`)
-    */
-    
+     
     if(r1 === 'a' && r2 === 'a' && r3 === 'Há' && r4 === 'há' && r5 === 'a' && r6 === 'há' && r7 === 'há'  && r8 === 'há'   && r9 === 'há' && r10 === 'A' && r11 === 'há' ){
         return true
     }else{
