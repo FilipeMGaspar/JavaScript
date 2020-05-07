@@ -39,8 +39,11 @@ function verificar(){
 
     let selresp13 = document.querySelector('select#selresp13')
     let valselresp13 = selresp13.options[selresp13.selectedIndex]
+
+    let selresp14 = document.querySelector('select#selresp14')
+    let valselresp14 = selresp14.options[selresp14.selectedIndex]
    
-    let respondido = verrespostas(valselresp.text, valselresp2.text, valselresp3.text, valselresp4.text, valselresp5.text, valselresp6.text , valselresp7.text, valselresp8.text, valselresp9.text, valselresp10.text, valselresp11.text, valselresp12.text, valselresp13.text)
+    let respondido = verrespostas(valselresp.text, valselresp2.text, valselresp3.text, valselresp4.text, valselresp5.text, valselresp6.text , valselresp7.text, valselresp8.text, valselresp9.text, valselresp10.text, valselresp11.text, valselresp12.text, valselresp13.text, valselresp14.text)
 
     if(respondido){
         alert(`Parabéns!!! Acertas-te em todas \u{1F603}`)
@@ -59,14 +62,15 @@ function verificar(){
         valselresp11.text = 'há'
         valselresp12.text = 'Há'
         valselresp13.text = 'há'
+        valselresp14.text = 'A'
         alert('!! [ERRO] !! Verifica de novo')
     }
 
 }
 
-function verrespostas(r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13){
+function verrespostas(r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14){
      
-    if(r1 === 'a' && r2 === 'a' && r3 === 'Há' && r4 === 'há' && r5 === 'a' && r6 === 'há' && r7 === 'há'  && r8 === 'há'   && r9 === 'há' && r10 === 'A' && r11 === 'há' && r12 === 'Há' && r13 === 'há'){
+    if(r1 === 'a' && r2 === 'a' && r3 === 'Há' && r4 === 'há' && r5 === 'a' && r6 === 'há' && r7 === 'há'  && r8 === 'há'   && r9 === 'há' && r10 === 'A' && r11 === 'há' && r12 === 'Há' && r13 === 'há' && r14 === 'A'){
         return true
     }else{
         return false
