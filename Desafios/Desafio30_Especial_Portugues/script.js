@@ -1,6 +1,9 @@
 
 
+
 function verificar(){
+    btnverifica = document.querySelector('input#btnverifica')
+
     let selresp = document.querySelector('select#selresp')
     let valselresp = selresp.options[selresp.selectedIndex]
     
@@ -50,6 +53,7 @@ function verificar(){
 
     if(respondido){
         alert(`Parabéns!!! Acertas-te em todas \u{1F603}`)
+        btnverifica.style.display = 'none'
     }else{
         
         valselresp.text = 'a'   
