@@ -24,8 +24,11 @@ function verificar(){
 
     let selresp8 = document.querySelector('select#selresp8')
     let valselresp8 = selresp8.options[selresp8.selectedIndex]
+
+    let selresp9 = document.querySelector('select#selresp9')
+    let valselresp9 = selresp9.options[selresp9.selectedIndex]
    
-    let respondido = verrespostas(valselresp.text, valselresp2.text, valselresp3.text, valselresp4.text, valselresp5.text, valselresp6.text , valselresp7.text, valselresp8.text)
+    let respondido = verrespostas(valselresp.text, valselresp2.text, valselresp3.text, valselresp4.text, valselresp5.text, valselresp6.text , valselresp7.text, valselresp8.text, valselresp9.text)
 
     if(respondido){
         alert(`Parabéns!!!`)
@@ -39,12 +42,13 @@ function verificar(){
         valselresp6.text = 'há'
         valselresp7.text = 'há'
         valselresp8.text = 'há'
+        valselresp9.text = 'há'
         alert('!! [ERRO] !! Verifica de novo')
     }
 
 }
 
-function verrespostas(r1, r2, r3, r4, r5, r6, r7, r8){
+function verrespostas(r1, r2, r3, r4, r5, r6, r7, r8, r9){
    /*
     alert(`Resposta 1: ${r1} seguida de: ${r2}`)
     alert(`Resposta 2: ${r3}`)
@@ -54,7 +58,7 @@ function verrespostas(r1, r2, r3, r4, r5, r6, r7, r8){
     alert(`Resposta 6: ${r7}`)
     */
     
-    if(r1 === 'a' && r2 === 'a' && r3 === 'Há' && r4 === 'há' && r5 === 'a' && r6 === 'há' && r7 === 'há'  && r8 === 'há'){
+    if(r1 === 'a' && r2 === 'a' && r3 === 'Há' && r4 === 'há' && r5 === 'a' && r6 === 'há' && r7 === 'há'  && r8 === 'há'   && r9 === 'há'){
         return true
     }else{
         return false
