@@ -21,3 +21,6 @@ footer{
 span.destaque{
     color: rgb(146, 31, 31);
 }
+ol{
+    list-style-type: lower-latin;
+}
