@@ -20,23 +20,26 @@ function mostrar(){
             txtnum.focus()
             divresultado.innerHTML +=`<p>A soma de ${Number(txtnum.value)} termo é : 0</p>`
             txtnum.value = ''
-        }else{  
+        }else{ 
+            let soma = termo2 
             divresultado.innerHTML =`<p>Solicitou mostrar ${Number(txtnum.value)} termos da Sequência Fibonacci!</p>`
             divresultado.innerHTML += `${termo1} - ${termo2} - `
-        /*
-                      termo3 = termo1+ termo2                 
-        0         1       1
-        termo1 - termo2 - termo3
-        */
+             /*
+                                  termo3 = termo1+ termo2                 
+                 0         1       1
+                termo1 - termo2 - termo3
+            */
+
             for(let conta = 2; conta<= Number(txtnum.value); conta++ ){
                 let termo3 = termo1 + termo2
                 divresultado.innerHTML += ` ${termo3} -`
                 termo1 = termo2
                 termo2 = termo3
+                soma += termo3
             }
             divresultado.innerHTML += ' Fim'
             txtnum.focus()
-            divresultado.innerHTML +=`<p>A soma dos ${Number(txtnum.value)} termos é : </p>`
+            divresultado.innerHTML +=`<p>A soma dos ${Number(txtnum.value)} termos é : ${soma}</p>`
             txtnum.value = ''           
         }
         
