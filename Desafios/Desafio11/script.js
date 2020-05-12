@@ -31,8 +31,12 @@ function calcular(){
 
 function calculaimc(peso , altura){
     let imc = peso / (altura*altura)
+    verSitucao(peso, altura, imc)    
+}
+
+function verSitucao(pesa, mede, imccalc){
+    let pesa = pesa.toFixed(2)
     alert('tudo ok podemos continuar')
-    divresultado.innerHTML =`<p>Para o peso de ${peso}Kg e altura ${altura}m</p>`
-    divresultado.innerHTML +=`<p>O seu IMC é de: ${imc}</p>`
-    
+    divresultado.innerHTML =`<p>Para o peso de ${pesa}Kg e altura ${mede}m</p>`
+    divresultado.innerHTML +=`<p>O seu IMC é de: ${imccalc}</p>`
 }
