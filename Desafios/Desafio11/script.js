@@ -1,5 +1,6 @@
 let txtpeso = document.getElementById('txtpeso')
 let txtaltura = document.querySelector('input#txtaltura')
+let divresultado = document.querySelector('div#resultado')
 
 function iniciar(){
     txtpeso.focus()
@@ -28,6 +29,10 @@ function calcular(){
     }
 }
 
-function calculaimc(peso , aaltura){
+function calculaimc(peso , altura){
+    let imc = peso / (altura*altura)
     alert('tudo ok podemos continuar')
+    divresultado.innerHTML =`<p>Para o peso de ${peso}Kg e altura ${altura}m</p>`
+    divresultado.innerHTML +=`<p>O seu IMC é de: ${imc}</p>`
+    
 }
