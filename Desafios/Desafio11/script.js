@@ -47,8 +47,13 @@ function verSitucao(pesa, mede, imccalc){
 
     divresultado.innerHTML += `<p>Sinto muito, mas o seu IMC é de ${imccalc}kg/m<sup>2</sup>. Indicando: </p>`        
     divresultado.appendChild(item)
-   }else if(){
 
+   }else if(imccalc<24.9){
+    item.style.color = '#249634'
+    item.innerHTML = '<strong>Normal</strong>'
+
+    divresultado.innerHTML += `<p>Sinto muito, mas o seu IMC é de ${imccalc}kg/m<sup>2</sup>. Indicando: </p>`        
+    divresultado.appendChild(item) 
    }
 
    
