@@ -45,28 +45,28 @@ function verSitucao(pesa, mede, imccalc){
         item.style.color = '#d23434'
         item.innerHTML = '<strong>Magreza</strong>'
 
-        divresultado.innerHTML += `<p>Sinto muito, mas o seu IMC é de ${imccalc}kg/m<sup>2</sup>. Indicando: </p>`        
+        divresultado.innerHTML += `<p>Sinto muito! É muito preocupante! O seu IMC é de ${imccalc}kg/m<sup>2</sup>. Indicando: </p>`        
         divresultado.appendChild(item)
 
    }else if(imccalc<24.9){
         item.style.color = '#249634'
         item.innerHTML = '<strong>Normal</strong>'
 
-        divresultado.innerHTML += `<p>Sinto muito, mas o seu IMC é de ${imccalc}kg/m<sup>2</sup>. Indicando: </p>`        
+        divresultado.innerHTML += `<p>Muito bem! O seu IMC é de ${imccalc}kg/m<sup>2</sup>. Indicando: </p>`        
         divresultado.appendChild(item) 
 
    }else if(imccalc<30){
         item.style.color = '#db7c48'
         item.innerHTML = '<strong>Sobrepeso</strong>'
 
-         divresultado.innerHTML += `<p>Sinto muito, mas o seu IMC é de ${imccalc}kg/m<sup>2</sup>. Indicando: </p>`        
+         divresultado.innerHTML += `<p>É preocupante! O seu IMC é de ${imccalc}kg/m<sup>2</sup>. Indicando: </p>`        
         divresultado.appendChild(item)
    }else{ 
         
         item.style.color = '#d23434'
         item.innerHTML = '<strong>Obesidade</strong>'
 
-        divresultado.innerHTML += `<p>Sinto muito, mas o seu IMC é de ${imccalc}kg/m<sup>2</sup>. Indicando: </p>`        
+        divresultado.innerHTML += `<p>Sinto muito! A sua situação é muito preocupante! O seu IMC é de ${imccalc}kg/m<sup>2</sup>. Indicando: </p>`        
         divresultado.appendChild(item)
     }
 
