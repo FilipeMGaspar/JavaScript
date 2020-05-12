@@ -6,7 +6,7 @@
     <title>Desafios 11!</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
-<body>
+<body onload="iniciar()">
     <header>
         <h1>Calculadora de IMC!</h1>
     </header>
@@ -14,7 +14,7 @@
     <section>
         <div>
             <p>Calculadora de Índice de Massa Corporal</p>
-            <p><span>Peso: <input type="number">kg </span><span class="altura">Altura: <input type="number">m</span><input type="button" value="Calcular" onclick="calcular()"></p>
+            <p><span>Peso: <input type="number" id="txtpeso" name="txtpeso">kg </span><span class="altura">Altura: <input type="number" id="txtaltura" name="txtaltura">m</span><input type="button" value="Calcular" onclick="calcular()" id="btncalc"></p>
         </div>
         <div>
             Vamos tentar resolver!
