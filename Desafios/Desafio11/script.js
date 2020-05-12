@@ -36,7 +36,10 @@ function calculaimc(peso , altura){
 }
 
 function verSitucao(pesa, mede, imccalc){
-    alert('tudo ok podemos continuar')
+    if(imccalc>=30){    
+        
+    }
     divresultado.innerHTML =`<p>Para o peso de ${pesa}Kg e altura de ${mede}m</p>`
     divresultado.innerHTML +=`<p>O seu IMC é de: ${imccalc}</p>`
+
 }
