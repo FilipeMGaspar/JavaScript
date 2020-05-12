@@ -23,7 +23,11 @@ function calcular(){
             txtaltura.focus()
             txtaltura.value = ''
         }else{
-           alert('tudo ok podemos continuar')
+            calculaimc(Number(txtpeso.value), Number(txtaltura.value))
         }
     }
+}
+
+function calculaimc(peso , aaltura){
+    alert('tudo ok podemos continuar')
 }
