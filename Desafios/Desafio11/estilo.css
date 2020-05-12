@@ -18,3 +18,11 @@ footer{
     text-align: center;
     margin-top: 25px;
 }
+
+input{
+    width: 65px;
+}
+
+span.altura{
+    margin-left: 10px;
+}
