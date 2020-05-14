@@ -12,6 +12,14 @@ function inserir(){
         txtnun.focus()
     }
     else{
-        alert('Todo ok podemos continuar')
+        colocanalista(Number(txtnun.value))
     }
+}
+
+function colocanalista(recebenum){
+    let item = document.createElement('option')
+    item.text = `Adicionou o N.º: ${recebenum}`
+    selectnum.appendChild(item)
+    txtnun.focus()
+    txtnun.value = ''
 }
