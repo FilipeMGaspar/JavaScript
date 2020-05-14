@@ -18,8 +18,25 @@ function inserir(){
 
 function colocanalista(recebenum){
     let item = document.createElement('option')
-    item.text = `Adicionou o N.º: ${recebenum}`
-    selectnum.appendChild(item)
-    txtnun.focus()
-    txtnun.value = ''
+    
+    if(estaNaLista(recebenum)){
+        valores.push(recebenum)
+        item.text = `Adicionou o N.º: ${recebenum}`    
+        selectnum.appendChild(item)    
+        txtnun.focus()
+        txtnun.value = ''    
+    }else{
+        alert(`!! [ERRO] !! O Número ${recebenum} encontrado na lista!`)
+        txtnun.focus()
+        txtnun.value = ''
+    }
+}
+
+function estaNaLista(vernumnlista){
+     let encontrado = valores.indexOf(vernumnlista)
+    if(encontrado == -1){
+        return true
+    }else{
+        return false
+    }
 }
