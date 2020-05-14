@@ -17,5 +17,6 @@ function inserir(){
 }
 
 function colocarNaLista(numero){
-    
+    let div = 45%5
+    alert (`${div}`)
 }
