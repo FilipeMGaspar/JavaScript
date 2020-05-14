@@ -6,7 +6,7 @@
     <title>Desafio 12!</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
-<body>
+<body onload="iniciar()">
     <header>
         <h1>Maior e menor!</h1>
     </header>
@@ -14,7 +14,12 @@
     <section>
         <div>
             <p>Maior e menor entre 5 Números</p>
-            <p>Digite um número: <input type="number" id="txtnun" name="txtnum" class="txtnr"> <input type="button" value="Inserir" id="btninserir" onclick="inserir()" class="btnins"> </p>
+            <p>Digite um número: <input type="number" id="txtnun" name="txtnum" class="txtnr"> <input type="button" value="Inserir" id="btninserir" onclick="inserir()" class="btnins"></p>
+            <p>
+                <select name="selectnum" id="selectnum" size="5">
+
+                </select>
+            </p>
         </div>
         <div>
             

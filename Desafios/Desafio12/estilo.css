@@ -21,6 +21,7 @@ footer{
 
 input.txtnr{
     width: 80px;
+    margin-left: 3px;
 }
 
 input.btnins{
@@ -30,4 +31,8 @@ input.btnins{
     border: 1px solid lightslategray;
     background-color: rgb(110, 112, 114);
     color: whitesmoke;
+}
+
+select#selectnum{
+    width: 150px;
 }
