@@ -1,5 +1,6 @@
 let selectnum = document.querySelector('select#selectnum')
 let txtnun = document.querySelector('input#txtnun')
+let btninserir = document.querySelector('input#btninserir')
 let valores = []
 
 function iniciar(){
@@ -7,6 +8,8 @@ function iniciar(){
 }
 
 function inserir(){
+    
+
     if(txtnun.value.length==0){
         alert ('!! [ERRO] !! Número não Informado!')
         txtnun.focus()
@@ -17,26 +20,24 @@ function inserir(){
 }
 
 function colocanalista(recebenum){
-    let btninserir = document.querySelector('input#btninserir')
+    
     let item = document.createElement('option')
    
-    if(valores.length >= 0 && valores.length<5){
         if(estaNaLista(recebenum)){
             valores.push(recebenum)
             item.text = `Adicionou o N.º: ${recebenum}`    
             selectnum.appendChild(item)    
             txtnun.focus()
-            txtnun.value = ''    
+            txtnun.value = ''
+            if (valores.length == 5){
+                btninserir.style.display = 'none'
+                txtnun.style.display= 'none'
+            }    
         }else{
             alert(`!! [ERRO] !! O Número ${recebenum} encontrado na lista!`)
             txtnun.focus()
             txtnun.value = ''
         }
-    }else{
-        btninserir.style.display = 'none'
-        alert(`Limite de 5 números foi atingido! O número ${recebenum} não foi adicionado.`)
-        txtnun.style.display = 'none'
-    }
 }
 
 function estaNaLista(vernumnlista){
