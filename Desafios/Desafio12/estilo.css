@@ -18,3 +18,16 @@ footer{
     text-align: center;
     margin-top: 25px;
 }
+
+input.txtnr{
+    width: 80px;
+}
+
+input.btnins{
+    width: 80px;
+    padding: 5px;
+    margin-left: 20px;
+    border: 1px solid lightslategray;
+    background-color: rgb(110, 112, 114);
+    color: whitesmoke;
+}
