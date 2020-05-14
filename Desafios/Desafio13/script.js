@@ -1,5 +1,7 @@
 let txtnum = document.querySelector('input#txtnum')
 let selnum = document.querySelector('select#selnum')
+let divresultado = document.getElementById('resultado')
+let btnverifica = document.querySelector('input#btnverifica')
 let multiplos = []
 
 function iniciar(){
@@ -7,6 +9,8 @@ function iniciar(){
 }
 
 function inserir(){
+    divresultado.innerHTML = ''
+
    if(txtnum.value.length == 0){
        alert('!! [ERRO] !! Nenhum Número informado!')
        txtnum.focus()
@@ -17,7 +21,7 @@ function inserir(){
 }
 
 function colocarNaLista(numero){
-   
+
     if(estaNaLista(numero, multiplos)){
         multiplos.push(numero)
 
@@ -26,6 +30,7 @@ function colocarNaLista(numero){
         selnum.appendChild(itemOption)
         txtnum.focus()
         txtnum.value = ''
+        btnverifica.style.display = 'block'
     }else{
         alert(`!! [ERRO] !! O nùmero ${numero} já se encontara na lista.`)
         txtnum.focus()
@@ -48,7 +53,25 @@ function encontar(){
         txtnum.focus()
         txtnum.value = ''
     }else{
-        alert('Tudo ok podemos continuar')
+        vermultiplos(multiplos)        
     }
 }
 
+
+function vermultiplos(listaDeMultiplos){   
+    let contamultiplos = 0
+
+    for (pos in listaDeMultiplos){
+        if(listaDeMultiplos[pos]%3 == 0 && listaDeMultiplos[pos] % 5 ==0){
+            divresultado.innerHTML += ` ${listaDeMultiplos[pos]} -`
+            contamultiplos ++
+        }
+    }
+    if(contamultiplos>0){
+        divresultado.innerHTML += ' FIM'
+        divresultado.innerHTML += `<br>Foram encontrados <strong>${contamultiplos}</strong>. Multiplos de 3 e do 5`
+        btnverifica.style.display = 'none'
+    }else{
+        divresultado.innerHTML += 'Não foram encontrados <strong>multiplos de 3 e do 5</strong>! <br> Por favor teste o número 15'
+    }
+}
