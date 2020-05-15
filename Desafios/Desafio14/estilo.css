@@ -18,3 +18,18 @@ footer{
     text-align: center;
     margin-top: 25px;
 }
+
+input#txtnum{
+    width: 50px;
+    margin-right: 15px;
+    margin-left: 5px;
+}
+
+select{
+    width: 150px;
+}
+
+input.btnverifica{
+    margin-top: 10px;
+    margin-left: 25px;
+}
