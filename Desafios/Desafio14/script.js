@@ -1,10 +1,12 @@
 let txtnum = document.querySelector('input#txtnum')
 let selectIdade = document.querySelector('select#selectIdade')
+let divresultado = document.querySelector('div#resultado')
 let idade = []
 
 function iniciar(){
     txtnum.focus()
     txtnum.value=''
+    divresultado.innerHTML = ''
 }
 
 function inserir(){
@@ -41,4 +43,34 @@ function estaNaLista(ano, LstIdade){
     }else{
         return false
     }
+}
+
+function maiorDeIdade(){
+    if (idade.length==0){
+        alert('!! [ERRO] !! Nenhum ano encontrado na lista!')
+        iniciar()
+    }else{
+        voceTemAnos(idade)
+    }
+}
+
+function voceTemAnos(listaIdade){
+    anoAtual = new Date
+    anoAtual.getFullYear()
+    let souMaior = 0
+    let souMenor = 0
+
+    for (pos in listaIdade){
+        let anosdevida = anoAtual - listaIdade[pos]
+        if(anosdevida>=18){
+            souMaior++
+        }else{
+            souMenor++
+        }
+    }
+    imprimeresultados(souMenor, souMaior)
+}
+
+function imprimeresultados(menoridd, maioridd){
+    let nrRegistos = idade.length
 }
