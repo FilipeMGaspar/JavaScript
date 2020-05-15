@@ -20,13 +20,13 @@ footer{
 }
 
 input#txtnum{
-    width: 50px;
+    width: 60px;
     margin-right: 15px;
     margin-left: 5px;
 }
 
 select{
-    width: 150px;
+    width: 190px;
 }
 
 input.btnverifica{
