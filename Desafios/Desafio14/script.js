@@ -78,10 +78,10 @@ function imprimeresultados(menoridd, maioridd){
     divresultado.innerHTML += `<p>Dos ${nrRegistos} registos inseridos encontrei: </p>`
     
     if(maioridd>0){
-        divresultado.innerHTML += `<p><strong>${maioridd}</strong> com mais de 18 anos. Indicado como: <mark style="background-color: green;color: white; padding: 3px;">Maior de Idade</mark></p>`
+        divresultado.innerHTML += `<p><strong>${maioridd}</strong> com mais de 18 anos. Indicando que é: <mark style="background-color: green;color: white; padding: 3px;">Maior de Idade</mark></p>`
     }
 
     if(menoridd>0){
-        divresultado.innerHTML += `<p><strong>${menoridd}</strong> com menos de 18 anos. Indicado como: <mark style="background-color: #894730; color: white; padding: 3px;">Menor de Idade</mark></p>`
+        divresultado.innerHTML += `<p><strong>${menoridd}</strong> com menos de 18 anos. Indicando que é: <mark style="background-color: #894730; color: white; padding: 3px;">Menor de Idade</mark></p>`
     }
 }
