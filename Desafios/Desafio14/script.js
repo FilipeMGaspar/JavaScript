@@ -2,6 +2,8 @@ let txtnum = document.querySelector('input#txtnum')
 let selectIdade = document.querySelector('select#selectIdade')
 let divresultado = document.querySelector('div#resultado')
 let idade = []
+anoAtual = new Date
+let estouNoAno = anoAtual.getFullYear()
 
 function iniciar(){
     txtnum.focus()
@@ -55,8 +57,7 @@ function maiorDeIdade(){
 }
 
 function voceTemAnos(listaIdade){
-    anoAtual = new Date
-    let estouNoAno = anoAtual.getFullYear()
+
     let souMaior = 0
     let souMenor = 0
 
@@ -71,15 +72,16 @@ function voceTemAnos(listaIdade){
     imprimeresultados(souMenor, souMaior)
 }
 
+
 function imprimeresultados(menoridd, maioridd){
     let nrRegistos = idade.length
     divresultado.innerHTML += `<p>Dos ${nrRegistos} registos inseridos encontrei: </p>`
     
     if(maioridd>0){
-        divresultado.innerHTML += `<p><strong>${maioridd}</strong> com mais de 18 anos. Indicado como: <mark>Maior de Idade</mark></p>`
+        divresultado.innerHTML += `<p><strong>${maioridd}</strong> com mais de 18 anos. Indicado como: <mark style="background-color: green;color: white; padding: 3px;">Maior de Idade</mark></p>`
     }
 
     if(menoridd>0){
-        divresultado.innerHTML += `<p><strong>${menoridd}</strong> com menos de 18 anos. Indicado como: <mark>Menor de Idade</mark></p>`
+        divresultado.innerHTML += `<p><strong>${menoridd}</strong> com menos de 18 anos. Indicado como: <mark style="background-color: blue;color: white; padding: 3px;">Menor de Idade</mark></p>`
     }
 }
