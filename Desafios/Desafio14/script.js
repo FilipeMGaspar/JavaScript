@@ -22,8 +22,8 @@ function inserir(){
 
 function colocaNalista(anoNascimento){
     let itemOption= document.createElement('option')
-
-    if(anoNascimento>=0){
+    let anoMinimo = estouNoAno - anoNascimento 
+    if(anoMinimo <= 130 && anoNascimento<=estouNoAno){
         if (estaNaLista(anoNascimento, idade)){
             itemOption.text = `Inseriu o ano: ${anoNascimento}`
             selectIdade.appendChild(itemOption)
@@ -34,7 +34,7 @@ function colocaNalista(anoNascimento){
             iniciar()
         }
     }else{
-        alert(`O ano ${anoNascimento} é inválido`)
+        alert(`O ano de ${anoNascimento} é inválido! ??? A sua idade seria de: ${anoMinimo} anos???`)
         iniciar()
     }
 }
@@ -82,6 +82,6 @@ function imprimeresultados(menoridd, maioridd){
     }
 
     if(menoridd>0){
-        divresultado.innerHTML += `<p><strong>${menoridd}</strong> com menos de 18 anos. Indicado como: <mark style="background-color: blue;color: white; padding: 3px;">Menor de Idade</mark></p>`
+        divresultado.innerHTML += `<p><strong>${menoridd}</strong> com menos de 18 anos. Indicado como: <mark style="background-color: #894730; color: white; padding: 3px;">Menor de Idade</mark></p>`
     }
 }
