@@ -41,7 +41,6 @@ function inverte(){
 }
 
 function nomesInvertidos(vInverterNomes){
-    alert ('entrei aki')
     for (pos in vInverterNomes){
         divresultado.innerHTML += `<p>O nome <strong>${vInverterNomes[pos]}</strong> invertido fica. <bdo dir="rtl"><em>${vInverterNomes[pos]}</em> </bdo></p>`
     }
