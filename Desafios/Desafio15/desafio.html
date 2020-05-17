@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-PT">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio 15!</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
+
 <body onload="iniciar()">
     <header>
         <h1>Nomes Invertos!</h1>
@@ -16,11 +18,11 @@
           
             <p class="insNome">Insira um nome:   <input type="text" maxlength="10" size="11" name="tNome" id="cNome"> <input type="button" value="Inserir" onclick="inserir()"> </p>
            
-            <p class="recebeNome">Nome Recebido:<br>
+            <p class="recebeNome" id="rcbNome">Nome Recebido:<br>
             
                 <select name="sNome" id="selNome" size="7">
                 </select><br><br>
-                <input type="button" value="Inverter">
+                <input type="button" value="Inverter" onclick="inverte()">
            </p>
 
         </div>
