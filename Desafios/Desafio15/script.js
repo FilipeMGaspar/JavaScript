@@ -4,3 +4,4 @@ function iniciar(){
     cNome.focus()
     cNome.value=''
 }
+
