@@ -2,6 +2,7 @@ let cNome  = document.querySelector('input#cNome')
 let selNome = document.querySelector('select#selNome')
 let pNome = document.querySelector('p#rcbNome')
 let divresultado = document.querySelector('div#resultado')
+let btnIverter = document.querySelector('input#btnIverter')
 let nomes = []
 
 function iniciar(){
@@ -26,6 +27,7 @@ function colocaNaLista(nome){
     itemOption.text = `-> ${nome}`
     selNome.appendChild(itemOption)
     nomes.push(nome)
+    btnIverter.style.display = 'block'
     iniciar()
 }
 
@@ -44,4 +46,7 @@ function nomesInvertidos(vInverterNomes){
     for (pos in vInverterNomes){
         divresultado.innerHTML += `<p>O nome <strong>${vInverterNomes[pos]}</strong> invertido fica. <bdo dir="rtl"><em>${vInverterNomes[pos]}</em> </bdo></p>`
     }
+    btnIverter.style.display = 'none'
+    pNome.focus()
+    pNome.value = ''
 }
