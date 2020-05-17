@@ -1,13 +1,13 @@
 let cNome  = document.querySelector('input#cNome')
 let selNome = document.querySelector('select#selNome')
 let pNome = document.querySelector('p#rcbNome')
-
+let divresultado = document.querySelector('div#resultado')
 let nomes = []
 
 function iniciar(){
     cNome.focus()
     cNome.value=''
-
+    divresultado.innerHTML = ''
 }
 
 function inserir(){
@@ -21,8 +21,6 @@ function inserir(){
 
 function colocaNaLista(nome){
     pNome.style.color = 'black'
-
-    alert(`Nome recebido ${nome}`)
     
     let itemOption = document.createElement('option')
     itemOption.text = `-> ${nome}`
@@ -38,6 +36,13 @@ function inverte(){
         alert('!! [ERRO] !! Lista de nomes vazia. Por favor insira.')
         iniciar()
     }else{
-        alert('Tudo ok Podemos continuar')
+        nomesInvertidos(nomes)
+    }
+}
+
+function nomesInvertidos(vInverterNomes){
+    alert ('entrei aki')
+    for (pos in vInverterNomes){
+        divresultado.innerHTML += `<p>${vInverterNomes[pos]} invertido fica. <bdo dir="rtl">${vInverterNomes[pos]} </bdo></p>`
     }
 }
