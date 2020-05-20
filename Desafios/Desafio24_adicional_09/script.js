@@ -30,7 +30,9 @@ function calcular(){
             cJuros.value= ''
         }else{
             if(validaJuros(Number(cJuros.value))){
+                /* Vamos adicinar num select e ativar  a cx de parcelas e btn de parcelar*/ 
                 alert('tudo ok podemos continuar')
+               
             }else{
                 alert(`!! [ERRO] !! O valor ${Number(cJuros.value)} não é válido indique entre 2% e 26%.`)
                 cJuros.focus()
@@ -61,3 +63,4 @@ function validaJuros(valorDosJuros){
         return false
     }
 }
+
