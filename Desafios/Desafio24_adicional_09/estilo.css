@@ -32,3 +32,7 @@ span.Lbljuros{
 input.btnCalcular{
     margin-left: 25px;
 }
+p.detalhes{
+    margin-top: 50px;
+    font-size: 9pt;
+}
