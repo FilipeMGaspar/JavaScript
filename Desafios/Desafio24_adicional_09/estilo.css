@@ -34,5 +34,19 @@ input.btnCalcular{
 }
 p.detalhes{
     margin-top: 50px;
-    font-size: 9pt;
+    font-size: 8pt;
+}
+
+span.detalhesEmp{
+    font-size: 10pt;
+}
+
+select#CSelDetalhes{
+    width: 150px;
+    margin-top: 5px;
+    margin-right: 15px;
+}
+
+input#cxParcelar{
+    width: 70px;
 }

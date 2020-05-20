@@ -14,7 +14,14 @@
     <section>
         <div>
             <p>Precisa de um empréstimo?</p>
-            <p>Valor: <input type="number" id="cValEmpres" name="tValEmpres" onchange="ativaCxJuros()">€<span class="Lbljuros">Juros:</span> <input type="number" id="cJuros" name="tJuros" readonly>% <input type="button" value="Calcular" class="btnCalcular" onclick="calcular()"> </p>
+            <p>Valor: <input type="number" id="cValEmpres" name="tValEmpres" onchange="ativaCxJuros()" placeholder="250 €">€<span class="Lbljuros">Juros:</span> <input type="number" id="cJuros" name="tJuros" readonly placeholder="2%">% <input type="button" value="Simular" class="btnCalcular" onclick="calcular()"> </p>
+            <p>
+                <span class="detalhesEmp">Detalhes do empréstimo</span><br>
+                <select name="tSelDetalhes" id="CSelDetalhes" size="8">
+
+                </select>
+                <input type="number" id="cxParcelar" placeholder="6 Meses">
+            </p>
         </div>
         <div>
             <p class="detalhes">Este empréstimo tem como valor minimo 250€. Com juros entre 2% e 26%</p>
