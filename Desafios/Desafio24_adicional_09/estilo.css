@@ -18,3 +18,17 @@ footer{
     text-align: center;
     margin-top: 25px;
 }
+
+input#cValEmpres, input#cJuros{
+    width: 70px;
+    margin-left: 10px;
+    margin-right:3px;
+}
+
+span.Lbljuros{
+    margin-left: 10px;
+}
+
+input.btnCalcular{
+    margin-left: 25px;
+}
