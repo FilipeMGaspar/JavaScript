@@ -12,3 +12,12 @@ function ativaCxJuros(){
     cJuros.removeAttribute('readonly')
 }
 
+function calcular(){
+        
+    if(cValEmpres.value.length == 0){
+        alert ('!! [ERRO] !! Valor de Empréstimo não indicado.')
+        iniciar()
+    }else{
+        alert('tudo ok podemos continuar')
+    }
+}
