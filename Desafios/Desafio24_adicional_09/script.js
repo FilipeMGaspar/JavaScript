@@ -43,11 +43,13 @@ function calcular(){
             cJuros.value= ''
         }else{
             if(validaJuros(Number(cJuros.value))){
-                /* Vamos adicinar num select e ativar  a cx de parcelas e btn de parcelar*/ 
+                                /* Vamos adicinar num select e ativar  a cx de parcelas e btn de parcelar*/ 
                 if(validaNrParcelas(Number(cxParcelar.value))){
-                    alert('tudo ok podemos continuar')
+                    colocanaLista(Number(cValEmpres.value), Number(cJuros.value), Number(cxParcelar.value))
                 }else{
-                    alert(`!! [ERRO] !! Dividir o valor ${Number(cValEmpres.value)} em ${Number(cxParcelar.value)} não é possivel. Valor minimo 3 Meses`)
+                    alert(`!! [ERRO] !! Dividir o valor ${Number(cValEmpres.value)}€ em ${Number(cxParcelar.value)} meses não é possivel. Valor minimo 3 Meses`)
+                    cxParcelar.focus()
+                    cxParcelar.value='3'
                 }
                
             }else{
@@ -88,4 +90,8 @@ function validaNrParcelas(numDeParcelas){
     }else{
         return false
     }
+}
+
+function colocanaLista(valorEmp, Porcenjuros, nrVezes){
+    alert('tudo ok podemos continuar')
 }
