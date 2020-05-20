@@ -12,25 +12,29 @@
     </header>
     
     <section>
-        <div>
+        <div class="caixas-texto">
             <p>Precisa de um empréstimo?</p>
             
             <p>Valor: <input type="number" id="cValEmpres" name="tValEmpres" onchange="ativaCxJuros()" placeholder="250 €">€</p>
             
             <p><span class="Lbljuros">Juros:</span> <input type="number" id="cJuros" name="tJuros" readonly placeholder="2%">%</p>
             
-            <p><input type="number" id="cxParcelar" placeholder="6 Meses">
+            <p>Pagar:<input type="number" name="tCxParcelar" id="cxParcelar" placeholder="6 Meses" readonly>meses.<br>
                 <input type="button" value="Simular" class="btnCalcular" onclick="calcular()">
             </p>
             
+        </div>
+
+        <div class="dtlSelemp">
             <p>
                 <span class="detalhesEmp">Detalhes do empréstimo</span><br>
                 <select name="tSelDetalhes" id="CSelDetalhes" size="8">
-
+    
                 </select>
                 
             </p>
         </div>
+
         <div>
             <p class="detalhes">Este empréstimo tem como valor minimo 250€. Com juros entre 2% e 26%</p>
         </div>
@@ -39,6 +43,7 @@
     <footer>
         <p>&copy; Filipe Gaspar </p>
     </footer>
+    
     <script src="script.js"></script>
 </body>
 </html>

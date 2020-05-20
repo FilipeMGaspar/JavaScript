@@ -19,7 +19,7 @@ footer{
     margin-top: 25px;
 }
 
-input#cValEmpres, input#cJuros{
+input#cValEmpres, input#cJuros, input#cxParcelar{
     width: 70px;
     margin-left: 10px;
     margin-right:3px;
@@ -30,7 +30,8 @@ span.Lbljuros{
 }
 
 input.btnCalcular{
-    margin-left: 25px;
+    margin-top: 25px;
+    margin-left: 55px;
 }
 p.detalhes{
     margin-top: 50px;
@@ -47,6 +48,12 @@ select#CSelDetalhes{
     margin-right: 15px;
 }
 
-input#cxParcelar{
-    width: 70px;
+div.caixas-texto{
+    display: inline-block;
+
+}
+
+div.dtlSelemp{
+    margin-left: 35px;
+    display: inline-block;
 }
