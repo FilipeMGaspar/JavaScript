@@ -44,7 +44,11 @@ function calcular(){
         }else{
             if(validaJuros(Number(cJuros.value))){
                 /* Vamos adicinar num select e ativar  a cx de parcelas e btn de parcelar*/ 
-                alert('tudo ok podemos continuar')
+                if(validaNrParcelas(Number(cxParcelar.value))){
+                    alert('tudo ok podemos continuar')
+                }else{
+                    alert(`!! [ERRO] !! Dividir o valor ${Number(cValEmpres.value)} em ${Number(cxParcelar.value)} não é possivel. Valor minimo 3 Meses`)
+                }
                
             }else{
                 alert(`!! [ERRO] !! O valor ${Number(cJuros.value)} não é válido indique entre 2% e 26%.`)
@@ -78,3 +82,10 @@ function validaJuros(valorDosJuros){
 }
 
 
+function validaNrParcelas(numDeParcelas){
+    if(numDeParcelas>=3){
+        return true
+    }else{
+        return false
+    }
+}
