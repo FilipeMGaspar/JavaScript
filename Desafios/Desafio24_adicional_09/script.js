@@ -10,6 +10,7 @@ function iniciar(){
 
 function ativaCxJuros(){
     cJuros.removeAttribute('readonly')
+    cJuros.focus()
 }
 
 function calcular(){
@@ -18,6 +19,8 @@ function calcular(){
         alert ('!! [ERRO] !! Valor de Empréstimo não indicado.')
         iniciar()
     }else{
-        alert('tudo ok podemos continuar')
+        if (cJuros.value.length == 0){
+            alert('!! [ERRO] !! Valor de juros não indicado')
+        }
     }
 }
