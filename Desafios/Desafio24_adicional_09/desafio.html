@@ -17,7 +17,7 @@
             
             <p>Valor: <input type="number" id="cValEmpres" name="tValEmpres" onchange="ativaCxJuros()" placeholder="250 €">€</p>
             
-            <p><span class="Lbljuros">Juros:</span> <input type="number" id="cJuros" name="tJuros" readonly placeholder="2%">%</p>
+            <p><span class="Lbljuros">Juros:</span> <input type="number" id="cJuros" name="tJuros" readonly placeholder="2%" onchange="ativaCXparcelar()">%</p>
             
             <p>Pagar:<input type="number" name="tCxParcelar" id="cxParcelar" placeholder="6 Meses" readonly>meses.<br>
                 <input type="button" value="Simular" class="btnCalcular" onclick="calcular()">
@@ -43,7 +43,7 @@
     <footer>
         <p>&copy; Filipe Gaspar </p>
     </footer>
-    
+
     <script src="script.js"></script>
 </body>
 </html>

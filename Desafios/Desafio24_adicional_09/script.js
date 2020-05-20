@@ -22,6 +22,15 @@ function ativaCxJuros(){
     }
 }
 
+function ativaCXparcelar(){
+    if(validaJuros(Number(cJuros.value))){
+        cxParcelar.removeAttribute('readonly')
+        cxParcelar.focus()
+    }else{
+        caixaDeJurosativa()
+    }
+}
+
 function calcular(){
         
     if(cValEmpres.value.length == 0){
@@ -67,4 +76,5 @@ function validaJuros(valorDosJuros){
         return false
     }
 }
+
 
