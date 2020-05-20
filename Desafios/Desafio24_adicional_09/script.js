@@ -93,5 +93,27 @@ function validaNrParcelas(numDeParcelas){
 }
 
 function colocanaLista(valorEmp, Porcenjuros, nrVezes){
-    alert('tudo ok podemos continuar')
+    let btnSimular = document.querySelector('input#btnSimular')
+
+    btnSimular.style.display='none'
+
+    let valorJuros= valorEmp*Porcenjuros/100
+    let totalAPagar = valorJuros+valorEmp
+
+    let itemOption1 = document.createElement('option')
+    let itemOption2 = document.createElement('option')
+    let itemOption3 = document.createElement('option')
+    let itemOption4 = document.createElement('option')
+    let itemOption5 = document.createElement('option')
+    
+    itemOption1.text=`Valor: ${valorEmp}€`
+    itemOption2.text=`Juro: ${Porcenjuros}%`
+    itemOption3.text=`Dividir: ${nrVezes} Meses`
+    itemOption4.text=`Mais : ${valorJuros}€ de juros`
+    itemOption5.text=`Total : ${totalAPagar}€ a Pagar`
+
+    CSelDetalhes.appendChild(itemOption1)
+    CSelDetalhes.appendChild(itemOption2)
+    CSelDetalhes.appendChild(itemOption3)
+    CSelDetalhes.appendChild(itemOption4)
 }
