@@ -2,6 +2,10 @@ let cJuros = document.querySelector('input#cJuros')
 
 let cValEmpres = document.querySelector('input#cValEmpres')
 
+let cxParcelar = document.querySelector('input#cxParcelar')
+
+let CSelDetalhes = document.querySelector('select#CSelDetalhes')
+
 
 function iniciar(){
     cValEmpres.focus()
