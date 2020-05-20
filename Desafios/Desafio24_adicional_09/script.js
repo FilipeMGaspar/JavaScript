@@ -99,21 +99,27 @@ function colocanaLista(valorEmp, Porcenjuros, nrVezes){
 
     let valorJuros= valorEmp*Porcenjuros/100
     let totalAPagar = valorJuros+valorEmp
+    let valorPorMes = totalAPagar/nrVezes
 
     let itemOption1 = document.createElement('option')
     let itemOption2 = document.createElement('option')
     let itemOption3 = document.createElement('option')
     let itemOption4 = document.createElement('option')
     let itemOption5 = document.createElement('option')
+    let itemOption6 = document.createElement('option')
     
     itemOption1.text=`Valor: ${valorEmp}€`
     itemOption2.text=`Juro: ${Porcenjuros}%`
-    itemOption3.text=`Dividir: ${nrVezes} Meses`
+    itemOption3.text=`Dividir em: ${nrVezes} Meses`
     itemOption4.text=`Mais : ${valorJuros}€ de juros`
     itemOption5.text=`Total : ${totalAPagar}€ a Pagar`
+    itemOption6.text=`Pagará : ${valorPorMes}€ por mês`
+
 
     CSelDetalhes.appendChild(itemOption1)
     CSelDetalhes.appendChild(itemOption2)
     CSelDetalhes.appendChild(itemOption3)
     CSelDetalhes.appendChild(itemOption4)
+    CSelDetalhes.appendChild(itemOption5)
+    CSelDetalhes.appendChild(itemOption6)
 }
