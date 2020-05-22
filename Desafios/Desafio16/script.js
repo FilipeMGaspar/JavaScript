@@ -41,6 +41,17 @@ function verificaAltura(altura){
                 sexo = sexoSele[pos].value
             }
         }
-        alert(`Você Selecionou ${sexo}`)  
+        colocarNalista(Number(CinpAltura.value) ,sexo) 
     }   
+ }
+
+ function colocarNalista(mede, genero){
+    alert(`Você mede ${mede}m. E é do género ${genero}`) 
+    /* cSelDetalhes */ 
+    let cSelDetalhes = document.querySelector('select#cSelDetalhes')
+    let itemOption = document.createElement('option')
+
+    itemOption.text=`Alt->${mede} Gen->${genero}`
+    cSelDetalhes.appendChild(itemOption)
+
  }
