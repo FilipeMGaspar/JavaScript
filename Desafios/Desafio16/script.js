@@ -1,4 +1,6 @@
 let CinpAltura = document.querySelector('input#CinpAltura')
+let alturas = []
+let generos = []
 
 function iniciar(){
     CinpAltura.focus()
@@ -53,5 +55,10 @@ function verificaAltura(altura){
     mede = mede.toFixed(2)
     itemOption.text=`Alt:${mede} | Gen: ${genero}`
     cSelDetalhes.appendChild(itemOption)
+
+    alturas.push(mede)
+    generos.push(genero)
     iniciar()
  }
+
+ 
