@@ -29,11 +29,18 @@ function verificaAltura(altura){
 
  function SexoSelecionado(){
      let sexoSele = document.getElementsByName('sexo')
-     
-     if ((sexoSele[0].checked==false) && (sexoSele[1].checked==false)){
+     let sexo = ''   
+
+    if ((sexoSele[0].checked==false) && (sexoSele[1].checked==false)){
          alert('!! [ERRO] !! Por favor Selecione o Sexo (Feminino ou Masculino)')
-     }else{
-         
-     }
-   
+    }else{
+
+        for(let pos=0; pos<sexoSele.length; pos++){
+            
+            if(sexoSele[pos].checked){
+                sexo = sexoSele[pos].value
+            }
+        }
+        alert(`Você Selecionou ${sexo}`)  
+    }   
  }
