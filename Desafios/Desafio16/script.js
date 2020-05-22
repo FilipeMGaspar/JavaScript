@@ -75,24 +75,27 @@ function verificaAltura(altura){
     
     Divresultado.innerHTML ='<p>No total escontrei:<p>'
     Divresultado.innerHTML +=`<p>..: ${lstAltura.length} elemento(os)<p>`
-    MaiorMenoraltura(lstAltura)
+    MaiorMenoraltura(lstAltura, lstgeneros)
     numGenFemeGenMasc(lstgeneros)
  }
 
- function MaiorMenoraltura(LstdAlturas){
+ function MaiorMenoraltura(LstdAlturas, ListaDeGen){
      let maiorAlt = LstdAlturas[0]
      let menorALt = LstdAlturas[0]
+     let sexoMalt = '', sexMbaixo = ''
 
      for(ind in LstdAlturas){
         if(LstdAlturas[ind]>maiorAlt){
             maiorAlt=LstdAlturas[ind]
+            sexoMalt = ListaDeGen[ind]
         }else if (menorALt<LstdAlturas[ind]){
             menorALt= LstdAlturas[ind]
+            sexMbaixo = ListaDeGen[ind]
         }
      }
      Divresultado.innerHTML +=`<p>Foram detetados:</p>`
-     Divresultado.innerHTML+= `<p>..: ${maiorAlt}</p>`
-     Divresultado.innerHTML+= `<p>..: ${menorALt}</p>`
+     Divresultado.innerHTML+= `<p>Mais alto  ..: ${maiorAlt}m do sexo ${sexoMalt}</p>`
+     Divresultado.innerHTML+= `<p>Mais baixo ..: ${menorALt}m do sexo ${sexMbaixo}</p>`
  }
 
  function numGenFemeGenMasc(genFemouMasc){
@@ -107,6 +110,6 @@ function verificaAltura(altura){
          }
      }
      
-     Divresultado.innerHTML +=`<p>..: ${NrDeFem} do Sexo Feminino</p>`
-     Divresultado.innerHTML +=`<p>..: ${NrDeMasc} do Sexo Masculino</p>`
+     Divresultado.innerHTML +=`<p>..: ${NrDeFem} elementos do Sexo Feminino</p>`
+     Divresultado.innerHTML +=`<p>..: ${NrDeMasc} elementos do Sexo Masculino</p>`
  }
