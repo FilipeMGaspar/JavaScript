@@ -27,7 +27,8 @@ function verificaAltura(altura){
     }
 }
 
- /*function SexoSelecionado(){
-     let sexFem
-     let sexMasc
- }*/
+ function SexoSelecionado(){
+     let sexFem = document.getElementById('sexFem')
+     let sexMasc = document.getElementById('sexMasc')
+   
+ }

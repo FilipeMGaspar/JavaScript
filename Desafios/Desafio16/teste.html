@@ -1,0 +1,27 @@
+<html>
+<head>
+<script language="JavaScript">
+function validaRadio() {
+  if (document.form1.tipoEndereco[0].checked == false 
+    && document.form1.tipoEndereco[1].checked == false) {
+    alert('Por favor, selecione o Tipo de Endereço.');
+    return false;
+  }
+  return true;
+}
+</script>
+</head>
+<body>
+ 
+<form name="form1" method="post" onSubmit="return validaRadio();">
+<table>
+<tr><td colspan="2">Endereço para correspondência:</td></tr>        
+<tr>
+   <td>Residencial: <input name="tipoEndereco" type="radio" value="Residencial"></td>
+   <td>Profissional: <input name="tipoEndereco" type="radio" value="Profissional"></td>
+</tr>
+</table>
+<p><input type="submit" value="Enviar"></p>
+</form>
+</body>
+</html>
