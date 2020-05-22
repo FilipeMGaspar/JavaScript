@@ -85,14 +85,17 @@ function verificaAltura(altura){
      let sexoMalt = '', sexMbaixo = ''
 
      for(ind in LstdAlturas){
-        if(LstdAlturas[ind]>maiorAlt){
+        if(LstdAlturas[ind] > maiorAlt){
             maiorAlt=LstdAlturas[ind]
             sexoMalt = ListaDeGen[ind]
-        }else if (menorALt<LstdAlturas[ind]){
-            menorALt= LstdAlturas[ind]
-            sexMbaixo = ListaDeGen[ind]
+        }else{ 
+            if(LstdAlturas[ind] < menorALt){
+                menorALt= LstdAlturas[ind]
+                sexMbaixo = ListaDeGen[ind]
+            }
         }
      }
+
      Divresultado.innerHTML +=`<p>Foram detetados:</p>`
      Divresultado.innerHTML+= `<p>Mais alto  ..: ${maiorAlt}m do sexo ${sexoMalt}</p>`
      Divresultado.innerHTML+= `<p>Mais baixo ..: ${menorALt}m do sexo ${sexMbaixo}</p>`
