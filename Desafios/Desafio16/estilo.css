@@ -51,7 +51,8 @@ div#resultado{
 }
 
 select#cSelDetalhes{
-    width: 160px;
+    width: 180px;
+    margin-top: 7px;
     margin-bottom: 30px;
 }
 
