@@ -1,10 +1,12 @@
 let CinpAltura = document.querySelector('input#CinpAltura')
+let Divresultado = document.querySelector('div#resultado')
 let alturas = []
 let generos = []
 
 function iniciar(){
     CinpAltura.focus()
     CinpAltura.value=''
+    Divresultado.innerHTML=''
 }
 
 function inserir(){
@@ -66,6 +68,13 @@ function verificaAltura(altura){
          alert('!! [ERRO] Lista de detalhes vazia. Impossivel Verificar.')
          iniciar()
      }else{
-         alert('Tudo ok podemos continuar')
+          maisAltoeMaisbaixo(alturas, generos)
      }
+ }
+
+ function maisAltoeMaisbaixo(lstAltura, lstgeneros){
+    
+    Divresultado.innerHTML ='Na lista escontrei:'
+    Divresultado.innerHTML +=` ${lstAltura.length} elemento(os)`
+
  }
