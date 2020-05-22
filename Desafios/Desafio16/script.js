@@ -50,7 +50,7 @@ function SexoSelecionado(){/* Função para verificar se os botões de Radio est
     }   
 }
 
- function colocarNalista(mede, genero){
+function colocarNalista(mede, genero){
 
     let cSelDetalhes = document.querySelector('select#cSelDetalhes')
     let itemOption = document.createElement('option')
@@ -62,9 +62,9 @@ function SexoSelecionado(){/* Função para verificar se os botões de Radio est
     generos.push(genero)
     iniciar()
     btnVerificar.style.display ='block'
- }
+}
 
- function verificar(){
+function verificar(){
      if((alturas.length == 0) && (generos.length == 0) ){
          alert('!! [ERRO] Lista de detalhes vazia. Impossivel Verificar.')
          if(CinpAltura.value.length!=0){
@@ -75,16 +75,16 @@ function SexoSelecionado(){/* Função para verificar se os botões de Radio est
      }else{
           VerificaAlturasEGeneros(alturas, generos)
      }
- }
+}
 
- function VerificaAlturasEGeneros(lstAltura, lstgeneros){
+function VerificaAlturasEGeneros(lstAltura, lstgeneros){
     
     Divresultado.innerHTML +=`<p>No total escontrei..: ${lstAltura.length} elemento(os)<p>`
     MaiorMenoraltura(lstAltura, lstgeneros)
     numGenFemeGenMasc(lstgeneros, lstAltura)
- }
+}
 
- function MaiorMenoraltura(LstdAlturas, ListaDeGen){
+function MaiorMenoraltura(LstdAlturas, ListaDeGen){
      let maiorAlt = LstdAlturas[0]
      let menorALt = LstdAlturas[0]
      let sexoMalt = ListaDeGen[0] 
@@ -105,9 +105,9 @@ function SexoSelecionado(){/* Função para verificar se os botões de Radio est
      Divresultado.innerHTML +=`<p>Foram detetados:</p>`
      Divresultado.innerHTML+= `<p>Mais alto  ..: ${maiorAlt}m do sexo ${sexoMalt}</p>`
      Divresultado.innerHTML+= `<p>Mais baixo ..: ${menorALt}m do sexo ${sexMbaixo}</p>`
- }
+}
 
- function numGenFemeGenMasc(LstgenFemouMasc, ListaDeAlturas){
+function numGenFemeGenMasc(LstgenFemouMasc, ListaDeAlturas){
     let NrDeFem = 0
     let NrDeMasc = 0
     let altFem = []
@@ -135,4 +135,4 @@ function SexoSelecionado(){/* Função para verificar se os botões de Radio est
      btnVerificar.style.display ='none'
      CinpAltura.focus()
      CinpAltura.value=''
- }
+}
