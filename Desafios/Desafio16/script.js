@@ -67,7 +67,11 @@ function verificaAltura(altura){
  function verificar(){
      if((alturas.length == 0) && (generos.length == 0) ){
          alert('!! [ERRO] Lista de detalhes vazia. Impossivel Verificar.')
-         iniciar()
+         if(CinpAltura.value.length!=0){
+            CinpAltura.focus()
+         }else{
+            iniciar()
+         }   
      }else{
           VerificaAlturasEGeneros(alturas, generos)
      }
