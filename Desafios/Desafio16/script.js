@@ -32,7 +32,7 @@ function verificaAltura(altura){
     }
 }
 
- function SexoSelecionado(){
+function SexoSelecionado(){/* Função para verificar se os botões de Radio estão selecionados */ 
      let sexoSele = document.getElementsByName('sexo')
      let sexo = ''   
 
@@ -48,7 +48,7 @@ function verificaAltura(altura){
         }
         colocarNalista(Number(CinpAltura.value) ,sexo) 
     }   
- }
+}
 
  function colocarNalista(mede, genero){
 
