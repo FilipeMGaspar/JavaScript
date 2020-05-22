@@ -61,4 +61,11 @@ function verificaAltura(altura){
     iniciar()
  }
 
- 
+ function verificar(){
+     if((alturas.length == 0) && (generos.length == 0) ){
+         alert('!! [ERRO] Lista de detalhes vazia. Impossivel Verificar.')
+         iniciar
+     }else{
+         alert('Tudo ok podemos continuar')
+     }
+ }
