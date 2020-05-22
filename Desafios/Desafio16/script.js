@@ -73,21 +73,21 @@ function verificaAltura(altura){
 
  function VerificaAlturasEGeneros(lstAltura, lstgeneros){
     
-    Divresultado.innerHTML ='<p>No total escontrei:<p>'
-    Divresultado.innerHTML +=`<p>..: ${lstAltura.length} elemento(os)<p>`
+    Divresultado.innerHTML +=`<p>No total escontrei..: ${lstAltura.length} elemento(os)<p>`
     MaiorMenoraltura(lstAltura, lstgeneros)
-    numGenFemeGenMasc(lstgeneros)
+    numGenFemeGenMasc(lstgeneros, lstAltura)
  }
 
  function MaiorMenoraltura(LstdAlturas, ListaDeGen){
      let maiorAlt = LstdAlturas[0]
      let menorALt = LstdAlturas[0]
-     let sexoMalt = '', sexMbaixo = ''
+     let sexoMalt = ListaDeGen[0] 
+     let sexMbaixo = ListaDeGen[0]
 
      for(ind in LstdAlturas){
         if(LstdAlturas[ind] > maiorAlt){
-            maiorAlt=LstdAlturas[ind]
-            sexoMalt = ListaDeGen[ind]
+           maiorAlt=LstdAlturas[ind]
+           sexoMalt = ListaDeGen[ind]
         }else{ 
             if(LstdAlturas[ind] < menorALt){
                 menorALt= LstdAlturas[ind]
@@ -101,19 +101,28 @@ function verificaAltura(altura){
      Divresultado.innerHTML+= `<p>Mais baixo ..: ${menorALt}m do sexo ${sexMbaixo}</p>`
  }
 
- function numGenFemeGenMasc(LstgenFemouMasc){
+ function numGenFemeGenMasc(LstgenFemouMasc, ListaDeAlturas){
     let NrDeFem = 0
-    let alturaFem = 0
     let NrDeMasc = 0
+    let altFem = []
 
      for(pos in LstgenFemouMasc){
          if(LstgenFemouMasc[pos]==='Feminino'){
             NrDeFem++
+            altFem.push(ListaDeAlturas[pos])
          }else{
             NrDeMasc++
          }
      }
+     let somaAltFem = 0
+     for(indice in altFem){
+        somaAltFem = Number(altFem[indice]) + somaAltFem
+     }
 
+     let mediaAltFem = somaAltFem/altFem.length
+     mediaAltFem = mediaAltFem.toFixed(2)
+
+     Divresultado.innerHTML +=`<p>Média de Altura do Género Feminino ..: ${mediaAltFem}m</p>`
      Divresultado.innerHTML +=`<p>..: ${NrDeFem} elementos do Sexo Feminino</p>`
      Divresultado.innerHTML +=`<p>..: ${NrDeMasc} elementos do Sexo Masculino</p>`
  }
