@@ -1,5 +1,6 @@
 let CinpAltura = document.querySelector('input#CinpAltura')
 let Divresultado = document.querySelector('div#resultado')
+let btnVerificar = document.querySelector('input#btnVerificar')
 let alturas = []
 let generos = []
 
@@ -60,6 +61,7 @@ function verificaAltura(altura){
     alturas.push(mede)
     generos.push(genero)
     iniciar()
+    btnVerificar.style.display ='block'
  }
 
  function verificar(){
@@ -125,4 +127,8 @@ function verificaAltura(altura){
      Divresultado.innerHTML +=`<p>Média de Altura do Género Feminino ..: ${mediaAltFem}m</p>`
      Divresultado.innerHTML +=`<p>..: ${NrDeFem} elementos do Sexo Feminino</p>`
      Divresultado.innerHTML +=`<p>..: ${NrDeMasc} elementos do Sexo Masculino</p>`
+     
+     btnVerificar.style.display ='none'
+     CinpAltura.focus()
+     CinpAltura.value=''
  }
