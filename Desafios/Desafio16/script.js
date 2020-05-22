@@ -28,7 +28,12 @@ function verificaAltura(altura){
 }
 
  function SexoSelecionado(){
-     let sexFem = document.getElementById('sexFem')
-     let sexMasc = document.getElementById('sexMasc')
+     let sexoSele = document.getElementsByName('sexo')
+     
+     if ((sexoSele[0].checked==false) && (sexoSele[1].checked==false)){
+         alert('!! [ERRO] !! Por favor Selecione o Sexo (Feminino ou Masculino)')
+     }else{
+         
+     }
    
  }
