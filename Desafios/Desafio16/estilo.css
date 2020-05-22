@@ -13,8 +13,52 @@ section{
     padding: 25px;
     box-shadow: 8px 8px 8px  midnightblue;
 }
+
 footer{
     font: normal 13pt Arial;
     text-align: center;
     margin-top: 25px;
+}
+
+input.btnInserir{
+    margin-left: 35px;
+    margin-top: 20px;
+}
+
+input.cxAltura{
+    width: 50px;
+}
+
+div#formAlteSex{
+    display: inline-block;
+    padding: 15px;
+    margin-right: 10px;
+}
+
+div#lstdeAlteSex{
+    display: inline-block;
+    padding: 15px;
+    margin-left: 10px;
+}
+
+article{
+    text-align: center;
+}
+
+div#resultado{
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+select#cSelDetalhes{
+    width: 160px;
+    margin-bottom: 30px;
+}
+
+p.Difersex{
+    text-align: left;
+}
+
+input#CinpAltura{
+    border: 1px solid rgb(105, 105, 109);
 }
