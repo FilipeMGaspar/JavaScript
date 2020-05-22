@@ -50,7 +50,6 @@ function verificaAltura(altura){
  }
 
  function colocarNalista(mede, genero){
-    alert(`Você mede ${mede}m. E é do género ${genero}`) 
 
     let cSelDetalhes = document.querySelector('select#cSelDetalhes')
     let itemOption = document.createElement('option')
@@ -74,7 +73,40 @@ function verificaAltura(altura){
 
  function maisAltoeMaisbaixo(lstAltura, lstgeneros){
     
-    Divresultado.innerHTML ='Na lista escontrei:'
-    Divresultado.innerHTML +=` ${lstAltura.length} elemento(os)`
+    Divresultado.innerHTML ='<p>No total escontrei:<p>'
+    Divresultado.innerHTML +=`<p>..: ${lstAltura.length} elemento(os)<p>`
+    MaiorMenoraltura(lstAltura)
+    numGenFemeGenMasc(lstgeneros)
+ }
 
+ function MaiorMenoraltura(LstdAlturas){
+     let maiorAlt = LstdAlturas[0]
+     let menorALt = LstdAlturas[0]
+
+     for(ind in LstdAlturas){
+        if(LstdAlturas[ind]>maiorAlt){
+            maiorAlt=LstdAlturas[ind]
+        }else if (menorALt<LstdAlturas[ind]){
+            menorALt= LstdAlturas[ind]
+        }
+     }
+     Divresultado.innerHTML +=`<p>Foram detetados:</p>`
+     Divresultado.innerHTML+= `<p>..: ${maiorAlt}</p>`
+     Divresultado.innerHTML+= `<p>..: ${menorALt}</p>`
+ }
+
+ function numGenFemeGenMasc(genFemouMasc){
+    let NrDeFem = 0
+    let NrDeMasc = 0
+
+     for(pos in genFemouMasc){
+         if(genFemouMasc[pos]==="Feminino"){
+            NrDeFem++
+         }else{
+            NrDeMasc++
+         }
+     }
+     
+     Divresultado.innerHTML +=`<p>..: ${NrDeFem} do Sexo Feminino</p>`
+     Divresultado.innerHTML +=`<p>..: ${NrDeMasc} do Sexo Masculino</p>`
  }
