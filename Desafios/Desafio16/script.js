@@ -67,11 +67,11 @@ function verificaAltura(altura){
          alert('!! [ERRO] Lista de detalhes vazia. Impossivel Verificar.')
          iniciar()
      }else{
-          maisAltoeMaisbaixo(alturas, generos)
+          VerificaAlturasEGeneros(alturas, generos)
      }
  }
 
- function maisAltoeMaisbaixo(lstAltura, lstgeneros){
+ function VerificaAlturasEGeneros(lstAltura, lstgeneros){
     
     Divresultado.innerHTML ='<p>No total escontrei:<p>'
     Divresultado.innerHTML +=`<p>..: ${lstAltura.length} elemento(os)<p>`
@@ -101,18 +101,19 @@ function verificaAltura(altura){
      Divresultado.innerHTML+= `<p>Mais baixo ..: ${menorALt}m do sexo ${sexMbaixo}</p>`
  }
 
- function numGenFemeGenMasc(genFemouMasc){
+ function numGenFemeGenMasc(LstgenFemouMasc){
     let NrDeFem = 0
+    let alturaFem = 0
     let NrDeMasc = 0
 
-     for(pos in genFemouMasc){
-         if(genFemouMasc[pos]==="Feminino"){
+     for(pos in LstgenFemouMasc){
+         if(LstgenFemouMasc[pos]==='Feminino'){
             NrDeFem++
          }else{
             NrDeMasc++
          }
      }
-     
+
      Divresultado.innerHTML +=`<p>..: ${NrDeFem} elementos do Sexo Feminino</p>`
      Divresultado.innerHTML +=`<p>..: ${NrDeMasc} elementos do Sexo Masculino</p>`
  }
