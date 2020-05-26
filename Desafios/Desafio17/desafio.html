@@ -6,7 +6,7 @@
     <title>Desafio 17!</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
-<body onload="teste()">
+<body onload="iniciar()">
     <header>
         <h1>Avaliador de filmes</h1>
     </header>
@@ -15,15 +15,16 @@
         <div>
             <h3>A sua opinião é importante para nós?</h3>
             <p>O que achou do filme: <span><em>"Escola Javali Cansado"</em></span></p>
-            <p>Idade: <input type="number" name="tCxNum" id="CxNum"></p>
-            A sua opinião:
-            <select name="tSelOpina" id="cSelOpina">
-                <option value="Pesimo">Pésimo</option>
-                <option value="Mau">Mau</option>
-                <option value="Regular">Regular</option>
-                <option value="Bom">Bom</option>
-                <option value="Optimo">Óptimo</option>
-            </select>
+            <p>Idade: <input type="number" name="tCxNum" id="CxNum"> A sua opinião:
+                <select name="tSelOpina" id="cSelOpina">
+                    <option value="Pesimo">Pésimo</option>
+                    <option value="Mau">Mau</option>
+                    <option value="Regular" selected>Regular</option>
+                    <option value="Bom">Bom</option>
+                    <option value="Excelente">Excelente</option>
+                </select>
+                <input type="button" value="Adicionar" onclick="Adicionar()" class="btnAdicionar">                 
+            </p>
         </div>
         <div>
         </div>
