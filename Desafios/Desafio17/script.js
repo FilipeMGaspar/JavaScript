@@ -62,6 +62,8 @@ function mostraResultado(){
 
 function MediaIdadeOptimo(LstIdade, LstOpinoes){
     for (ind in LstOpinoes){
-       
+       if(LstOpinoes[ind]==="Excelente"){
+           
+       }
     }
 }
