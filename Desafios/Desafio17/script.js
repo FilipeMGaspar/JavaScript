@@ -1,5 +1,7 @@
 let CxNum = document.querySelector('input#CxNum')
 let cSelOpinao = document.querySelector('select#cSelOpinao')
+let VetIdades = []
+let VetOpinioes = []
 
 function iniciar(){
     CxNum.focus()
@@ -37,7 +39,9 @@ function verificaIdade(Idade){
 
 function AdicionarNaLista(AnosDeIdade, opiniao){
     let intemOption = document.createElement('option')
+    
     intemOption.text = `Idade: ${AnosDeIdade} | Avaliação: ${opiniao}`
     cSelOpinao.appendChild(intemOption)
-
+    VetIdades.push(AnosDeIdade)
+    VetOpinioes.push(opiniao)
 }
