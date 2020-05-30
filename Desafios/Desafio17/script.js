@@ -58,7 +58,7 @@ function AdicionarNaLista(AnosDeIdade, opiniao){
 function mostraResultado(){
     DivResultado.innerHTML =`<p>No total foram registadas: <strong>${VetOpinioes.length}</strong> opiniões</p>`
     MediaIdadeOptimo(VetIdades, VetOpinioes)
-    QtdPessoasRespRegular(VetIdades, VetOpinioes)
+    QtdPessoasRespRegular(VetOpinioes)
     PercentPessoasRespBom(VetIdades, VetOpinioes)
 }
 
@@ -76,7 +76,7 @@ function MediaIdadeOptimo(LstIdade, LstOpinoes){
     DivResultado.innerHTML += `<p>Média das idades que respoderam Excelente: ${mediaIdades} anos.</p>`
 }
 
-function QtdPessoasRespRegular(ListIdade, ListOpinoes){
+function QtdPessoasRespRegular(ListOpinoes){
     let qtdPessoas = 0
 
     for (ind in ListOpinoes){
@@ -88,6 +88,10 @@ function QtdPessoasRespRegular(ListIdade, ListOpinoes){
      DivResultado.innerHTML += `<p> Pessoas que responderam regular: ${qtdPessoas}</p>`
 }
 
+function PercentPessoasRespBom(){
 
 /*   percentagem de pessoas que responderam bom */
+}
+
+
 
