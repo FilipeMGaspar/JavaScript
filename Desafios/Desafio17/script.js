@@ -89,13 +89,15 @@ function QtdPessoasRespRegular(ListOpinoes){
 }
 
 function PercentPessoasRespBom(ListaDeOpinoes){
-    let percentBom = 0
+    let percentBom = 1, QtdPessoas = 0
     
-    for (ind in ListOpinoes){
-        if(ListOpinoes[ind] == 'Bom'){
-            qtdPessoas ++
+    for (ind in ListaDeOpinoes){
+        if(ListaDeOpinoes[ind] == 'Bom'){
+            QtdPessoas ++
         }
      }
+
+     percentBom = (QtdPessoas / ListaDeOpinoes.length) * 100
 /*   percentagem de pessoas que responderam bom */
 }
 
