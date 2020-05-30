@@ -17,7 +17,7 @@ function Adicionar(){
         if(verificaIdade(Number(CxNum.value))){
             alert(valselresp.text)
         }else{
-            alert(`!! [ERRO] !! a Idade de ${Number(CxNum.value)} Anos. É inválida!`)
+            alert(`!! [ERRO] !! A Idade de ${Number(CxNum.value)} Anos. É inválida!`)
             iniciar()
         }
         
