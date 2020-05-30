@@ -56,17 +56,18 @@ function AdicionarNaLista(AnosDeIdade, opiniao){
 }
 
 function mostraResultado(){
-    DivResultado.innerHTML =`<p>No total foram registadas <strong>${VetOpinioes.length}</strong> opiniões</p>`
+    DivResultado.innerHTML =`<p>No total foram registadas: <strong>${VetOpinioes.length}</strong> opiniões</p>`
     MediaIdadeOptimo(VetIdades, VetOpinioes)
 }
 
 function MediaIdadeOptimo(LstIdade, LstOpinoes){
-    let somaIdades, mediaIdades
+    let somaIdades = 0, mediaIdades = 1
     for (ind in LstOpinoes){
-       if(LstOpinoes[ind]==="Excelente"){
-        somaIdades += Number(LstIdade[ind].value)
+       if(LstOpinoes[ind] == 'Excelente'){
+          somaIdades += Number(LstIdade[ind])
+          alert(Number(LstIdade[ind]))
        }
     }
     mediaIdades = (somaIdades/LstOpinoes.length)
-    DivResultado.innerHTML += `<p>Média das idades das pessoas que responderam ótimo: ${mediaIdades}</p>`
+    DivResultado.innerHTML += `<p>Média das idades que respoderam Excelente: ${somaIdades}</p>`
 }
