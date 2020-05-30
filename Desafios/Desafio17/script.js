@@ -84,5 +84,7 @@ function QtdPessoasRespRegular(ListIdade, ListOpinoes){
         }
      }
 
-     DivResultado.innerHTML += `<p> pessoas que responderam regular: ${qtdPessoas}</p>`
+     DivResultado.innerHTML += `<p> Pessoas que responderam regular: ${qtdPessoas}</p>`
 }
+
+/*   percentagem de pessoas que responderam bom */
