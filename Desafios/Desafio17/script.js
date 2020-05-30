@@ -57,5 +57,11 @@ function AdicionarNaLista(AnosDeIdade, opiniao){
 
 function mostraResultado(){
     DivResultado.innerHTML =`<p>No total foram registadas <strong>${VetOpinioes.length}</strong> opiniões</p>`
-    
+    MediaIdadeOptimo(VetIdades, VetOpinioes)
+}
+
+function MediaIdadeOptimo(LstIdade, LstOpinoes){
+    for (ind in LstOpinoes){
+       
+    }
 }
