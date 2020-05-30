@@ -59,7 +59,7 @@ function mostraResultado(){
     DivResultado.innerHTML =`<p>No total foram registadas: <strong>${VetOpinioes.length}</strong> opiniões</p>`
     MediaIdadeOptimo(VetIdades, VetOpinioes)
     QtdPessoasRespRegular(VetOpinioes)
-    PercentPessoasRespBom(VetIdades, VetOpinioes)
+    PercentPessoasRespBom(VetOpinioes)
 }
 
 function MediaIdadeOptimo(LstIdade, LstOpinoes){
@@ -88,7 +88,7 @@ function QtdPessoasRespRegular(ListOpinoes){
      DivResultado.innerHTML += `<p> Pessoas que responderam regular: ${qtdPessoas}</p>`
 }
 
-function PercentPessoasRespBom(){
+function PercentPessoasRespBom(ListaDeOpinoes){
 
 /*   percentagem de pessoas que responderam bom */
 }
