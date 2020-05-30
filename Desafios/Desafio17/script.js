@@ -1,5 +1,7 @@
 let CxNum = document.querySelector('input#CxNum')
 let cSelOpinao = document.querySelector('select#cSelOpinao')
+let DivResultado = document.querySelector('div#resultado')
+
 let VetIdades = []
 let VetOpinioes = []
 
@@ -47,6 +49,12 @@ function AdicionarNaLista(AnosDeIdade, opiniao){
         VetIdades.push(AnosDeIdade)
         VetOpinioes.push(opiniao)
     }else{
+        mostraResultado()
         BtnAdiciona.style.display='none'
+        
     }    
+}
+
+function mostraResultado(){
+    
 }
