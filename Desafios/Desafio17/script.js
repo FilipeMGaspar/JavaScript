@@ -98,7 +98,8 @@ function PercentPessoasRespBom(ListaDeOpinoes){
      }
 
      percentBom = (QtdPessoas / ListaDeOpinoes.length) * 100
-/*   percentagem de pessoas que responderam bom */
+
+     DivResultado.innerHTML += `<p>Percentagem de pessoas que responderam bom: ${percentBom}%</p>`
 }
 
 
