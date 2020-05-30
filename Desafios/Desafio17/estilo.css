@@ -35,10 +35,15 @@ input.btnAdicionar{
 }
 
 div#adicinar{
-    background-color: blueviolet;
     text-align: center;
 }
 
 select#cSelOpinao{
     width: 150px;
+    margin-right: 150px;
+    margin-top: 10px;
+}
+
+span.dtl{
+    margin-right: 200px;
 }
