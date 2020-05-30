@@ -26,12 +26,24 @@ p span{
 
 input#CxNum{
     width: 50px;
-    margin-right: 15px;
+    margin-right: 50px;
 }
 
 input.btnAdicionar{
     margin-top: 20px;
     margin-left: 25px;
+}
+
+article.idd{
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+article.opn{
+    position: relative;
+    display: inline-block;
 }
 
 div#adicinar{
@@ -48,3 +60,4 @@ select#cSelOpinao{
 span.dtl{
     margin-right: 200px;
 }
+
