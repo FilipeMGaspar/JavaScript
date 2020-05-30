@@ -96,7 +96,7 @@ function PercentPessoasRespBom(ListaDeOpinoes){
             QtdPessoas ++
         }
      }
-
+     percentBom = percentBom.toFixed(2)
      percentBom = (QtdPessoas / ListaDeOpinoes.length) * 100
 
      DivResultado.innerHTML += `<p>Percentagem de pessoas que responderam bom: ${percentBom}%</p>`
