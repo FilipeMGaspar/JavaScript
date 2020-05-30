@@ -34,30 +34,25 @@ input.btnAdicionar{
     margin-left: 25px;
 }
 
-article.idd{
-    position: relative;
-    display: inline-block;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-article.opn{
-    position: relative;
-    display: inline-block;
+div#IddeOpina{
+ position: relative;
+ display: inline-block;
+ box-sizing: border-box;
 }
 
 div#adicinar{
-    margin-top: 25px;
-    text-align: center;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
 }
 
 select#cSelOpinao{
-    width: 250px;
-    margin-right: 150px;
-    margin-top: 10px;
+    width: 200px;
+    /*margin-right: 150px;
+    margin-top: 10px;*/
 }
 
-span.dtl{
+/*span.dtl{
     margin-right: 200px;
-}
+}*/
 
