@@ -84,5 +84,5 @@ function QtdPessoasRespRegular(ListIdade, ListOpinoes){
         }
      }
 
-     DivResultado.innerHTML += `<p>Média das idades que respoderam Excelente: ${mediaIdades} anos.</p>`
+     DivResultado.innerHTML += `<p> pessoas que responderam regular: ${qtdPessoas}</p>`
 }
