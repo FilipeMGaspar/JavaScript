@@ -58,6 +58,7 @@ function AdicionarNaLista(AnosDeIdade, opiniao){
 function mostraResultado(){
     DivResultado.innerHTML =`<p>No total foram registadas: <strong>${VetOpinioes.length}</strong> opiniões</p>`
     MediaIdadeOptimo(VetIdades, VetOpinioes)
+    QtdPessoasRespRegular(VetIdades, VetOpinioes)
 }
 
 function MediaIdadeOptimo(LstIdade, LstOpinoes){
@@ -72,4 +73,16 @@ function MediaIdadeOptimo(LstIdade, LstOpinoes){
     mediaIdades = (somaIdades/totpessoasExc)
     mediaIdades = mediaIdades.toFixed(2)
     DivResultado.innerHTML += `<p>Média das idades que respoderam Excelente: ${mediaIdades} anos.</p>`
+}
+
+function QtdPessoasRespRegular(ListIdade, ListOpinoes){
+    let qtdPessoas = 0
+
+    for (ind in ListOpinoes){
+        if(ListOpinoes[ind] == 'Regular'){
+            qtdPessoas ++
+        }
+     }
+
+     DivResultado.innerHTML += `<p>Média das idades que respoderam Excelente: ${mediaIdades} anos.</p>`
 }
