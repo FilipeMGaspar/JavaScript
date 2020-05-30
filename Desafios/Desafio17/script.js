@@ -61,11 +61,12 @@ function mostraResultado(){
 }
 
 function MediaIdadeOptimo(LstIdade, LstOpinoes){
-    let somaIdades
+    let somaIdades, mediaIdades
     for (ind in LstOpinoes){
        if(LstOpinoes[ind]==="Excelente"){
         somaIdades += Number(LstIdade[ind].value)
        }
     }
-    DivResultado.innerHTML += ``
+    mediaIdades = (somaIdades/LstOpinoes.length)
+    DivResultado.innerHTML += `<p>Média das idades das pessoas que responderam ótimo: ${mediaIdades}</p>`
 }
