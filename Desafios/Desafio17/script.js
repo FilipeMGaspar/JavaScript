@@ -15,7 +15,8 @@ function Adicionar(){
         iniciar()
     }else{
         if(verificaIdade(Number(CxNum.value))){
-            alert(valselresp.text)
+            AdicionarNaLista(Number(CxNum.value), valselresp.text)
+    
         }else{
             alert(`!! [ERRO] !! A Idade de ${Number(CxNum.value)} Anos. É inválida!`)
             iniciar()
@@ -31,5 +32,12 @@ function verificaIdade(Idade){
     }else{
         return false
     }
+
+}
+
+function AdicionarNaLista(AnosDeIdade, opiniao){
+    let intemOption = document.createElement('option')
+    intemOption.text = `Idade: ${AnosDeIdade} | Avaliação: ${opiniao}`
+    cSelOpinao.appendChild(intemOption)
 
 }
