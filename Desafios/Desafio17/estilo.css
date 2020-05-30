@@ -30,8 +30,7 @@ input#CxNum{
 }
 
 input.btnAdicionar{
-    margin-top: 20px;
-    margin-left: 25px;
+    margin-top: 0px;
 }
 
 div#IddeOpina{
@@ -40,19 +39,23 @@ div#IddeOpina{
  box-sizing: border-box;
 }
 
-div#adicinar{
+div#AddToselect{
     position: relative;
     display: inline-block;
     box-sizing: border-box;
 }
 
 select#cSelOpinao{
+    margin-top: 5px;
     width: 200px;
-    /*margin-right: 150px;
-    margin-top: 10px;*/
 }
 
-/*span.dtl{
-    margin-right: 200px;
-}*/
+select#cSelOpina{
+    margin-top: 5px;
+    width: 120px;
+}
 
+span.Propiniao{
+    margin-bottom: 5px;
+    font-size: 12pt;
+}
