@@ -31,10 +31,10 @@ div.DivSelect{
     display: inline-block;
 }
 
-select{
-    width: 150px;
+div.DivSelect select{
+    width: 180px;
     margin-top: 30px;
     position: relative;
-    margin-bottom: 40px;
-    margin-left: 25px;
+    margin-bottom: 20px;
+    margin-left: 15px;
 }
