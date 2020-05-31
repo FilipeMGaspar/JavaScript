@@ -27,6 +27,10 @@ input.inpAnoNasc{
     width: 80px;
 }
 
+input.btnAdicionar{
+    margin-left: 80px;
+}
+
 div.DivSelect{
     display: inline-block;
 }
