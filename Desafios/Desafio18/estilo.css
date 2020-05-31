@@ -18,3 +18,23 @@ footer{
     text-align: center;
     margin-top: 25px;
 }
+
+div.RecebDados{
+    display: inline-block;
+}
+
+input.inpAnoNasc{
+    width: 80px;
+}
+
+div.DivSelect{
+    display: inline-block;
+}
+
+select{
+    width: 150px;
+    margin-top: 30px;
+    position: relative;
+    margin-bottom: 40px;
+    margin-left: 25px;
+}
