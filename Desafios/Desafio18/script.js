@@ -78,9 +78,16 @@ function FcVerificar(){
 }
 
 function MostrarResultado(ListaIdades, ListaGeneros){
-    alert('Tudo ok Podemos continuar!')
-    Divresultado.innerHTML = `<p>No total adicionou: ${ListaIdades.length} elementos</p>`
+    let totalHomens, totalMulheres
 
-    
+    Divresultado.innerHTML = `<p>No total adicionou: ${ListaIdades.length} elementos</p>`
+    for (pos in ListaGeneros){
+        if(ListaGeneros[pos] == "Feminino"){
+            totalMulheres ++
+        }else{
+            totalHomens++
+        }
+    }
+    Divresultado.innerHTML +=`<p></p>`
     //Falta terminar
 }
