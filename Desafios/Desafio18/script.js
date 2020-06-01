@@ -79,5 +79,8 @@ function FcVerificar(){
 
 function MostrarResultado(ListaIdades, ListaGeneros){
     alert('Tudo ok Podemos continuar!')
+    Divresultado.innerHTML = `<p>No total adicionou: ${ListaIdades.length} elementos</p>`
+
+    
     //Falta terminar
 }
