@@ -10,7 +10,16 @@ function FcAdicionar(){
         alert('!!! [ERRO] !!! Ano de nascimento não foi informado!')
         inicar()
     }else{
-        alert('Tudo ok podemos continuar!')
+        if (verificaAno(Number(CxAnoNasc.value))){
+            alert('Tudo ok podemos continuar!')
+        }else{
+            alert(`!! [ERRO] !! O Ano de ${Number(CxAnoNasc.value)} não é válido! `)
+        }
+        
     }
 
+}
+
+function verificaAno(AnoNascimento){
+    
 }
