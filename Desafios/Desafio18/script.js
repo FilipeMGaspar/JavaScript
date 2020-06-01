@@ -88,6 +88,7 @@ function MostrarResultado(ListaIdades, ListaGeneros){
             totalHomens++
         }
     }
-    Divresultado.innerHTML +=`<p></p>`
+    Divresultado.innerHTML +=`<p>Pessoas do Género Feminino: ${totalMulheres}</p>`
+    Divresultado.innerHTML += `<p>Pessoas do Género Masculino: ${totalHomens}</p>`
     //Falta terminar
 }
