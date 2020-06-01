@@ -15,7 +15,7 @@ function FcAdicionar(){
     }else{
         if (verificaAno(Number(CxAnoNasc.value))){
             if(RadioGeneroSelecionado()){
-                alert('Tudo ok podemos continuar!')
+                colocarNalista(Number(CxAnoNasc.value), GenSelecionado)
             }else{
                 alert('!! [ERRO] !! Género não foi indicado. (Feminino ou Masculino)!')
             }
@@ -41,4 +41,10 @@ function RadioGeneroSelecionado(){
    }else{
         return false
    }
+}
+
+function colocarNalista(AnoEmQueNasceu, LstGeneros){
+    let Genero = '' 
+    alert('Função colocar na lista Todo ok!')
+
 }
