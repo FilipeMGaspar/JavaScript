@@ -44,13 +44,20 @@ function RadioGeneroSelecionado(){
 }
 
 function colocarNalista(AnoEmQueNasceu, LstGeneros){
+    let cSelGenero = document.querySelector('select#cSelGenero')
+    let itemOption = document.createElement('option')
+    let AnosDeIdade 
     let Genero = '' 
+
+
     for(let pos=0; pos<LstGeneros.length; pos++){
             
         if(LstGeneros[pos].checked){
             Genero = LstGeneros[pos].value
         }
     }
-    alert('Função colocar na lista Todo ok!' + Genero)
-
+    
+    AnosDeIdade = estouNoAno - AnoEmQueNasceu 
+    itemOption.text =`Idade: ${AnosDeIdade} | Gen: ${Genero}`
+    cSelGenero.appendChild(itemOption)
 }
