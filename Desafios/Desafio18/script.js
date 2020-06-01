@@ -23,7 +23,7 @@ function FcAdicionar(){
 }
 
 function verificaAno(AnoNascimento){
-    if((estouNoAno - AnoNascimento > 0)  && (estouNoAno - AnoNascimento <= 130)){
+    if((estouNoAno - AnoNascimento > 0)  && (estouNoAno - AnoNascimento < 130)){
         return true
     }else{
         return false
