@@ -52,18 +52,26 @@ function colocarNalista(AnoEmQueNasceu, LstGeneros){
     let AnosDeIdade 
     let Genero = '' 
 
-
     for(let pos=0; pos<LstGeneros.length; pos++){
             
         if(LstGeneros[pos].checked){
             Genero = LstGeneros[pos].value
         }
     }
-    
     AnosDeIdade = estouNoAno - AnoEmQueNasceu 
     itemOption.text =`Idade: ${AnosDeIdade} | Gen: ${Genero}`
     cSelGenero.appendChild(itemOption)
     VetGeneros.push(Genero)
     VetIdades.push(AnosDeIdade)
-    iniciar()
+    CxAnoNasc.focus()
+    CxAnoNasc.value= ''
+}
+
+function FcVerificar(){
+    if((VetIdades.length == 0) || VetGeneros.length==0){
+        alert('!! [ERRO] !! Lista de detalhes Vazia!')
+        inicar()
+    }else{
+        alert('Tudo ok Podemos continuar!')
+    }
 }
