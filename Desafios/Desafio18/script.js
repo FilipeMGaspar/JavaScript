@@ -1,4 +1,6 @@
 let CxAnoNasc = document.querySelector('input#CxAnoNasc')
+anoAtual = new Date
+let estouNoAno = anoAtual.getFullYear()
 
 function inicar(){
     CxAnoNasc.focus()
@@ -13,7 +15,7 @@ function FcAdicionar(){
         if (verificaAno(Number(CxAnoNasc.value))){
             alert('Tudo ok podemos continuar!')
         }else{
-            alert(`!! [ERRO] !! O Ano de ${Number(CxAnoNasc.value)} não é válido! `)
+            alert(`!! [ERRO] !! O Ano de ${Number(CxAnoNasc.value)} não é válido! Voce teria ${estouNoAno - Number(CxAnoNasc.value)} Anos`)
         }
         
     }
@@ -21,5 +23,9 @@ function FcAdicionar(){
 }
 
 function verificaAno(AnoNascimento){
-    
+    if((AnoNascimento - estouNoAno > 0)  && (AnoNascimento-estouNoAno <= 130)){
+        return true
+    }else{
+        return false
+    }
 }
