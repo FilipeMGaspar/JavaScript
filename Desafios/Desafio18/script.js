@@ -17,7 +17,7 @@ function FcAdicionar(){
             if(RadioGeneroSelecionado()){
                 alert('Tudo ok podemos continuar!')
             }else{
-                alert('!! [ERRO] !! Género não foi indicado! Por favor Selecione (Feminino ou Masculino)')
+                alert('!! [ERRO] !! Género não foi indicado. (Feminino ou Masculino)!')
             }
         }else{
             alert(`!! [ERRO] !! O Ano de ${Number(CxAnoNasc.value)} não é válido! Voce teria ${estouNoAno - Number(CxAnoNasc.value)} Anos`)
@@ -38,7 +38,7 @@ function verificaAno(AnoNascimento){
 function RadioGeneroSelecionado(){
     //let GenSelecionado = document.getElementsByName('Genero')
     //let Genero = ''  
-    if ((GenSelecionado[0].checked==true) && (GenSelecionado[1].checked==true)){
+    if ((GenSelecionado[0].checked==true) || (GenSelecionado[1].checked==true)){
        return true
    }else{
         return false
