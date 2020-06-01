@@ -1,5 +1,6 @@
 let CxAnoNasc = document.querySelector('input#CxAnoNasc')
 let GenSelecionado = document.getElementsByName('Genero')
+let Divresultado = document.querySelector('div#resultado')
 anoAtual = new Date
 let estouNoAno = anoAtual.getFullYear()
 let VetGeneros = []
@@ -72,6 +73,11 @@ function FcVerificar(){
         alert('!! [ERRO] !! Lista de detalhes Vazia!')
         inicar()
     }else{
-        alert('Tudo ok Podemos continuar!')
+        MostrarResultado(VetIdades, VetGeneros)        
     }
+}
+
+function MostrarResultado(ListaIdades, ListaGeneros){
+    alert('Tudo ok Podemos continuar!')
+    //Falta terminar
 }
