@@ -78,7 +78,7 @@ function FcVerificar(){
 }
 
 function MostrarResultado(ListaIdades, ListaGeneros){
-    let totalHomens, totalMulheres
+    let totalHomens = 0, totalMulheres = 0
 
     Divresultado.innerHTML = `<p>No total adicionou: ${ListaIdades.length} elementos</p>`
     for (pos in ListaGeneros){
