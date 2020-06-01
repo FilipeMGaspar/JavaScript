@@ -36,8 +36,6 @@ function verificaAno(AnoNascimento){
 }
 
 function RadioGeneroSelecionado(){
-    //let GenSelecionado = document.getElementsByName('Genero')
-    //let Genero = ''  
     if ((GenSelecionado[0].checked==true) || (GenSelecionado[1].checked==true)){
        return true
    }else{
