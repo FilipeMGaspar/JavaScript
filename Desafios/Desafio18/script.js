@@ -2,6 +2,9 @@ let CxAnoNasc = document.querySelector('input#CxAnoNasc')
 let GenSelecionado = document.getElementsByName('Genero')
 anoAtual = new Date
 let estouNoAno = anoAtual.getFullYear()
+let VetGeneros = []
+let VetIdades = []
+
 
 function inicar(){
     CxAnoNasc.focus()
@@ -60,4 +63,7 @@ function colocarNalista(AnoEmQueNasceu, LstGeneros){
     AnosDeIdade = estouNoAno - AnoEmQueNasceu 
     itemOption.text =`Idade: ${AnosDeIdade} | Gen: ${Genero}`
     cSelGenero.appendChild(itemOption)
+    VetGeneros.push(Genero)
+    VetIdades.push(AnosDeIdade)
+    iniciar()
 }
