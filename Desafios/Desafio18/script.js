@@ -90,8 +90,9 @@ function MostrarResultado(ListaIdades, ListaGeneros){
         }
     }
     mediaIdadesH = somaIdadesH / totalHomens
+    mediaIdadesH = mediaIdadesH.toFixed(2)
     Divresultado.innerHTML +=`<p>Pessoas do Género Feminino: ${totalMulheres}</p>`
     Divresultado.innerHTML += `<p>Pessoas do Género Masculino: ${totalHomens}</p>`
-    Divresultado.innerHTML += `<p>Média de idades dos homens: ${mediaIdadesH}</p>`
+    Divresultado.innerHTML += `<p>Média de idades dos homens: ${mediaIdadesH} anos</p>`
     //Falta terminar
 }
