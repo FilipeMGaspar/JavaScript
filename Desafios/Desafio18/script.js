@@ -78,7 +78,7 @@ function FcVerificar(){
 }
 
 function MostrarResultado(ListaIdades, ListaGeneros){
-    let totalHomens = 0, totalMulheres = 0
+    let totalHomens = 0, totalMulheres = 0, somaIdadesH = 0, mediaIdadesH = 1
 
     Divresultado.innerHTML = `<p>No total adicionou: ${ListaIdades.length} elementos</p>`
     for (pos in ListaGeneros){
@@ -86,8 +86,10 @@ function MostrarResultado(ListaIdades, ListaGeneros){
             totalMulheres ++
         }else{
             totalHomens++
+            somaIdadesH += Number(ListaIdades[pos])
         }
     }
+    mediaIdadesH = somaIdadesH / totalHomens
     Divresultado.innerHTML +=`<p>Pessoas do Género Feminino: ${totalMulheres}</p>`
     Divresultado.innerHTML += `<p>Pessoas do Género Masculino: ${totalHomens}</p>`
     //Falta terminar
