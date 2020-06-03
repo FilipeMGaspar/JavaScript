@@ -25,6 +25,7 @@ div.RecebDados{
 
 input.inpAnoNasc{
     width: 80px;
+    margin-bottom: 10px;
 }
 
 input.btnAdicionar{
