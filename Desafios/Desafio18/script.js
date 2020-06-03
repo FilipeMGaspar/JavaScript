@@ -97,17 +97,19 @@ function FcVerificar(){
         alert('!! [ERRO] !! Lista de detalhes Vazia!')
         inicar()
     }else{
-        MostrarResultado(VetIdades, VetGeneros)        
+        MostrarResultado(VetIdades, VetGeneros, VetPesos)        
     }
 }
 
-function MostrarResultado(ListaIdades, ListaGeneros){
-    let totalHomens = 0, totalMulheres = 0, somaIdadesH = 0, mediaIdadesH = 1
+function MostrarResultado(ListaIdades, ListaGeneros, listaDePeso){
+    let totalHomens = 0, totalMulheres = 0 
+    let somaIdadesH = 0, mediaIdadesH = 1, somaPesoFem = 0, mediaPesosFem = 1
 
     Divresultado.innerHTML = `<p>No total adicionou: ${ListaIdades.length} elementos</p>`
     for (pos in ListaGeneros){
         if(ListaGeneros[pos] == "Feminino"){
             totalMulheres ++
+            somaPesoFem += Number(listaDePeso[pos])
         }else{
             totalHomens++
             somaIdadesH += Number(ListaIdades[pos])
@@ -115,8 +117,12 @@ function MostrarResultado(ListaIdades, ListaGeneros){
     }
     mediaIdadesH = somaIdadesH / totalHomens
     mediaIdadesH = mediaIdadesH.toFixed(2)
+    mediaPesosFem = somaPesoFem/totalMulheres
+    mediaPesosFem = mediaPesosFem.toFixed(2)
     Divresultado.innerHTML +=`<p>Pessoas do Género Feminino: ${totalMulheres}</p>`
     Divresultado.innerHTML += `<p>Pessoas do Género Masculino: ${totalHomens}</p>`
     Divresultado.innerHTML += `<p>Média de idades dos homens: ${mediaIdadesH} anos</p>`
+    Divresultado.innerHTML += `<p>Média dos pesos das mulheres: ${mediaPesosFem}Kg </p>`
+
     //Falta terminar
 }
