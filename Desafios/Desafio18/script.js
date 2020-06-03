@@ -93,7 +93,7 @@ function colocarNalista(AnoEmQueNasceu, LstGeneros, pesaEmKg){
 }
 
 function FcVerificar(){
-    if((VetIdades.length == 0) || VetGeneros.length==0){
+    if((VetIdades.length == 0) || VetGeneros.length==0 || VetPesos.length == 0){
         alert('!! [ERRO] !! Lista de detalhes Vazia!')
         inicar()
     }else{
