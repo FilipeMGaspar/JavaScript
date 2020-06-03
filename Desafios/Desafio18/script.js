@@ -123,6 +123,4 @@ function MostrarResultado(ListaIdades, ListaGeneros, listaDePeso){
     Divresultado.innerHTML += `<p>Pessoas do Género Masculino: ${totalHomens}</p>`
     Divresultado.innerHTML += `<p>Média de idades dos homens: ${mediaIdadesH} anos</p>`
     Divresultado.innerHTML += `<p>Média dos pesos das mulheres: ${mediaPesosFem}Kg </p>`
-
-    //Falta terminar
 }
