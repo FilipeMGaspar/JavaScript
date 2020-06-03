@@ -7,7 +7,7 @@ header{
     font: normal 15pt Arial;
 }
 section{
-    width: 570px;
+    width: 580px;
     background: whitesmoke;
     margin: auto;
     padding: 25px;
@@ -37,7 +37,7 @@ div.DivSelect{
 }
 
 div.DivSelect select{
-    width: 250px;
+    width: 260px;
     margin-top: 30px;
     position: relative;
     margin-bottom: 20px;

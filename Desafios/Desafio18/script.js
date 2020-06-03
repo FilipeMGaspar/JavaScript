@@ -21,7 +21,7 @@ function FcAdicionar(){
         if (verificaAno(Number(CxAnoNasc.value))){
             if(VerificaPeso(Number(CxPeso.value))){
                 if(RadioGeneroSelecionado()){
-                    colocarNalista(Number(CxAnoNasc.value), GenSelecionado)
+                    colocarNalista(Number(CxAnoNasc.value), GenSelecionado, Number(CxPeso.value))
                 }else{
                 alert('!! [ERRO] !! Género não foi indicado. (Feminino ou Masculino)!')
                 }
@@ -32,13 +32,11 @@ function FcAdicionar(){
         }else{
             alert(`!! [ERRO] !! O Ano de ${Number(CxAnoNasc.value)} não é válido! Voce teria ${estouNoAno - Number(CxAnoNasc.value)} Anos`)
             inicar()
-        }
-        
+        }   
     }
-
 }
 
-function verificaAno(AnoNascimento){
+function verificaAno(AnoNascimento){//Função para garator que não é indicada nenhuma idade menor que 0 e maior que 130
     if((estouNoAno - AnoNascimento > 0)  && (estouNoAno - AnoNascimento < 130)){
         return true
     }else{
@@ -70,7 +68,7 @@ function RadioGeneroSelecionado(){//Função para verificar se os botões de rad
    }
 }
 
-function colocarNalista(AnoEmQueNasceu, LstGeneros){
+function colocarNalista(AnoEmQueNasceu, LstGeneros, pesaEmKg){
     let cSelGenero = document.querySelector('select#cSelGenero')
     let itemOption = document.createElement('option')
     let AnosDeIdade 
@@ -83,12 +81,13 @@ function colocarNalista(AnoEmQueNasceu, LstGeneros){
         }
     }
     AnosDeIdade = estouNoAno - AnoEmQueNasceu 
-    itemOption.text =`Idade: ${AnosDeIdade} | Gen: ${Genero}`
+    itemOption.text =`Idade: ${AnosDeIdade} | Gen: ${Genero} | Peso: ${pesaEmKg}`
     cSelGenero.appendChild(itemOption)
     VetGeneros.push(Genero)
     VetIdades.push(AnosDeIdade)
     CxAnoNasc.focus()
     CxAnoNasc.value= ''
+    CxPeso.value = ''
 }
 
 function FcVerificar(){
