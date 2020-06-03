@@ -19,12 +19,16 @@ function FcAdicionar(){
         inicar()
     }else{
         if (verificaAno(Number(CxAnoNasc.value))){
-
-            if(RadioGeneroSelecionado()){
-                colocarNalista(Number(CxAnoNasc.value), GenSelecionado)
-            }else{
+            if(VerificaPeso(Number(CxPeso.value))){
+                if(RadioGeneroSelecionado()){
+                    colocarNalista(Number(CxAnoNasc.value), GenSelecionado)
+                }else{
                 alert('!! [ERRO] !! Género não foi indicado. (Feminino ou Masculino)!')
+                }
+            }else{
+                alert(`!! [ERRO] !! O peso de ${Number(CxPeso.value)} Kg. Não é válido.`)
             }
+
         }else{
             alert(`!! [ERRO] !! O Ano de ${Number(CxAnoNasc.value)} não é válido! Voce teria ${estouNoAno - Number(CxAnoNasc.value)} Anos`)
             inicar()
@@ -49,7 +53,16 @@ function DesblocCxpeso(){//Fução para desbloquear a caixa do peso
     }
 }
 
-function RadioGeneroSelecionado(){
+
+function VerificaPeso(Peso){//Função para verificar se o peso é maior que 0 
+    if(Peso > 0){
+        return true
+    }else{
+        return false
+    }
+}
+
+function RadioGeneroSelecionado(){//Função para verificar se os botões de radio estao selecionados
     if ((GenSelecionado[0].checked==true) || (GenSelecionado[1].checked==true)){
        return true
    }else{
