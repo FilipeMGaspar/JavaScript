@@ -2,10 +2,11 @@ let CxAnoNasc = document.querySelector('input#CxAnoNasc')
 let GenSelecionado = document.getElementsByName('Genero')
 let Divresultado = document.querySelector('div#resultado')
 let CxPeso = document.querySelector('input#CxPeso')
-anoAtual = new Date
-let estouNoAno = anoAtual.getFullYear()
+anoAtual = new Date //objeto do tipo data
+let estouNoAno = anoAtual.getFullYear() //obtem apenas o ano
 let VetGeneros = []
 let VetIdades = []
+let VetPesos = []
 
 
 function inicar(){
@@ -85,6 +86,7 @@ function colocarNalista(AnoEmQueNasceu, LstGeneros, pesaEmKg){
     cSelGenero.appendChild(itemOption)
     VetGeneros.push(Genero)
     VetIdades.push(AnosDeIdade)
+    VetPesos.push(pesaEmKg)
     CxAnoNasc.focus()
     CxAnoNasc.value= ''
     CxPeso.value = ''
