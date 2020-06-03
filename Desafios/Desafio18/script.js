@@ -39,6 +39,13 @@ function verificaAno(AnoNascimento){
     }
 }
 
+function DesblocCxpeso(){
+    // Em falta Falta.........
+    if (verificaAno(Number(CxAnoNasc.value)){
+        
+    }
+}
+
 function RadioGeneroSelecionado(){
     if ((GenSelecionado[0].checked==true) || (GenSelecionado[1].checked==true)){
        return true
