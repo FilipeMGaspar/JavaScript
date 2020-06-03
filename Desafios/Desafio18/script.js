@@ -1,6 +1,7 @@
 let CxAnoNasc = document.querySelector('input#CxAnoNasc')
 let GenSelecionado = document.getElementsByName('Genero')
 let Divresultado = document.querySelector('div#resultado')
+let CxPeso = document.querySelector('input#CxPeso')
 anoAtual = new Date
 let estouNoAno = anoAtual.getFullYear()
 let VetGeneros = []
@@ -18,6 +19,7 @@ function FcAdicionar(){
         inicar()
     }else{
         if (verificaAno(Number(CxAnoNasc.value))){
+
             if(RadioGeneroSelecionado()){
                 colocarNalista(Number(CxAnoNasc.value), GenSelecionado)
             }else{
@@ -25,6 +27,7 @@ function FcAdicionar(){
             }
         }else{
             alert(`!! [ERRO] !! O Ano de ${Number(CxAnoNasc.value)} não é válido! Voce teria ${estouNoAno - Number(CxAnoNasc.value)} Anos`)
+            inicar()
         }
         
     }
@@ -39,10 +42,10 @@ function verificaAno(AnoNascimento){
     }
 }
 
-function DesblocCxpeso(){
-    // Em falta Falta.........
-    if (verificaAno(Number(CxAnoNasc.value)){
-        
+function DesblocCxpeso(){//Fução para desbloquear a caixa do peso
+    if (verificaAno(Number(CxAnoNasc.value))){
+        CxPeso.removeAttribute('readonly')
+        CxPeso.focus()
     }
 }
 
