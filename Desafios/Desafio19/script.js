@@ -8,7 +8,7 @@ function iniciar(){
 }
 
 function reseolver(){
-    if(CxA.value.length==0){
+    if((CxA.value.length==0) || (CxB.value.length==0) || (CxC.value.length==0)){
         alert('!! [ERRO] !! Equação incompleta!')
         iniciar()
     }else{
