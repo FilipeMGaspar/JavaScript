@@ -7,7 +7,7 @@ function iniciar(){
     CxA.value = ''
 }
 
-function FCresolver(){
+function FcResolver(){
     if(CxA.value.length==0){
         alert('!! [ERRO] !! Equação incompleta! Valor de A não informado.')
         iniciar()
@@ -56,24 +56,20 @@ function calculaFormulaResolvente(a, b, c){
 function mostrarResultados(raiz, raiz1){
     let Divresultado = document.querySelector('div#resultado')
     
-    let sinalDeA, sinalDeB, sinalDeC
-    if(Number(CxA.value)<0){
-        sinalDeA = '-'
-    }else{
-        sinalDeA = ''
-    }
-    if (Number(CxB.value)<0){
-        sinalDeB = '-'
-    }else{
+    let  sinalDeB, sinalDeC
+   
+    if (Number(CxB.value)>0){
         sinalDeB = '+'
-    }
-    if(Number(CxB.value)<0){
-        sinalDeC = '-'
     }else{
+        sinalDeB = ''
+    }
+    if(Number(CxB.value)>0){
         sinalDeC = '+'
+    }else{
+        sinalDeC = ''
     }
 
-    Divresultado.innerHTML += `<p>Para a equação ${sinalDeA}${Number(CxA.value)}X<sup>2</sup> ${sinalDeB} ${Number(CxB.value)}X ${sinalDeC} ${Number(CxC.value)} = 0<p>`
+    Divresultado.innerHTML += `<p>Para a equação ${Number(CxA.value)}X<sup>2</sup> ${sinalDeB} ${Number(CxB.value)}X ${sinalDeC} ${Number(CxC.value)} = 0<p>`
     if(raiz == raiz1){
         Divresultado.innerHTML += `Tem uma raíz<br> X = ${raiz}`
     }else{
