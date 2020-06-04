@@ -24,3 +24,11 @@ span{
     margin-left: 25px;
 }
 
+input{
+    width: 75px;
+}
+
+input.btnResolver{
+    margin-top: 30px;
+    margin-left: 30px;
+}
