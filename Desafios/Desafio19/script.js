@@ -1,10 +1,12 @@
 let CxA = document.querySelector('input#CxA')
 let CxB = document.querySelector('input#CxB')
 let CxC = document.querySelector('input#CxC')
+let Divresultado = document.querySelector('div#resultado')
 
 function iniciar(){
     CxA.focus()
     CxA.value = ''
+   
 }
 
 function FcResolver(){
@@ -41,7 +43,7 @@ function calculaFormulaResolvente(a, b, c){
     let x = 0, x1 = 0
     dentroDaRaiz = (Math.pow(b, 2) - 4*a*c)
 
-    if(dentroDaRaiz>0){
+    if(dentroDaRaiz>=0){
         x = ((-b + (Math.sqrt(Math.pow(b, 2) - 4*a*c)))/2*a)
         x = x.toFixed(2)
         
@@ -53,9 +55,7 @@ function calculaFormulaResolvente(a, b, c){
     }
 }
 
-function mostrarResultados(raiz, raiz1){
-    let Divresultado = document.querySelector('div#resultado')
-    
+function mostrarResultados(raiz, raiz1){ 
     let  sinalDeB, sinalDeC
    
     if (Number(CxB.value)>0){
