@@ -47,14 +47,36 @@ function calculaFormulaResolvente(a, b, c){
         
         x1 = ((-b - (Math.sqrt(Math.pow(b, 2) - 4*a*c)))/2*a)
         x1 = x1.toFixed(2)
-        mostrarResultado(x, x1)
-    }else{
-        if(dentroDaRaiz==0){
-            x = ((-b + (Math.sqrt(Math.pow(b, 2) - 4*a*c)))/2*a)
-            x = x.toFixed(2)
-        }else{
-            alert(`!! [ERRO] !! Impossivel calcular a Raiz Quadrada de ${dentroDaRaiz}`)
-        }
+        mostrarResultados(x, x1)
+    }else{        
+        alert(`!! [ERRO] !! Impossivel calcular a Raiz Quadrada de ${dentroDaRaiz}`)
     }
 }
 
+function mostrarResultados(raiz, raiz1){
+    let Divresultado = document.querySelector('div#resultado')
+    let sinalDeA, sinalDeB, sinalDeC
+    if(Number(CxA.value)<0){
+        sinalDeA = '-'
+    }else{
+        sinalDeA = ''
+    }
+    if (Number(CxB.value)<0){
+        sinalDeB = '-'
+    }else{
+        sinalDeB = '+'
+    }
+    if(Number(CxB.value)<0){
+        sinalDeC = '-'
+    }else{
+        sinalDeC = '+'
+    }
+
+    Divresultado.innerHTML += `<p>Para a equação ${sinalDeA}${Number(CxA.value)}X<sup>2</sup> ${sinalDeB} ${Number(CxB.value)}X  ${Number(CxC.value)} = 0<p>`
+    if(raiz == raiz1){
+        Divresultado.innerHTML += `Tem uma raíz<br> X = ${raiz}`
+    }else{
+        Divresultado.innerHTML += `Tem duas raízes:<br> x = ${raiz} <br> x<sub>1</sub> = ${raiz1}`
+    }   
+
+}
