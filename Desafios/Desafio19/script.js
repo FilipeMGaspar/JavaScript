@@ -2,11 +2,13 @@ let CxA = document.querySelector('input#CxA')
 let CxB = document.querySelector('input#CxB')
 let CxC = document.querySelector('input#CxC')
 let Divresultado = document.querySelector('div#resultado')
+let numDeOperacoes = 0
 
 function iniciar(){
     CxA.focus()
     CxA.value = ''
-   
+    CxB.value = ''
+    CxC.value = ''
 }
 
 function FcResolver(){
@@ -74,6 +76,15 @@ function mostrarResultados(raiz, raiz1){
         Divresultado.innerHTML += `Tem uma raíz<br> X = ${raiz}`
     }else{
         Divresultado.innerHTML += `Tem duas raízes:<br> x = ${raiz} <br> x<sub>1</sub> = ${raiz1}`
-    }   
-
+    }  
+    numDeOperacoes ++
+    if(numDeOperacoes==3){
+        alert('Tem mais uma operação!')
+        alert('Se tentar uma quarta vez todos os dados serão apagados!')
+    }
+    if(numDeOperacoes==4){
+        Divresultado.innerHTML = ''
+        iniciar()
+    } 
+    iniciar()
 }
