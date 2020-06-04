@@ -44,11 +44,12 @@ function calculaFormulaResolvente(a, b, c){
     if(dentroDaRaiz>0){
         x = ((-b + (Math.sqrt(Math.pow(b, 2) - 4*a*c)))/2*a)
         x = x.toFixed(2)
+        
+        x1 = ((-b - (Math.sqrt(Math.pow(b, 2) - 4*a*c)))/2*a)
+        x1 = x1.toFixed(2)
         alert(x)
+        alert(x1)
     }else{
         alert(`!! [ERRO] !! Impossivel calcular a Raiz Quadrada de ${dentroDaRaiz}`)
     }
-    
-    /* ()/2*a */
-
 }
