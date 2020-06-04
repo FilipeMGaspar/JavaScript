@@ -16,7 +16,12 @@ function reseolver(){
         if(CxB.value.length==0){
             alert('!! [ERRO] !!Equação incompleta! Valor de B não informado.')
         }else{
-            alert('Vamos continuar')
+            desblcCxC()
+            if(CxC.value.length==0){
+                alert('!! [ERRO] !!Equação incompleta! Valor de C não informado.')
+            }else{
+                alert('Tudo ok podemos continuar')
+            }
         }
     }
 }
@@ -24,4 +29,9 @@ function reseolver(){
 function desblcCxB(){
     CxB.removeAttribute('readonly')
     CxB.focus()
+}
+
+function desblcCxC(){
+    CxC.removeAttribute('readonly')
+    CxC.focus()
 }
