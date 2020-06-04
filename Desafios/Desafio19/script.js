@@ -8,8 +8,10 @@ function iniciar(){
 }
 
 function reseolver(){
-    if(CxA.vaalue.length==0){
+    if(CxA.value.length==0){
         alert('!! [ERRO] !! Equação incompleta!')
         iniciar()
+    }else{
+        alert('Tudo ok podemos continuar')
     }
 }
