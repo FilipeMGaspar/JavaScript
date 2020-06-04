@@ -20,7 +20,7 @@ function reseolver(){
             if(CxC.value.length==0){
                 alert('!! [ERRO] !!Equação incompleta! Valor de C não informado.')
             }else{
-                alert('Tudo ok podemos continuar')
+                calculaFormulaResolvente(Number(CxA.value), Number(CxB.value), Number(CxC.value))
             }
         }
     }
@@ -34,4 +34,17 @@ function desblcCxB(){
 function desblcCxC(){
     CxC.removeAttribute('readonly')
     CxC.focus()
+}
+
+function calculaFormulaResolvente(a, b, c){
+    let dentroDaRaiz = 1
+    dentroDaRaiz = (Math.pow(b, 2) - 4*a*c)
+    if(dentroDaRaiz>0){
+        alert (`Podemos continuar ${dentroDaRaiz}`)
+    }else{
+        alert('ERRO '+ dentroDaRaiz)
+    }
+    
+    /* ()/2*a */
+
 }
