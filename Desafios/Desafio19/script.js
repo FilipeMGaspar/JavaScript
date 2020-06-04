@@ -8,10 +8,20 @@ function iniciar(){
 }
 
 function reseolver(){
-    if((CxA.value.length==0) || (CxB.value.length==0) || (CxC.value.length==0)){
-        alert('!! [ERRO] !! Equação incompleta!')
+    if(CxA.value.length==0){
+        alert('!! [ERRO] !! Equação incompleta! Valor de A não informado.')
         iniciar()
     }else{
-        alert('Tudo ok podemos continuar')
+        desblcCxB()
+        if(CxB.value.length==0){
+            alert('!! [ERRO] !!Equação incompleta! Valor de B não informado.')
+        }else{
+            alert('Vamos continuar')
+        }
     }
+}
+
+function desblcCxB(){
+    CxB.removeAttribute('readonly')
+    CxB.focus()
 }
