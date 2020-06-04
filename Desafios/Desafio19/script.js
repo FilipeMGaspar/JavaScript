@@ -63,7 +63,7 @@ function mostrarResultados(raiz, raiz1){
     }else{
         sinalDeB = ''
     }
-    if(Number(CxB.value)>0){
+    if(Number(CxC.value)>0){
         sinalDeC = '+'
     }else{
         sinalDeC = ''
