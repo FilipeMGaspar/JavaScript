@@ -38,11 +38,15 @@ function desblcCxC(){
 
 function calculaFormulaResolvente(a, b, c){
     let dentroDaRaiz = 1
+    let x = 0, x1 = 0
     dentroDaRaiz = (Math.pow(b, 2) - 4*a*c)
+
     if(dentroDaRaiz>0){
-        alert (`Podemos continuar ${dentroDaRaiz}`)
+        x = ((-b + (Math.sqrt(Math.pow(b, 2) - 4*a*c)))/2*a)
+        x = x.toFixed(2)
+        alert(x)
     }else{
-        alert('ERRO '+ dentroDaRaiz)
+        alert(`!! [ERRO] !! Impossivel calcular a Raiz Quadrada de ${dentroDaRaiz}`)
     }
     
     /* ()/2*a */
