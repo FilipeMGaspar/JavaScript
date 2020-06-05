@@ -1,0 +1,20 @@
+body{
+    background: url("imagens/fundo.gif");
+    font: normal 14pt Arial;
+}
+header{
+    text-align: center;
+    font: normal 15pt Arial;
+}
+section{
+    width: 500px;
+    background: whitesmoke;
+    margin: auto;
+    padding: 25px;
+    box-shadow: 8px 8px 8px  midnightblue;
+}
+footer{
+    font: normal 13pt Arial;
+    text-align: center;
+    margin-top: 25px;
+}
