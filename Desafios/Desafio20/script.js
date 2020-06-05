@@ -7,10 +7,11 @@ function FcSelecionar(){
     let ano = dataRecebida.slice(0,4)
     let mes = dataRecebida.slice(5,7)
     let dia = dataRecebida.slice(8,10)
+    let m = mes
 
-    switch (mes){
+    switch (m){
         case '01':
-            mes = 'Janeiro'
+            m = 'Janeiro'
         break
     }
 
@@ -18,7 +19,7 @@ function FcSelecionar(){
 
     DivResultado.innerHTML = `<p>Data Selecionada ${dia}-${mes}-${ano}</p>`
     DivResultado.innerHTML +=`<p>Dia: ${dia}</p>`
-    DivResultado.innerHTML += `<p>Mês: ${mes}</p>`
+    DivResultado.innerHTML += `<p>Mês: ${m}</p>`
     DivResultado.innerHTML += `<p>Ano: ${ano}</p>`
    /* alert(`Ano selecionado ${ano}`)
     alert(`Mês selecionado ${mes}`)
