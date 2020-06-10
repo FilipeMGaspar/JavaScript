@@ -26,14 +26,13 @@ function colocarNaLista(valor){
         vetValores.push(valor)       
         iniciar()
     }else{
-        
+        alert(`!![ERRO]!! O Valor ${valor} já se encontra na lista!`)
+        iniciar()
     }
 }
 
 
 function valorEstaNaLista(num, lstValores){
-    /*vetValores.indexOf()*/
-
     if(lstValores.indexOf(num)==-1){
         return true
     }else{
