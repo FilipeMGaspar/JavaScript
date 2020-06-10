@@ -62,7 +62,7 @@ function ordemDecrescente(listaValores){
 }
 
 /*
- nas funções ordemCrescente e ordemDecrescente 
+ Nas funções ordemCrescente e ordemDecrescente 
     utilizamos .sort(function(a, b){return b-a})
     function(a, b){return b-a} e sort(function(a, b){return a-b} que vão efectuar as comparações.
 
@@ -85,5 +85,5 @@ function ordemDecrescente(listaValores){
      
     Ordem Decerscente:
     
-       15 - 10 - ......
+        15 - 10 - ......
 */
