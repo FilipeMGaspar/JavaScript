@@ -64,12 +64,26 @@ function ordemDecrescente(listaValores){
 /*
  nas funções ordemCrescente e ordemDecrescente 
     utilizamos .sort(function(a, b){return b-a})
-    function(a, b){return b-a} vai efectuar a comparação
+    function(a, b){return b-a} e sort(function(a, b){return a-b} que vão efectuar as comparações.
 
     Quando chamamos o método .sort() para comparar dois valores este retorna um valor que pode ser:
      ..: Negativo
      ..: Zero
      ..: Positivo
     
+     Exemplo:
+
+     Se no vetor tivermos o valor 10 e 15, quando o método .sort() chamar a função pra comparar function(a, b) a função vai ficar function(10, 15).
+
+     a função function(10, 15) efectua o seguinte calculo return a-b neste exemplo ficaria 10 - 15 retornando o valor -5 valor negativo
+
+     O método .sort() ao abter um valor negativo vai ordenar colocando colocando o 10 com menor que o 15
+
+    Ordem cerscente:
+
+        10 - 15 - .....
      
+    Ordem Decerscente:
+    
+       15 - 10 - ......
 */
