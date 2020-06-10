@@ -16,5 +16,13 @@ function adicionar(){
 }
 
 function colocarNaLista(valor){
-    alert (`Recebi o valor ${valor}`)
+    let CselValAdd = document.querySelector('select#CselValAdd')
+
+    let itemOption = document.createElement('option')
+
+    itemOption.text = ` ${valor}`
+
+    CselValAdd.appendChild(itemOption)
+    
+    iniciar()
 }
