@@ -5,6 +5,7 @@ let vetValores = []
 function iniciar(){
     CxValor.focus()
     CxValor.value=''
+    DivResultado.innerHTML = ''
 }
 
 function adicionar(){
@@ -53,12 +54,12 @@ function ondenaCresEdecres(){
 
 function ordemCrescente(listaDeValores){
     listaDeValores.sort(function(a, b){return a-b})
-    DivResultado .innerHTML += `<p>Ordem Crescente ${listaDeValores}</p>`
+    DivResultado .innerHTML += `<p>Ordem Crescente: ${listaDeValores}</p>`
 }
 
 function ordemDecrescente(listaValores){
     listaValores.sort(function(a, b){return b-a})
-    DivResultado.innerHTML += `<p>Ordem decrescente ${listaValores}</p>`
+    DivResultado.innerHTML += `<p>Ordem decrescente: ${listaValores}</p>`
 }
 
 /*
