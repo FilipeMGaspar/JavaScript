@@ -27,3 +27,7 @@ input#CxValor{
 select#CselValAdd{
     width: 100px;
 }
+
+input.btnOrdenar{
+    margin-left: 15px;
+}
