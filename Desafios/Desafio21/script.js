@@ -11,6 +11,10 @@ function adicionar(){
         alert('!! [ERRO] !! Não foi indicado nenhum valor! ')
         iniciar()
     }else{
-        alert('Tudo ok Podemos continuar')
+        colocarNaLista(Number(CxValor.value))
     }
+}
+
+function colocarNaLista(valor){
+    alert (`Recebi o valor ${valor}`)
 }
