@@ -19,12 +19,24 @@ function adicionar(){
 function colocarNaLista(valor){
     let CselValAdd = document.querySelector('select#CselValAdd')
 
-    let itemOption = document.createElement('option')
+    if (valorEstaNaLista(valor, vetValores)){
+        let itemOption = document.createElement('option')
+         itemOption.text = ` ${valor}`
+        CselValAdd.appendChild(itemOption)    
+        vetValores.push(valor)       
+        iniciar()
+    }else{
+        
+    }
+}
 
-    itemOption.text = ` ${valor}`
 
-    CselValAdd.appendChild(itemOption)
-    
-    vetValores.push(valor)       
-    iniciar()
+function valorEstaNaLista(num, lstValores){
+    /*vetValores.indexOf()*/
+
+    if(lstValores.indexOf(num)==-1){
+        return true
+    }else{
+        return false
+    }
 }
