@@ -1,4 +1,5 @@
 let CxValor = document.querySelector('input#CxValor')
+let DivResultado = document.querySelector('div#resultado')
 let vetValores = []
 
 function iniciar(){
@@ -50,5 +51,6 @@ function ondenaCresEdecres(){
 }
 
 function ondemCrescente(listaDeValores){
-    
+    listaDeValores.sort()
+    DivResultado .innerHTML += `<p>Ordem Crescente ${listaDeValores}</p>`
 }
