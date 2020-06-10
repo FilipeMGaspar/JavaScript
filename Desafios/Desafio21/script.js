@@ -45,6 +45,10 @@ function ondenaCresEdecres(){
         alert('!![ERRO]!! Não adicionou nenhum valor á lista!')
         iniciar()
     }else{
-        alert('Tudo ok podemos continuar')
+       ondemCrescente(vetValores)
     }
+}
+
+function ondemCrescente(listaDeValores){
+    
 }
