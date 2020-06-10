@@ -52,7 +52,7 @@ function ondenaCresEdecres(){
 }
 
 function ordemCrescente(listaDeValores){
-    listaDeValores.sort(function(a, b){return a-b})//
+    listaDeValores.sort(function(a, b){return a-b})
     DivResultado .innerHTML += `<p>Ordem Crescente ${listaDeValores}</p>`
 }
 
@@ -60,3 +60,16 @@ function ordemDecrescente(listaValores){
     listaValores.sort(function(a, b){return b-a})
     DivResultado.innerHTML += `<p>Ordem decrescente ${listaValores}</p>`
 }
+
+/*
+ nas funções ordemCrescente e ordemDecrescente 
+    utilizamos .sort(function(a, b){return b-a})
+    function(a, b){return b-a} vai efectuar a comparação
+
+    Quando chamamos o método .sort() para comparar dois valores este retorna um valor que pode ser:
+     ..: Negativo
+     ..: Zero
+     ..: Positivo
+    
+     
+*/
