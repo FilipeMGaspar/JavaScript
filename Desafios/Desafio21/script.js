@@ -39,3 +39,12 @@ function valorEstaNaLista(num, lstValores){
         return false
     }
 }
+
+function ondenaCresEdecres(){
+    if(vetValores.length==0){
+        alert('!![ERRO]!! Não adicionou nenhum valor á lista!')
+        iniciar()
+    }else{
+        alert('Tudo ok podemos continuar')
+    }
+}
