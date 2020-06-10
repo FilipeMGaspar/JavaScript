@@ -51,6 +51,6 @@ function ondenaCresEdecres(){
 }
 
 function ondemCrescente(listaDeValores){
-    listaDeValores.sort()
+    listaDeValores.sort(function(a, b){return a-b})
     DivResultado .innerHTML += `<p>Ordem Crescente ${listaDeValores}</p>`
 }
