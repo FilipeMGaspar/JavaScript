@@ -1,4 +1,5 @@
 let CxValor = document.querySelector('input#CxValor')
+let vetValores = []
 
 function iniciar(){
     CxValor.focus()
@@ -24,5 +25,6 @@ function colocarNaLista(valor){
 
     CselValAdd.appendChild(itemOption)
     
+    vetValores.push(valor)       
     iniciar()
 }
