@@ -1,7 +1,6 @@
 let cSelDetalhes = document.querySelector('select#cSelDetalhes')
 let cxSubTot = document.querySelector('input#cxSubTot')
-
-DivResultado = document.querySelector('div#resultado')
+let divResultado = document.querySelector('div#resultado')
 
 
 function addfruta(fruta){
@@ -44,7 +43,8 @@ function calculaPreco(qtdKg, qFruta){
         for(pos in totPagamento){
             subtot += totPagamento[pos]
         }
-        DivResultado.innerHtml
-        return subtot       
+        
+        return subtot   
+        divResultado.innerHTML = `${totPagamento}`    
     }
 }
