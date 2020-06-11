@@ -6,7 +6,7 @@
     <title>Desafio 22!</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
-<body>
+<body onload="iniciar()">
     <header>
         <h1>Inverter Palavras!</h1>
     </header>
@@ -14,7 +14,7 @@
     <section>
         <div class="dados">  
                Palavra: <input type="text" id="Cxpalavra" name="tCxpalavra"><br>
-               <input type="button" value="Inverter" class="btnInverter">       
+               <input type="button" value="Inverter" class="btnInverter" onclick="inverter()">       
         </div>
 
         <div class="recebidos">
