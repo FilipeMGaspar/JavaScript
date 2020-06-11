@@ -11,6 +11,10 @@ function inverter(){
         alert('!![ERRO]!! Nenhuma palavra foi indicada!')
         iniciar()
     }else{
-        alert('tudo ok Podemos continuar')
+        inverteColocaNaLista(Cxpalavra.value)
     }
+}
+
+function inverteColocaNaLista(palavra){
+    alert('tudo ok Podemos continuar: '+palavra)
 }
