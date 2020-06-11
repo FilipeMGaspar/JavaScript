@@ -1,6 +1,9 @@
 let cSelDetalhes = document.querySelector('select#cSelDetalhes')
 let cxSubTot = document.querySelector('input#cxSubTot')
 
+DivResultado = document.querySelector('div#resultado')
+
+
 function addfruta(fruta){
     let qt = prompt("Quantos quilos?")
 
@@ -22,19 +25,26 @@ function mostraDetalhes(qtd, frut){
     
     itemOption.text =`${frut}   ${qtd}Kg`
     cSelDetalhes.appendChild(itemOption)
-    preco = calculaPreco(qtd)
+    preco = calculaPreco(qtd, frut)
+    cxSubTot.value = `${preco}€`
     
 }
 
-/*
+function calculaPreco(qtdKg, qFruta){
+    let totPagamento = []
+    let paga = 0
+    let subtot = 0
 
+    if ((qtdKg<5) && (qFruta==="Morango")){
+        paga +=  2.50 * qtdKg
+        totPagamento.push(paga)
+       
+        alert (`Tot a Pagar ${paga}`)
 
-if ((qt<5) && (fruta==="Morango")){
-    alert ('aki')
-    preco +=  2.50 * qt
-    alert (preco)
-    cxSubTot.focus()
-    cxSubTot.value = `${preco}€`
+        for(pos in totPagamento){
+            subtot += totPagamento[pos]
+        }
+        DivResultado.innerHtml
+        return subtot       
+    }
 }
-
-*/
