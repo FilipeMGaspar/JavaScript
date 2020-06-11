@@ -31,17 +31,11 @@ div.fruta img{
     border: 1px solid black;
 }
 
-div.img{
+div.morango {
     width: 100px;
     height: 100px;
-}
-
-div.morango h1{
-    position: relative;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    top: -50px;
-    text-align: center;
+    background: url('./imagens/morangos.jpg');
+    background-repeat: no-repeat;
 }
 
 div.detalhes{
