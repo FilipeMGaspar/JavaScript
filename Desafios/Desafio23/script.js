@@ -34,22 +34,24 @@ function calculaPreco(qtdKg, qFruta){
     let paga = 0
     let subtot = 0
 
-    if ((qtdKg<5) && (qFruta==="Morango")){
+    if ((qtdKg<=5) && (qFruta==="Morango")){
         paga +=  2.50 * qtdKg
-        //paga = paga.toFixed(2)
+        paga = paga.toFixed(2)
     }else{
-        paga +=  2.20 * qtdKg
-        //paga = paga.toFixed(2)
-    }
+        if ((qtdKg>5) && (qFruta==="Morango")){
+            paga += 2.20 * qtdKg
+            paga = paga.toFixed(2)
+        }
+    }   
 
-
-
-    if((qtdKg<5)&&(qFruta==="Maçã")){
+    if((qtdKg<=5)&&(qFruta==="Maçã")){
         paga +=  1.60 * qtdKg
-        //paga = paga.toFixed(2)
+        paga = paga.toFixed(2)
     }else{
-        paga +=  1.30 * qtdKg
-       //paga = paga.toFixed(2)  
+        if((qtdKg>5)&&(qFruta==="Maçã")){
+            paga +=  1.30 * qtdKg
+            paga = paga.toFixed(2)  
+        }
     }
 
 
