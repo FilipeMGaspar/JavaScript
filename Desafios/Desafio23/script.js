@@ -36,13 +36,22 @@ function calculaPreco(qtdKg, qFruta){
 
     if ((qtdKg<5) && (qFruta==="Morango")){
         paga +=  2.50 * qtdKg
-        alert (`Tot a Pagar ${paga}`) 
+        paga = paga.toFixed(2)
+    }else{
+        paga +=  2.20 * qtdKg
+        paga = paga.toFixed(2)
     }
+
+
 
     if((qtdKg<5)&&(qFruta==="Maçã")){
         paga +=  1.60 * qtdKg
-        alert (`Tot a Pagar ${paga}`) 
+        paga = paga.toFixed(2)
+    }else{
+        paga +=  1.30 * qtdKg
+        paga = paga.toFixed(2)  
     }
+
 
     totPagamento.push(paga)
 
@@ -53,3 +62,4 @@ function calculaPreco(qtdKg, qFruta){
     divResultado.innerHTML = `${totPagamento}` 
     return subtot    
 }
+
