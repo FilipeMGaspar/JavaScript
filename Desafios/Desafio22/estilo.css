@@ -23,19 +23,21 @@ div.dados{
     background: blueviolet;
     width: 47%;
     display: inline-block;
+    margin-top: 0px;
+    box-sizing: border-box;
+    padding-top: 25px;
 }
 
-div.dados{
-    margin-top: 0px;
-    position: relative;
-    top: 0;
-    margin-bottom: 25px;
+div.dados input.btnInverter{
+    margin-top: 35px;
+    margin-left: 45px;
 }
 
 div.recebidos{
     background: chocolate;
     width: 47%;
     display: inline-block;
+    box-sizing: border-box;
 }
 
 div.recebidos select{
