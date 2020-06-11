@@ -25,9 +25,19 @@ div.dados{
     display: inline-block;
 }
 
+div.dados{
+    margin-top: 0px;
+    position: relative;
+    top: 0;
+    margin-bottom: 25px;
+}
+
 div.recebidos{
     background: chocolate;
     width: 47%;
     display: inline-block;
 }
 
+div.recebidos select{
+    width: 150px;
+}
