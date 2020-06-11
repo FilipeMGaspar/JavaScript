@@ -50,20 +50,22 @@ function colocaNalista(qtdKg, qFruta){
         }
     }
 
-    totPagamento.push(paga)   
+    totPagamento.push(paga) 
+    
+    calculaSubTotal(totPagamento)
 // Linha abaixo é para testes
-    divResultado.innerHTML = `${totPagamento}` 
- 
+    
 }
 
 
-/*
-    let preco = 0
-    cxSubTot.value = `${preco}€`
+function calculaSubTotal(LstPagar){
     let subtot = 0
+    
+    divResultado.innerHTML = `${LstPagar}` 
 
-    for(pos in totPagamento){
-        subtot += totPagamento[pos]
+    for(pos in LstPagar){
+        subtot += LstPagar[pos]
     }
-    return subtot    
-*/
+
+    cxSubTot.value = `${subtot}€`
+}
