@@ -1,3 +1,6 @@
-cSelPalavraInv
+let cSelPalavraInv = document.querySelector('select#cSelPalavraInv')
+let Cxpalavra = document.querySelector('input#Cxpalavra')
 
-Cxpalavra
+function iniciar(){
+    
+}
