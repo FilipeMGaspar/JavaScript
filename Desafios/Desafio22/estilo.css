@@ -21,8 +21,13 @@ footer{
 
 div.dados{
     background: blueviolet;
+    width: 47%;
+    display: inline-block;
 }
 
 div.recebidos{
     background: chocolate;
+    width: 47%;
+    display: inline-block;
 }
+
