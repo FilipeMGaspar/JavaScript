@@ -6,8 +6,8 @@ let totPagamento = []
 
 function addfruta(fruta){
     let qt = prompt("Quantos quilos?")
-
-    if(qt==0){
+    
+    if((qt==0) || (qt== null)){
         alert ('!![ERRO]!! Quantidade não indicada!')
     }else{
         if(qt<0){
@@ -20,19 +20,15 @@ function addfruta(fruta){
 
 
 function mostraDetalhes(qtd, frut){
-    let itemOption = document.createElement('option')
-    let preco = 0
+    let itemOption = document.createElement('option')    
 
     itemOption.text =`${frut}   ${qtd}Kg`
     cSelDetalhes.appendChild(itemOption)
-    preco = calculaPreco(qtd, frut)
-    cxSubTot.value = `${preco}€`
-    
+    colocaNalista(qtd, frut)      
 }
 
-function calculaPreco(qtdKg, qFruta){    
-    let paga = 0
-    let subtot = 0
+function colocaNalista(qtdKg, qFruta){    
+    let paga = 0    
 
     if ((qtdKg<=5) && (qFruta==="Morango")){
         paga +=  2.50 * qtdKg
@@ -54,14 +50,20 @@ function calculaPreco(qtdKg, qFruta){
         }
     }
 
-
-    totPagamento.push(paga)
-
-    /*for(pos in totPagamento){
-        subtot += totPagamento[pos]
-    }*/
-
+    totPagamento.push(paga)   
+// Linha abaixo é para testes
     divResultado.innerHTML = `${totPagamento}` 
-    return subtot    
+ 
 }
 
+
+/*
+    let preco = 0
+    cxSubTot.value = `${preco}€`
+    let subtot = 0
+
+    for(pos in totPagamento){
+        subtot += totPagamento[pos]
+    }
+    return subtot    
+*/
