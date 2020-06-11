@@ -18,3 +18,24 @@ footer{
     text-align: center;
     margin-top: 25px;
 }
+
+div.fruta{
+    width: 65%;
+    display: inline-block;
+}
+
+div.fruta img{
+    width: 100px;
+    height: 100px;
+    margin-left: 25px;
+    border: 1px solid black;
+}
+
+div.detalhes{
+    width: 30%;
+    display: inline-block;
+}
+
+div.detalhes select{
+    width: 150px;
+}
