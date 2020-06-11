@@ -1,4 +1,5 @@
 let cSelDetalhes = document.querySelector('select#cSelDetalhes')
+let cxSubTot = document.querySelector('input#scxSubTot')
 
 function addfruta(fruta){
     let qt = prompt("Quantos quilos?")
