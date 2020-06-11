@@ -38,6 +38,12 @@ function calculaPreco(qtdKg, qFruta){
         paga +=  2.50 * qtdKg
         alert (`Tot a Pagar ${paga}`) 
     }
+
+    if((qtdKg<5)&&(qFruta==="Maçã")){
+        paga +=  1.60 * qtdKg
+        alert (`Tot a Pagar ${paga}`) 
+    }
+
     totPagamento.push(paga)
 
     /*for(pos in totPagamento){
