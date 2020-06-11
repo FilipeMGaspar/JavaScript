@@ -24,20 +24,39 @@ div.fruta{
     display: inline-block;
 }
 
-div.fruta img{
-    width: 100px;
-    height: 100px;
-    margin-left: 25px;
-    border: 1px solid black;
+div.fruta h1{
+    font-size: 12pt;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+    display: none;
 }
 
+
 div.morango {
+    position: relative;
     width: 100px;
     height: 100px;
     background: url('./imagens/morangos.jpg');
     background-repeat: no-repeat;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-right: 25px;
+    cursor: pointer;
 }
 
+div.maca{
+    width: 100px;
+    height: 100px;
+    background: url('./imagens/maca.jpg');
+    background-repeat: no-repeat;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+}
 div.detalhes{
     width: 30%;
     display: inline-block;
