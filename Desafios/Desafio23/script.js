@@ -58,6 +58,7 @@ function colocaNalista(qtdKg, qFruta){
 
 function calculaSubTotal(LstPagar){
     let subtot = 0
+    
     // Linha abaixo é para testes
     divResultado.innerHTML = `${LstPagar}` 
 
