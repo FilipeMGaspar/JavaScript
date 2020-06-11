@@ -52,15 +52,13 @@ function colocaNalista(qtdKg, qFruta){
 
     totPagamento.push(paga) 
     
-    calculaSubTotal(totPagamento)
-// Linha abaixo é para testes
-    
+    calculaSubTotal(totPagamento) 
 }
 
 
 function calculaSubTotal(LstPagar){
     let subtot = 0
-    
+    // Linha abaixo é para testes
     divResultado.innerHTML = `${LstPagar}` 
 
     for(pos in LstPagar){
