@@ -11,7 +11,8 @@ function addfruta(fruta){
         alert ('aki')
         let preco = 2.50 * qt
         alert (preco)
-        cxSubTot.value = 'Coisa chata'
+        cxSubTot.focus()
+        cxSubTot.value += `${preco}`
     }
 
 }
