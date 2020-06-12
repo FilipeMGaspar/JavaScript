@@ -1,6 +1,5 @@
 let cSelDetalhes = document.querySelector('select#cSelDetalhes')
 let cxSubTot = document.querySelector('input#cxSubTot')
-let divResultado = document.querySelector('div#resultado')
 let cxDesconto = document.querySelector('input#cxDesconto')
 let cxTotal = document.querySelector('input#cxTotal')
 let desconto = 0
@@ -99,5 +98,4 @@ function calculaSubTotal(LstPagar){
     cxSubTot.value = `${subtot}€`
     cxDesconto.value = `${desc}€`
     cxTotal.value = `${total}€`
-
 }
