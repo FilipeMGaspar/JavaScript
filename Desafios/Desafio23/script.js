@@ -81,9 +81,6 @@ function calculaSubTotal(LstPagar){
     let subtot = 0
     let desc = 0
     let total = 0
-    
-    // Linha abaixo é para testes
-    divResultado.innerHTML = `${LstPagar}` 
 
     for(pos in LstPagar){
         subtot += Number(LstPagar[pos])
@@ -98,7 +95,7 @@ function calculaSubTotal(LstPagar){
 
     total = subtot - desc
     total = total.toFixed(2)
-    
+
     cxSubTot.value = `${subtot}€`
     cxDesconto.value = `${desc}€`
     cxTotal.value = `${total}€`
