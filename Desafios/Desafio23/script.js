@@ -20,9 +20,29 @@ function addfruta(fruta){
 
 
 function mostraDetalhes(qtd, frut){
-    let itemOption = document.createElement('option')    
+    let itemOption = document.createElement('option') 
+    let preco = 0   
 
-    itemOption.text =`${frut}   ${qtd}Kg`
+    if ((qtd<=5) && (frut==="Morango")){
+        preco = 2.50 
+        
+    }else{
+        if ((qtd>5) && (frut==="Morango")){
+            preco = 2.20 
+           
+        }
+    }   
+
+    if((qtd<=5)&&(frut==="Maçã")){
+        preco = 1.60 
+        
+    }else{
+        if((qtd>5)&&(frut==="Maçã")){
+            preco = 1.30 
+        }
+    }
+    
+    itemOption.text =`${frut}  ${qtd}Kg  x  ${preco}€`
     cSelDetalhes.appendChild(itemOption)
     colocaNalista(qtd, frut)      
 }
