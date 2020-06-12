@@ -21,10 +21,10 @@ function addfruta(fruta){
 
 function mostraDetalhes(qtd, frut){
     let itemOption = document.createElement('option')    
-    colocaNalista(qtd, frut)  
-    let preco = colocaNalista(qtd, frut)
-    itemOption.text =`${frut}   ${qtd}Kg x ${preco}`
-    cSelDetalhes.appendChild(itemOption)    
+
+    itemOption.text =`${frut}   ${qtd}Kg`
+    cSelDetalhes.appendChild(itemOption)
+    colocaNalista(qtd, frut)      
 }
 
 function colocaNalista(qtdKg, qFruta){    
@@ -33,24 +33,20 @@ function colocaNalista(qtdKg, qFruta){
     if ((qtdKg<=5) && (qFruta==="Morango")){
         paga +=  2.50 * qtdKg
         paga = paga.toFixed(2)
-        return 2.50
     }else{
         if ((qtdKg>5) && (qFruta==="Morango")){
             paga += 2.20 * qtdKg
             paga = paga.toFixed(2)
-            return 2.20
         }
     }   
 
     if((qtdKg<=5)&&(qFruta==="Maçã")){
         paga +=  1.60 * qtdKg
         paga = paga.toFixed(2)
-        return 1.60
     }else{
         if((qtdKg>5)&&(qFruta==="Maçã")){
             paga +=  1.30 * qtdKg
-            paga = paga.toFixed(2) 
-            return 1.30 
+            paga = paga.toFixed(2)  
         }
     }
 
