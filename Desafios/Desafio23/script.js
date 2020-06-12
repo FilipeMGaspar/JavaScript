@@ -2,7 +2,7 @@ let cSelDetalhes = document.querySelector('select#cSelDetalhes')
 let cxSubTot = document.querySelector('input#cxSubTot')
 let divResultado = document.querySelector('div#resultado')
 let lblDesconto = document.getElementById('lblDesconto')
-let tcxDesconto = document.querySelector('input#tcxDesconto')
+let cxDesconto = document.querySelector('input#cxDesconto')
 let totPagamento = []
 
 
@@ -80,6 +80,7 @@ function colocaNalista(qtdKg, qFruta){
 
 function calculaSubTotal(LstPagar){
     let subtot = 0
+    let desc = 0
     
     // Linha abaixo é para testes
     divResultado.innerHTML = `${LstPagar}` 
@@ -87,8 +88,14 @@ function calculaSubTotal(LstPagar){
     for(pos in LstPagar){
         subtot += Number(LstPagar[pos])
     }
-    subtot = subtot.toFixed(2)
 
-    //tcxDesconto
+    if(subtot>25){
+        desc = subtot*(10/100)
+        desc = desc.toFixed(2)
+    }
+
+    subtot = subtot.toFixed(2)
+   
     cxSubTot.value = `${subtot}€`
+    cxDesconto.value = `${desc}€`
 }
