@@ -81,3 +81,8 @@ div.detalhes{
 div.detalhes select{
     width: 150px;
 }
+
+div.detalhes span{
+font-size: 10pt;
+}
+

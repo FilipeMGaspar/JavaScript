@@ -1,6 +1,8 @@
 let cSelDetalhes = document.querySelector('select#cSelDetalhes')
 let cxSubTot = document.querySelector('input#cxSubTot')
 let divResultado = document.querySelector('div#resultado')
+let lblDesconto = document.getElementById('lblDesconto')
+let tcxDesconto = document.querySelector('input#tcxDesconto')
 let totPagamento = []
 
 
@@ -87,5 +89,6 @@ function calculaSubTotal(LstPagar){
     }
     subtot = subtot.toFixed(2)
 
+    //tcxDesconto
     cxSubTot.value = `${subtot}€`
 }
