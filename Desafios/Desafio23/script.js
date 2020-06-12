@@ -3,6 +3,7 @@ let cxSubTot = document.querySelector('input#cxSubTot')
 let divResultado = document.querySelector('div#resultado')
 let cxDesconto = document.querySelector('input#cxDesconto')
 let cxTotal = document.querySelector('input#cxTotal')
+let desconto = 0
 let totPagamento = []
 
 
@@ -30,14 +31,12 @@ function mostraDetalhes(qtd, frut){
         
     }else{
         if ((qtd>5) && (frut==="Morango")){
-            preco = 2.20 
-           
+            preco = 2.20           
         }
     }   
 
     if((qtd<=5)&&(frut==="Maçã")){
-        preco = 1.60 
-        
+        preco = 1.60         
     }else{
         if((qtd>5)&&(frut==="Maçã")){
             preco = 1.30 
@@ -96,8 +95,10 @@ function calculaSubTotal(LstPagar){
     }
 
     subtot = subtot.toFixed(2)
+
     total = subtot - desc
     total = total.toFixed(2)
+    
     cxSubTot.value = `${subtot}€`
     cxDesconto.value = `${desc}€`
     cxTotal.value = `${total}€`
