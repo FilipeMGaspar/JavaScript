@@ -95,7 +95,7 @@ function calculaSubTotal(LstPagar){
     }
 
     subtot = subtot.toFixed(2)
-   
+    
     cxSubTot.value = `${subtot}€`
     cxDesconto.value = `${desc}€`
 }
