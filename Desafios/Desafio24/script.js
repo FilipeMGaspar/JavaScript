@@ -12,6 +12,23 @@ function calcular(){
         alert ('!![ERRO]!! Valor 1 não foi informado!')
         iniciar()
     }else{
-        alert ('Tudo ok podemos continuar')
+        if (verificaValor(Number(cxVal1.value))){
+            alert('OK')
+        }else{
+            alert (`!![ERRO]!! O valor ${Number(cxVal1.value)} não é válido! Indique maior que 0.`)
+            iniciar()
+        }
     }
 }
+
+function verificaValor(valor){
+    if(valor > 0){
+        return true
+    }else{
+        return false
+    }
+}
+
+function desblocCxVal2(){
+    
+}   
