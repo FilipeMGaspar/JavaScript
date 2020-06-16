@@ -74,6 +74,25 @@ function calculaMMC(valor1, valor2){
 
 function MDCcalculo(val1, val2){
     let resto = 0
-    resto = (val1 % val2)
-    alert (`Resto de ${resto}`)
+    let div = 0
+
+    if (val1>val2){
+        resto = val1 % val2
+        div = val2
+        //maior = val1
+        //menor = val2
+    }else{
+        resto = val2 % val1
+        div = val1
+        //maior = val2
+        //menor = val1
+    }
+    
+   /* resto = (maior % menor)
+     if(resto!=0){
+        
+     }
+    alert (`Resto de ${resto}`)*/
+
+    iniciar()
 }
