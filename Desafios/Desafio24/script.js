@@ -57,11 +57,11 @@ function calculaMMC(valor1, valor2){
         multval1 = valor1 * c
         for (var i=1; i<=maior; i++){            
             multval2 = valor2 * i
-            //DivResultado.innerHTML += `<p>${multval1} e ${multval2}</p>`    
+   
             if(multval1 == multval2){
                 //mmc = multval2
                 alert ('MMC INICIAL = ' + mmc)
-                if (mmc > multval2){
+                if (multval2 < mmc){
                     mmc = multval2
                     alert (`MMC Dentro do IF = ${mmc}`)
                 }               
