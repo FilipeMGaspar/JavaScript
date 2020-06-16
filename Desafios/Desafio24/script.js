@@ -60,8 +60,13 @@ function calculaMMC(valor1, valor2){
             multval2 = valor2 * i
             DivResultado.innerHTML += `<p>${multval1} e ${multval2}</p>`    
             if(multval1 == multval2){
-                alert (`MMC = ${multval1}`) 
-                //mmc = multval1               
+                mmc = multval2
+                if (mmc < multval2){
+                    mmc = multval2
+                    alert (`MMC = ${mmc}`)
+                }               
+
+                alert ('Teste = '+ mmc)
             }
         }
     }
