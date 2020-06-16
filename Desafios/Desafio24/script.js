@@ -45,6 +45,19 @@ function calculaMMC(valor1, valor2){
     let multval1 = 1
     let multval2 = 1
 
+    if(valor1>valor2){
+        let maior = valor1
+    }else{
+        maior = valor2
+    }    
+
+    for($c=1;$c<=maior;$c++){
+        multval1 = valor1 * $c
+        multval2 = valor2 * $c
+        if(multval1 == multval2){
+            alert (`MMC = ${multval2}`)
+        }
+    }
     DivResultado.innerHTML = `<p>Mínimo Múltiplo Comum entre <strong>${valor1}</strong> e <strong>${valor2}</strong></p>`
     
 
