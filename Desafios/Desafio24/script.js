@@ -17,8 +17,8 @@ function calcular(){
         if (verificaValor(Number(cxVal1.value))){
             if(verificaValor(Number(CxVal2.value))){
                 DivResultado.innerHTML = ''
-                calculaMMC(Number(cxVal1.value), Number(CxVal2.value))
-                MDCcalculo(Number(cxVal1.value), Number(CxVal2.value))
+                calculaMMC(Number(cxVal1.value), Number(CxVal2.value))//Função para Calcular o MMC - mínimo múltiplo comum
+                MDCcalculo(Number(cxVal1.value), Number(CxVal2.value))//Função para Calcular o MDC - máximo divisor comum
             }else{
                 alert (`!![ERRO]!! Valor 2: ${Number(CxVal2.value)} não é válido! Indique maior que 0.`)
                 CxVal2.focus()
@@ -44,6 +44,7 @@ function desblocCxVal2(){
     CxVal2.focus()
 }   
 
+//Função para Calcular o MMC - mínimo múltiplo comum
 function calculaMMC(valor1, valor2){
     let multval1 = 1
     let multval2 = 1
@@ -71,6 +72,7 @@ function calculaMMC(valor1, valor2){
     DivResultado.innerHTML += `<br><p>Mínimo Múltiplo Comum entre <strong>${valor1}</strong> e <strong>${valor2}</strong> é: <strong>${mmc}</strong></p>`
 }
 
+//Função para Calcular o MDC - máximo divisor comum
 function MDCcalculo(val1, val2){
     let resto = 1
     let div = 0
