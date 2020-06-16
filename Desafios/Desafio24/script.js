@@ -63,18 +63,9 @@ function calculaMMC(valor1, valor2){
                 i = maior
                 mmc = multval2
                 alert (`MMC = ${mmc}`)
-               /* //mmc = multval2
-                alert ('MMC INICIAL = ' + mmc)
-                if (multval2 < mmc){
-                    mmc = multval2
-                    alert (`MMC Dentro do IF = ${mmc}`)
-                }               
-
-                alert ('MMC Fora do IF = '+ mmc)*/
             }
         }
     }
-    DivResultado.innerHTML += `<p>Mínimo Múltiplo Comum entre <strong>${valor1}</strong> e <strong>${valor2}</strong></p>`
-    
+    DivResultado.innerHTML += `<p>Mínimo Múltiplo Comum entre <strong>${valor1}</strong> e <strong>${valor2}</strong> é: <strong>${mmc}</strong></p>`
 
 }
