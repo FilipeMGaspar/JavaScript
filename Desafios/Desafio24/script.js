@@ -52,7 +52,6 @@ function calculaMMC(valor1, valor2){
     }else{
         maior = valor2
     }    
-    alert (maior)
     
     for(var c=1; c<=maior; c++){
         multval1 = valor1 * c
@@ -61,8 +60,8 @@ function calculaMMC(valor1, valor2){
             //DivResultado.innerHTML += `<p>${multval1} e ${multval2}</p>`    
             if(multval1 == multval2){
                 //mmc = multval2
-                alert ('MMC INICIAL = '+mmc)
-                if (mmc < multval2){
+                alert ('MMC INICIAL = ' + mmc)
+                if (mmc > multval2){
                     mmc = multval2
                     alert (`MMC Dentro do IF = ${mmc}`)
                 }               
