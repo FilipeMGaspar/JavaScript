@@ -83,9 +83,12 @@ function MDCcalculo(val1, val2){
             if(resto !=0){
                 div = val2
                 val2 = resto
+                val1 = div
             }else{
                 mdc = val2
-            }    
+            } 
+            alert(div)
+            alert ('RESTO = '+resto)
             //maior = val1
             //menor = val2
         }else{
