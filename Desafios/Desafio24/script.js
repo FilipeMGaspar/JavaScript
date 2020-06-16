@@ -54,11 +54,13 @@ function calculaMMC(valor1, valor2){
     
     for(var c=1; c<=maior; c++){
         multval1 = valor1 * c
-        multval2 = valor2 * c
-        DivResultado.innerHTML += `<p>${multval1} e ${multval2}</p>`    
-       /* if(multval1 == multval2){
-            alert (`MMC = ${multval2}`)
-        }*/
+        for (var i=1; i<=maior; i++){
+            multval2 = valor2 * c
+            //DivResultado.innerHTML += `<p>${multval1} e ${multval2}</p>`    
+            if(multval1 == multval2){
+                alert (`MMC = ${multval2}`)
+            }
+        }
     }
     DivResultado.innerHTML += `<p>Mínimo Múltiplo Comum entre <strong>${valor1}</strong> e <strong>${valor2}</strong></p>`
     
