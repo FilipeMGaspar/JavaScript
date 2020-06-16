@@ -44,22 +44,23 @@ function desblocCxVal2(){
 function calculaMMC(valor1, valor2){
     let multval1 = 1
     let multval2 = 1
-    let maior 
+    let maior = 0 
     if(valor1>valor2){
         maior = valor1
     }else{
         maior = valor2
     }    
     alert (maior)
-    let c
-    for(c=1; c<=maior; c++){
-        multval1 = valor1 * $c
-        multval2 = valor2 * $c
-        if(multval1 == multval2){
+    
+    for(var c=1; c<=maior; c++){
+        multval1 = valor1 * c
+        multval2 = valor2 * c
+        DivResultado.innerHTML += `<p>${multval1} e ${multval2}</p>`    
+       /* if(multval1 == multval2){
             alert (`MMC = ${multval2}`)
-        }
+        }*/
     }
-    DivResultado.innerHTML = `<p>Mínimo Múltiplo Comum entre <strong>${valor1}</strong> e <strong>${valor2}</strong></p>`
+    DivResultado.innerHTML += `<p>Mínimo Múltiplo Comum entre <strong>${valor1}</strong> e <strong>${valor2}</strong></p>`
     
 
 }
