@@ -69,10 +69,11 @@ function calculaMMC(valor1, valor2){
         }
     }
     DivResultado.innerHTML += `<p>Mínimo Múltiplo Comum entre <strong>${valor1}</strong> e <strong>${valor2}</strong> é: <strong>${mmc}</strong></p>`
-    iniciar()
+    //iniciar()
 }
 
 function MDCcalculo(val1, val2){
-    let resto = val1 % val2
+    let resto = 0
+    resto = (val1 % val2)
     alert (`Resto de ${resto}`)
 }
