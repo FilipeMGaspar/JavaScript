@@ -59,14 +59,18 @@ function calculaMMC(valor1, valor2){
             multval2 = valor2 * i
    
             if(multval1 == multval2){
-                //mmc = multval2
+                c = maior
+                i = maior
+                mmc = multval2
+                alert (`MMC = ${mmc}`)
+               /* //mmc = multval2
                 alert ('MMC INICIAL = ' + mmc)
                 if (multval2 < mmc){
                     mmc = multval2
                     alert (`MMC Dentro do IF = ${mmc}`)
                 }               
 
-                alert ('MMC Fora do IF = '+ mmc)
+                alert ('MMC Fora do IF = '+ mmc)*/
             }
         }
     }
