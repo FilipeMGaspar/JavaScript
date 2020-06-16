@@ -17,6 +17,8 @@ function calcular(){
                 alert ('Tudo ok podemos continuar')
             }else{
                 alert (`!![ERRO]!! Valor 2: ${Number(CxVal2.value)} não é válido! Indique maior que 0.`)
+                CxVal2.focus()
+                CxVal2.value = ''
             }
         }else{
             alert (`!![ERRO]!! Valor 1: ${Number(cxVal1.value)} não é válido! Indique maior que 0.`)
