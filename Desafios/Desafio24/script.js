@@ -44,14 +44,15 @@ function desblocCxVal2(){
 function calculaMMC(valor1, valor2){
     let multval1 = 1
     let multval2 = 1
-
+    let maior 
     if(valor1>valor2){
-        let maior = valor1
+        maior = valor1
     }else{
         maior = valor2
     }    
-
-    for($c=1;$c<=maior;$c++){
+    alert (maior)
+    let c
+    for(c=1; c<=maior; c++){
         multval1 = valor1 * $c
         multval2 = valor2 * $c
         if(multval1 == multval2){
