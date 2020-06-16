@@ -42,7 +42,7 @@ function desblocCxVal2(){
 }   
 
 function calculaMMC(valor1, valor2){
-    DivResultado.innerHTML = `<p></p>`
-    alert ('Tudo ok podemos continuar')
+    DivResultado.innerHTML = `<p>Mínimo Múltiplo Comum entre <strong>${valor1}</strong> e <strong>${valor2}</strong></p>`
+    
 
 }
