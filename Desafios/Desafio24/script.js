@@ -5,6 +5,7 @@ let DivResultado = document.querySelector('div#resultado')
 function iniciar(){
     cxVal1.focus()
     cxVal1.value = ''
+    CxVal2.value = ''
 }
 
 function calcular(){
@@ -15,6 +16,7 @@ function calcular(){
     }else{
         if (verificaValor(Number(cxVal1.value))){
             if(verificaValor(Number(CxVal2.value))){
+                DivResultado.innerHTML = ''
                 calculaMMC(Number(cxVal1.value), Number(CxVal2.value))
             }else{
                 alert (`!![ERRO]!! Valor 2: ${Number(CxVal2.value)} não é válido! Indique maior que 0.`)
@@ -66,5 +68,5 @@ function calculaMMC(valor1, valor2){
         }
     }
     DivResultado.innerHTML += `<p>Mínimo Múltiplo Comum entre <strong>${valor1}</strong> e <strong>${valor2}</strong> é: <strong>${mmc}</strong></p>`
-
+    iniciar()
 }
