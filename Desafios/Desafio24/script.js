@@ -13,9 +13,13 @@ function calcular(){
         iniciar()
     }else{
         if (verificaValor(Number(cxVal1.value))){
-            alert('OK')
+            if(verificaValor(Number(CxVal2.value))){
+                alert ('Tudo ok podemos continuar')
+            }else{
+                alert (`!![ERRO]!! Valor 2: ${Number(CxVal2.value)} não é válido! Indique maior que 0.`)
+            }
         }else{
-            alert (`!![ERRO]!! O valor ${Number(cxVal1.value)} não é válido! Indique maior que 0.`)
+            alert (`!![ERRO]!! Valor 1: ${Number(cxVal1.value)} não é válido! Indique maior que 0.`)
             iniciar()
         }
     }
