@@ -62,7 +62,6 @@ function calculaMMC(valor1, valor2){
                 c = maior
                 i = maior
                 mmc = multval2
-                alert (`MMC = ${mmc}`)
             }
         }
     }
