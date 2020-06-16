@@ -67,7 +67,7 @@ function calculaMMC(valor1, valor2){
                     alert (`MMC Dentro do IF = ${mmc}`)
                 }               
 
-                alert ('Teste = '+ mmc)
+                alert ('MMC Fora do IF = '+ mmc)
             }
         }
     }
