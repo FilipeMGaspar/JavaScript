@@ -18,6 +18,7 @@ function calcular(){
             if(verificaValor(Number(CxVal2.value))){
                 DivResultado.innerHTML = ''
                 calculaMMC(Number(cxVal1.value), Number(CxVal2.value))
+                MDCcalculo(Number(cxVal1.value), Number(CxVal2.value))
             }else{
                 alert (`!![ERRO]!! Valor 2: ${Number(CxVal2.value)} não é válido! Indique maior que 0.`)
                 CxVal2.focus()
@@ -69,4 +70,9 @@ function calculaMMC(valor1, valor2){
     }
     DivResultado.innerHTML += `<p>Mínimo Múltiplo Comum entre <strong>${valor1}</strong> e <strong>${valor2}</strong> é: <strong>${mmc}</strong></p>`
     iniciar()
+}
+
+function MDCcalculo(val1, val2){
+    let resto = val1 % val2
+    alert (`Resto de ${resto}`)
 }
