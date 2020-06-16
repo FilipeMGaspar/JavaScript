@@ -30,5 +30,6 @@ function verificaValor(valor){
 }
 
 function desblocCxVal2(){
-    
+    CxVal2.removeAttribute('disabled');
+    CxVal2.focus()
 }   
