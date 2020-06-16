@@ -68,8 +68,7 @@ function calculaMMC(valor1, valor2){
             }
         }
     }
-    DivResultado.innerHTML += `<p>Mínimo Múltiplo Comum entre <strong>${valor1}</strong> e <strong>${valor2}</strong> é: <strong>${mmc}</strong></p>`
-    //iniciar()
+    DivResultado.innerHTML += `<br><p>Mínimo Múltiplo Comum entre <strong>${valor1}</strong> e <strong>${valor2}</strong> é: <strong>${mmc}</strong></p>`
 }
 
 function MDCcalculo(val1, val2){
@@ -87,10 +86,6 @@ function MDCcalculo(val1, val2){
             }else{
                 mdc = val2
             } 
-            alert(div)
-            alert ('RESTO = '+resto)
-            //maior = val1
-            //menor = val2
         }else{
             resto = val2 % val1
             if(resto !=0){
@@ -100,18 +95,9 @@ function MDCcalculo(val1, val2){
             }else{
                 mdc = val1
             } 
-            alert(div)
-            alert ('RESTO = '+resto)
-            //maior = val2
-            //menor = val1
         }
     }
-   /* resto = (maior % menor)
-     if(resto!=0){
-        
-     }
-    alert (`Resto de ${resto}`)*/
-    alert (`MDC = ${mdc}`)
+    DivResultado.innerHTML += `<br><p>Máximo Divisor Comum entre <strong>${val1}</strong> e <strong>${val2}</strong> é: <strong>${mdc}</strong></p>`
 
     iniciar()
 }
