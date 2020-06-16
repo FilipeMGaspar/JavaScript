@@ -73,26 +73,39 @@ function calculaMMC(valor1, valor2){
 }
 
 function MDCcalculo(val1, val2){
-    let resto = 0
+    let resto = 1
     let div = 0
+    let mdc = 0
 
-    if (val1>val2){
-        resto = val1 % val2
-        div = val2
-        //maior = val1
-        //menor = val2
-    }else{
-        resto = val2 % val1
-        div = val1
-        //maior = val2
-        //menor = val1
+    while(resto!=0){
+        if (val1>val2){
+            resto = val1 % val2
+            if(resto !=0){
+                div = val2
+                val2 = resto
+            }else{
+                mdc = val2
+            }    
+            //maior = val1
+            //menor = val2
+        }else{
+            resto = val2 % val1
+            if(resto !=0){
+                div = val1
+                val1 = resto
+            }else{
+                mdc = val1
+            } 
+            //maior = val2
+            //menor = val1
+        }
     }
-    
    /* resto = (maior % menor)
      if(resto!=0){
         
      }
     alert (`Resto de ${resto}`)*/
+    alert (`MDC = ${mdc}`)
 
     iniciar()
 }
