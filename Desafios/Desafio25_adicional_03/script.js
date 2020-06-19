@@ -10,6 +10,7 @@ function alterar(){
         alert ('!![ERRO]!! Novo título não foi informado!')
         iniciar()
     }else{
-        document.title = cxTitulo.value // document.title
+        document.title = cxTitulo.value // document.title altera o titulo da página
+        iniciar()
     }
 }
