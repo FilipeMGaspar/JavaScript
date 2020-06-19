@@ -1,6 +1,9 @@
 let cxTitulo = document.querySelector('input#cxTitulo')
 
-window.onload(cxTitulo.focuS())
+function iniciar(){
+    cxTitulo.focus()
+    cxTitulo.value = ''
+}
 
 function alterar(){
 
