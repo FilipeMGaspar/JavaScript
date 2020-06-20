@@ -1,5 +1,5 @@
 let res = document.querySelector('div')
 
 function dividir(){
-    res.innerHTML = `O resto da divisão de 25 por 3 é ${25%3}`
+    res.innerHTML = `O resto da divisão de 25 por 3 é <strong>${25%3}</strong>`
 }
