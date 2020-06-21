@@ -17,10 +17,11 @@ function clicoucx1(){
 }
 
 function focuscx2(){
-    if(mudacx2 == false){
+    if((mudacx2 == false) && (mudacx1 == true)){
         cx1.style.background = '#DCC9B6'
         alert ('A Caixa 1 Perdeu o foco! \u{1F634}')
         titCx1.innerHTML = `Perdi o Foco! \u{1F97A}`
+        titCx2.innerHTML = `\u{1F923} Hei!!!`
         mudacx1 = false
         mudacx2 = true        
     }
