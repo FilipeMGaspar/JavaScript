@@ -12,7 +12,11 @@ section{
     margin: auto;
     padding: 25px;
     box-shadow: 8px 8px 8px  midnightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 footer{
     font: normal 13pt Arial;
     text-align: center;
@@ -24,7 +28,5 @@ div#cx1{
     background: darkgrey;
     width: 120px;
     height: 120px;
-    display: flex;
-    align-items: center;
-    
 }
+
