@@ -25,16 +25,26 @@ footer{
 
 div#cx1{
     color: whitesmoke;
-    background: darkgrey;
+    background: rgb(92, 91, 91);
     width: 120px;
     height: 120px;
     margin-right: 50px;
+    text-align: center;
+}
+
+div#cx1 h1{
+    font-size: 20pt;
 }
 
 div#cx2{
     color: white;
-    background: black;
+    background: rgb(10, 8, 119);
     width: 120px;
     height: 120px;
     margin-left: 50px;
+    text-align: center;
+}
+
+div#cx2 h1{
+    font-size: 20pt;
 }
