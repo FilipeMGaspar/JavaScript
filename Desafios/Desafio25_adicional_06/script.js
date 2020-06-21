@@ -4,4 +4,5 @@ function clicou(){
     
     cx1.style.background = '#F7D1CD'
     cx1.style.color = '#000000'
+    
 }
