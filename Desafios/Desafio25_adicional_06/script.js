@@ -12,4 +12,6 @@ function clicoucx1(){
 
 function focuscx2(){
     cx1.style.background = '#DCC9B6'
+    alert ('A Caixa 1 Perdeu o foco! \u{}')
+    titCx1.innerHTML = `Perdi o Foco! \u{}`
 }
