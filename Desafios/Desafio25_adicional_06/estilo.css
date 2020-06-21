@@ -1,6 +1,7 @@
 body{
     background: url("imagens/fundo.gif");
     font: normal 14pt Arial;
+    user-select: none;
 }
 header{
     text-align: center;
