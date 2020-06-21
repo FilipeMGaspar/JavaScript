@@ -20,5 +20,11 @@ footer{
 }
 
 div#cx1{
+    color: whitesmoke;
+    background: darkgrey;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
     
 }
