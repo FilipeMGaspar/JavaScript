@@ -11,6 +11,9 @@ function clicoucx1(){
         cx1.style.color = '#000000'
         titCx1.innerHTML = `Clicou! \u{1F929}`
         alert ('Primeira caixa ativa! \u{1F914}')
+        if(mudacx2 == true){
+            titCx2.innerHTML = `Bem haja! \u{1F60D}`
+        }
         mudacx1 = true
         mudacx2 = false
     }
@@ -21,7 +24,7 @@ function focuscx2(){
         cx1.style.background = '#DCC9B6'
         alert ('A Caixa 1 Perdeu o foco! \u{1F634}')
         titCx1.innerHTML = `Perdi o Foco! \u{1F97A}`
-        titCx2.innerHTML = `\u{1F923} Hei!!!`
+        titCx2.innerHTML = `\u{1F923} Nice!!!`
         mudacx1 = false
         mudacx2 = true        
     }
