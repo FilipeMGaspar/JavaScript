@@ -13,6 +13,7 @@ function clicoucx1(){
         alert ('Primeira caixa ativa! \u{1F914}')
         if(mudacx2 == true){
             titCx2.innerHTML = `Bem haja! \u{1F60D}`
+            cx2.innerHTML = 'Rato em mim!'
         }
         mudacx1 = true
         mudacx2 = false
@@ -25,6 +26,7 @@ function focuscx2(){
         alert ('A Caixa 1 Perdeu o foco! \u{1F634}')
         titCx1.innerHTML = `Perdi o Foco! \u{1F97A}`
         titCx2.innerHTML = `\u{1F923} Nice!!!`
+        cx1.innerHTML = 'Clique em mim!'
         mudacx1 = false
         mudacx2 = true        
     }
