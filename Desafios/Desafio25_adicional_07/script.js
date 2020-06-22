@@ -37,7 +37,7 @@ function classificaAlunos(notaAluno){
       if(notaAluno<14){
         avaliacao = 'Bom'
       }else{
-          
+          avaliacao = 'Muito Bom!'
       }
     }
     alert (avaliacao)
