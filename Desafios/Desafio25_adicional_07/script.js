@@ -12,6 +12,12 @@ function verificaNota(){
         alert('!![ERRO]!! Nenhuma nota Informada!')
         iniciar()
     }else{
-        alert ('Tudo ok podemos continuar!')
+        validaNotas(Number(CxNota.value))
+    }
+}
+
+function validaNotas(notas){
+    if((notas>0) ){
+
     }
 }
