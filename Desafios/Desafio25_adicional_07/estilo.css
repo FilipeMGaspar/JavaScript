@@ -29,3 +29,9 @@ input#CxNota{
 div#resultado{
     margin-top: 30px;
 }
+
+span.foco{
+    color: brown;
+    font-weight: bold;
+    font-size: 16pt;
+}
