@@ -13,8 +13,7 @@ function verificaNota(){
         iniciar()
     }else{
         if(validaNotas(Number(CxNota.value))){
-            alert ('Ok Podemos continuar')
-            
+            classificaAlunos(Number(CxNota.value))    
         }else{
             alert (`!![ERRO]!! A nota ${Number(CxNota.value)} não é válida! Indique entre 0 e 14 valores.`)
             iniciar()
