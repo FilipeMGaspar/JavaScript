@@ -6,7 +6,7 @@ document.onload = iniciar()
 function iniciar(){
     CxNota.focus()
     CxNota.value = ''
-    DivResultado.innerHTML= ''
+    //DivResultado.innerHTML= ''
 }
 
 function verificaNota(){
