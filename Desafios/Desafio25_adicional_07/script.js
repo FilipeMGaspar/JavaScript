@@ -42,7 +42,8 @@ function classificaAlunos(notaAluno){
           avaliacao = 'Muito Bom!'
       }
     }
-    DivResultado.innerHTML += `<p>Com a nota de <span class='foco'>${notaAluno}</span> valores.<p>`
+    DivResultado.innerHTML = `<p>Com a nota de <span class='foco'>${notaAluno}</span> valores.<p>`
+    DivResultado.innerHTML += `<p>Teve a cotação de: <span class='foco'>${avaliacao}</span></p>`
     
     alert (avaliacao)
 }
