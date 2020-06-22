@@ -1,10 +1,12 @@
 let CxNota = document.querySelector('input#CxNota')
+let DivResultado = document.querySelector('div#resultado')
 
 document.onload = iniciar()
 
 function iniciar(){
     CxNota.focus()
     CxNota.value = ''
+    DivResultado.innerHTML= ''
 }
 
 function verificaNota(){
@@ -42,4 +44,5 @@ function classificaAlunos(notaAluno){
       }
     }
     alert (avaliacao)
+    DivResultado.innerHTML =`Com A nota de `
 }
