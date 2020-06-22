@@ -43,6 +43,6 @@ function classificaAlunos(notaAluno){
           avaliacao = 'Muito Bom!'
       }
     }
+    DivResultado.innerHTML += `Com a nota de ${notaAluno} valores.`
     alert (avaliacao)
-    DivResultado.innerHTML =`Com A nota de `
 }
