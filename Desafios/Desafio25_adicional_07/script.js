@@ -8,7 +8,7 @@ function iniciar(){
 }
 
 function verificaNota(){
-    if (CxNota.value.length==0){
+    if (CxNota.value.length ==0){
         alert('!![ERRO]!! Nenhuma nota Informada!')
         iniciar()
     }else{
