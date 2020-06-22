@@ -32,10 +32,10 @@ function validaNotas(notas){
 function classificaAlunos(notaAluno){
     let avaliacao
     if((notaAluno>=0) && (notaAluno<10)){
-        avaliacao = 'Insuficiente'
+        avaliacao = 'Insuficiente!'
     }else{
       if(notaAluno<14){
-        avaliacao = 'Bom'
+        avaliacao = 'Bom!'
       }else{
           avaliacao = 'Muito Bom!'
       }
