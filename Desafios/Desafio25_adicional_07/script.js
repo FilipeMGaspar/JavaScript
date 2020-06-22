@@ -36,4 +36,5 @@ function classificaAlunos(notaAluno){
     }else{
       
     }
+    alert (avaliacao)
 }
