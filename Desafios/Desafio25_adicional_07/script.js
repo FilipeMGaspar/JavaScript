@@ -12,12 +12,18 @@ function verificaNota(){
         alert('!![ERRO]!! Nenhuma nota Informada!')
         iniciar()
     }else{
-        validaNotas(Number(CxNota.value))
+        if(validaNotas(Number(CxNota.value))){
+            alert ('Ok Podemos continuar')
+            
+        }else{
+            alert (`!![ERRO]!! A nota ${Number(CxNota.value)} não é válida! Indique entre 0 e 14 valores.`)
+            iniciar()
+        }
     }
 }
 
 function validaNotas(notas){
-    if((notas>=0) && (notas<=20)){
+    if((notas>=0) && (notas<=14)){
         return true
     }else{
         return false
