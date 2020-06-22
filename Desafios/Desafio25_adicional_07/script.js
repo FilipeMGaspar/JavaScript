@@ -1,5 +1,8 @@
 let CxNota = document.querySelector('input#CxNota')
 
-window.onload()= function iniciar(){
+document.onload = iniciar()
+
+function iniciar(){
     CxNota.focus()
+    CxNota.value = ''
 }
