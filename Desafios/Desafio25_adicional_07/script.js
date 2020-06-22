@@ -17,7 +17,7 @@ function verificaNota(){
 }
 
 function validaNotas(notas){
-    if((notas>0) ){
-
+    if((notas>=0) && (notas<=14)){
+        
     }
 }
