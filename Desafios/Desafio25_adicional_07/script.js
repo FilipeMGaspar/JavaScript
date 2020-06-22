@@ -28,3 +28,12 @@ function validaNotas(notas){
         return false
     }
 }
+
+function classificaAlunos(notaAluno){
+    let avaliacao
+    if((notaAluno>=0) && (notaAluno<10)){
+        avaliacao = 'Insuficiente'
+    }else{
+      
+    }
+}
