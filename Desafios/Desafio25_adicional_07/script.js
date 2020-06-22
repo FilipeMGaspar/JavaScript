@@ -15,14 +15,14 @@ function verificaNota(){
         if(validaNotas(Number(CxNota.value))){
             classificaAlunos(Number(CxNota.value))    
         }else{
-            alert (`!![ERRO]!! A nota ${Number(CxNota.value)} não é válida! Indique entre 0 e 14 valores.`)
+            alert (`!![ERRO]!! A nota ${Number(CxNota.value)} não é válida! Indique entre 0 e 20 valores.`)
             iniciar()
         }
     }
 }
 
 function validaNotas(notas){
-    if((notas>=0) && (notas<=14)){
+    if((notas>=0) && (notas<=20)){
         return true
     }else{
         return false
@@ -34,7 +34,11 @@ function classificaAlunos(notaAluno){
     if((notaAluno>=0) && (notaAluno<10)){
         avaliacao = 'Insuficiente'
     }else{
-      
+      if(notaAluno<14){
+        avaliacao = 'Bom'
+      }else{
+          
+      }
     }
     alert (avaliacao)
 }
