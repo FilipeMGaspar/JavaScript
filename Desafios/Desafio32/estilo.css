@@ -21,3 +21,7 @@ footer{
 input{
     margin-right: 25px;
 }
+
+input#Cxval{
+    width: 80px;
+}
