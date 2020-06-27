@@ -24,3 +24,9 @@ input#Cxval{
     text-indent: 7px;
     margin-right: 15px;
 }
+
+.foco{
+    font-weight: bold;
+    color: rgb(138, 27, 7);
+    font-size: 15pt;
+}
