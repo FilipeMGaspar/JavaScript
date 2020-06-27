@@ -4,3 +4,10 @@ function iniciar() {
     Cxval.focus()
     Cxval.value = ''
 }
+
+function verificar(){
+    if (Cxval.value.length == 0){
+        alert('!![ERRO]!! Nenhum número foi informado!')
+        iniciar()
+    }
+}
