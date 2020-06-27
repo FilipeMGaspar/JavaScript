@@ -18,6 +18,7 @@ function verificaNumeros(num){
     let divResultado = document.querySelector('div#resultado')
 
     if (num<0){
-        divResultado.innerHTML = `<h2>O número <span class='foco'>${num}</span></h2>`
+        divResultado.innerHTML = `<h2>O número <span class='foco'>${num}</span> é um:</h2>`
+        divResultado.innerHTML = `<p> <span class='foco'>Valor Negativo</span> </p>`
     }
 }
