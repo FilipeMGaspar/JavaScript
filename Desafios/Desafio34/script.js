@@ -9,5 +9,7 @@ function verificar(){
     if (Cxval.value.length == 0){
         alert('!![ERRO]!! Nenhum número foi informado!')
         iniciar()
+    }else{
+        alert ('Tudo ok podemos continuar')
     }
 }
