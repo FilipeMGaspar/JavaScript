@@ -15,5 +15,7 @@ function verificar(){
 }
 
 function verificaNumeros(num){
+    let divResultado = document.querySelector('div#resultado')
+
     
 }
