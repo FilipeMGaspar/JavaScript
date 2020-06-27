@@ -10,6 +10,7 @@ function verificar(){
         alert('!![ERRO]!! Nenhum número foi informado!')
         iniciar()
     }else{
-        alert ('Tudo ok podemos continuar')
+        VerificaNumeros(Number(Cxval.value))
     }
 }
+
