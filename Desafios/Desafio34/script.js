@@ -25,7 +25,8 @@ function verificaNumeros(num){
             divResultado.innerHTML = `<h2>O número <span class='foco'>${num}</span> é um:</h2>`
             divResultado.innerHTML += `<p> <span class='foco'>Valor Positivo</span> </p>`
         }else{
-            
+            divResultado.innerHTML = `<h2>O número <span class='foco'>${num}</span> é:</h2>`
+            divResultado.innerHTML += `<p> <span class='foco'>Igual a Zero</span> </p>`
         }
     }
 }
