@@ -18,3 +18,9 @@ footer{
     text-align: center;
     margin-top: 25px;
 }
+
+.foco{
+    font-weight: bold;
+    font-size: 16pt;
+    color: darkblue;
+}
