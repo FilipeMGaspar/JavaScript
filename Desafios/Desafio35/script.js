@@ -12,5 +12,11 @@ function iniciar(){
 }
 
 function calcularTabuada(){
-    alert (CxSeltab.value)
+    let divResultado = document.querySelector('div#resultado')
+    let nrTabuada = Number(CxSeltab.value)
+    alert (nrTabuada)
+
+    for (let c=1; c<=10; c++){
+        
+    }
 }
