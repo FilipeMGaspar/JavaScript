@@ -17,6 +17,6 @@ function calcularTabuada(){
     alert (nrTabuada)
 
     for (let c=1; c<=10; c++){
-        
+        divResultado.innerHTML += `<p> x ${c} = </p>`
     }
 }
