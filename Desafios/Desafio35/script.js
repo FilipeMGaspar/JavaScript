@@ -10,3 +10,7 @@ function iniciar(){
         CxSeltab.appendChild(item)
     }
 }
+
+function calcularTabuada(){
+    
+}
