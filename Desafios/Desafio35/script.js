@@ -12,5 +12,5 @@ function iniciar(){
 }
 
 function calcularTabuada(){
-    
+    alert (CxSeltab.value)
 }
