@@ -15,7 +15,7 @@ function calcularTabuada(){
     let divResultado = document.querySelector('div#resultado')
     let nrTabuada = Number(CxSeltab.value)
     alert (nrTabuada)
-
+    divResultado .innerHTML = `<h2>Tabuada do ${nrTabuada}</h2>`
     for (let c=1; c<=10; c++){
         divResultado.innerHTML += `<p> x ${c} = </p>`
     }
