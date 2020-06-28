@@ -17,6 +17,6 @@ function calcularTabuada(){
     
     divResultado .innerHTML = `<h2>Tabuada do <span class="foco">${nrTabuada}</span></h2>`
     for (let c=1; c<=10; c++){
-        divResultado.innerHTML += `<p>${nrTabuada} x ${c} = </p>`
+        divResultado.innerHTML += `<p>${nrTabuada} x ${c} = ${nrTabuada * c}</p>`
     }
 }
