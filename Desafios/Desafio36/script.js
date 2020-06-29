@@ -13,12 +13,12 @@ function calcular(){
         alert ('!![ERRO]!! Valor não informado!')
         iniciar()
     }else{
-        let fat = Number(CxNum.value)
+        let val = Number(CxNum.value)
+        let fat = 1
         
-        
-        for(let i=1; i<=fat; i++){
-            
+        for(let i=1; i<=val; i++){
+            fat *= i
         }
-        divReseultado.innerHTML = `${fat}! = `
+        divReseultado.innerHTML = `${val}! = ${fat}`
     }
 }
