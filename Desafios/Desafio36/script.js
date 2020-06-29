@@ -14,10 +14,11 @@ function calcular(){
         iniciar()
     }else{
         let fat = Number(CxNum.value)
-
+        
+        
         for(let i=1; i<=fat; i++){
             
         }
-        
+        divReseultado.innerHTML = `${fat}! = `
     }
 }
