@@ -16,8 +16,8 @@ function calcular(){
         let fat = Number(CxNum.value)
 
         for(let i=1; i<=fat; i++){
-            divReseultado.innerHTML += `${i} - `
+            
         }
-        divReseultado.innerHTML += ` FIM!`
+        
     }
 }
