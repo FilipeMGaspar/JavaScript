@@ -12,6 +12,6 @@ function calcular(){
         alert ('!![ERRO]!! Valor não informado!')
         iniciar()
     }else{
-        alert('Tudo ok podemos continuar!')
+        
     }
 }
