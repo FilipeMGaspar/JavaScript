@@ -12,6 +12,10 @@ function calcular(){
         alert ('!![ERRO]!! Valor não informado!')
         iniciar()
     }else{
-        
+        let fat = Number(CxNum.value)
+
+        for(){
+            
+        }
     }
 }
