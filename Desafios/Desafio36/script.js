@@ -14,7 +14,7 @@ function calcular(){
     }else{
         let fat = Number(CxNum.value)
 
-        for(){
+        for(let i=1; i<=fat; i++){
             
         }
     }
