@@ -8,5 +8,8 @@ function iniciar(){
 }
 
 function calcular(){
-    
+    if(CxNum.value.length==0){
+        alert ('!![ERRO]!! Valor não informado!')
+        iniciar()
+    }
 }
