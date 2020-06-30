@@ -40,3 +40,7 @@ fieldset{
 fieldset.operador{
     width: 20px;
 }
+
+div#resultado{
+    margin-top: 30px;
+}

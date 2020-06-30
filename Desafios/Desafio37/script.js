@@ -31,7 +31,7 @@ function desbloqCxNum2(){
 }
 
 function calculadora(nr1, nr2, op){
-    
+    let divResultado = document.querySelector('div#resultado')
 
     switch (op){
         case "+":
