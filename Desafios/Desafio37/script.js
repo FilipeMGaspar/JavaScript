@@ -7,3 +7,8 @@ function iniciar(){
     CxNum1.value = ''
 }
 
+function calcular(){
+    let tCxSelOper = document.querySelector('select#tCxSelOper')
+
+    alert (tCxSelOper.value)
+}
