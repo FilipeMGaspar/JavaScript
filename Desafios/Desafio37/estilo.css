@@ -27,3 +27,8 @@ footer{
 .btnCalc{
     margin-left: 25px;
 }
+
+fieldset{
+    display: inline-block;
+    width: 80px;
+}

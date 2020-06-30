@@ -13,14 +13,20 @@
     
     <section>
         <div>
-            <input type="number" id="CxNum1" name="tCxNum1" class="inpnr"> 
-            <select name="tSelOper" id="tCxSelOper">
-                <option value="+">+</option>
-                <option value="-">-</option>
-                <option value="x">x</option>
-                <option value="/">/</option>
-            </select>
-            <input type="number" id="CxNum2" name="tCxNum2" class="inpnr" disabled>
+            <fieldset>
+                <input type="number" id="CxNum1" name="tCxNum1" class="inpnr">
+            </fieldset> 
+            <fieldset class="operador">
+                <select name="tSelOper" id="tCxSelOper">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="x">x</option>
+                    <option value="/">/</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <input type="number" id="CxNum2" name="tCxNum2" class="inpnr" disabled>
+            </fieldset>
             <input type="button" class="btnCalc" value="Calcular" onclick="calcular()">
         </div>
         <div>
