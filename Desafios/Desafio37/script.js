@@ -35,8 +35,12 @@ function calculadora(nr1, nr2, op){
 
     switch (op){
         case "+":
-            divResultado.innerHTML = `<p>Soma de ${nr1} com ${nr2} igual a ${nr1+nr2} </p>`
+            divResultado.innerHTML = `<p>Soma de <span class='foco'>${nr1}</span> com <span class='foco'>${nr2}</span> igual a <span class='foco'>${nr1+nr2}</span> </p>`
             break
-            
+        
+        case "-":
+            divResultado.innerHTML = `<p>Subtração de <span class='foco'>${nr1}</span> com <span class='foco'>${nr2}</span> igual a <span class='foco'>${nr1-nr2}</span> </p>`
+            break
+
     }
 }
