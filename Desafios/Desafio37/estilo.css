@@ -24,6 +24,10 @@ footer{
     text-indent: 8px;
 }
 
+select{
+    width: 80px;
+}
+
 .btnCalc{
     margin-left: 25px;
 }
@@ -31,4 +35,8 @@ footer{
 fieldset{
     display: inline-block;
     width: 80px;
+}
+
+fieldset.operador{
+    width: 20px;
 }
