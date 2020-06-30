@@ -12,6 +12,9 @@ function calcular(){
     if (CxNum1.value.length==0){
         alert ('!![ERRO]!! Valor numérico não informado!')
         iniciar()
+    }else{
+        alert('Tudo ok podemos continuar')
     }
     
 }
+
