@@ -44,3 +44,9 @@ fieldset.operador{
 div#resultado{
     margin-top: 30px;
 }
+
+.foco{
+    font-weight: bold;
+    color: rgb(102, 7, 7);
+    font-size: 18pt;
+}
