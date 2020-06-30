@@ -30,3 +30,11 @@ function desbloqCxNum2(){
     CxNum2.removeAttribute('disabled')
 }
 
+function calculadora(nr1, nr2, op){
+    
+
+    switch (op){
+        case "+":
+
+    }
+}
