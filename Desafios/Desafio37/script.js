@@ -1,4 +1,5 @@
 let CxNum1 = document.querySelector('input#CxNum1')
+let CxNum2 = document.querySelector('input#CxNum2')
 
 document.onload = iniciar()
 
@@ -9,12 +10,16 @@ function iniciar(){
 
 function calcular(){
     let tCxSelOper = document.querySelector('select#tCxSelOper')
+    
     if (CxNum1.value.length==0){
         alert ('!![ERRO]!! Valor numérico não informado!')
         iniciar()
     }else{
-        alert('Tudo ok podemos continuar')
+            
     }
     
 }
 
+function desbloqCxNum2(){
+    CxNum2.removeAttribute('disabled')
+}
