@@ -41,6 +41,9 @@ function calculadora(nr1, nr2, op){
         case "-":
             divResultado.innerHTML = `<p><span class='foco'>${nr1}</span> - <span class='foco'>${nr2}</span> = <span class='foco'>${nr1-nr2}</span> </p>`
             break
-
+        
+        case "x":
+            divResultado.innerHTML = `<p><span class='foco'>${nr1}</span> x <span class='foco'>${nr2}</span> = <span class='foco'>${nr1*nr2}</span> </p>`
+            break 
     }
 }
