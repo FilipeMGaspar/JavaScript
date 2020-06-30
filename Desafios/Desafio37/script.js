@@ -9,6 +9,9 @@ function iniciar(){
 
 function calcular(){
     let tCxSelOper = document.querySelector('select#tCxSelOper')
-
-    alert (tCxSelOper.value)
+    if (CxNum1.value.length==0){
+        alert ('!![ERRO]!! Valor numérico não informado!')
+        iniciar()
+    }
+    
 }
