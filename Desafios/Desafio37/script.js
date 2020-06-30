@@ -50,6 +50,8 @@ function calculadora(nr1, nr2, op){
             if(nr2 != 0){
                 let divisao = nr1/nr2
                 divResultado.innerHTML = `<p><span class='foco'>${nr1}</span> / <span class='foco'>${nr2}</span> = <span class='foco'>${divisao}</span> </p>`
+            }else{
+                divResultado.innerHTML = `<p><span class='foco'>${nr1}</span> / <span class='foco'>${nr2}</span> = <span class='foco'>Imposivel de calcular</span> </p>`
             }
             break     
     }
