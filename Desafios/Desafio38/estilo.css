@@ -28,3 +28,11 @@ input#CxNum{
     margin-right: 15px;
 }
 
+fieldset{
+    width: 150px;
+    display: inline-block;
+    margin-left: 25px;
+}
+select{
+    width: 145px;
+}
