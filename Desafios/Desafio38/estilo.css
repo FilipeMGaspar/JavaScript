@@ -51,3 +51,7 @@ select{
 .btnVerificar{
     margin-top: 15px;
 }
+
+.foco{
+    color: rgb(155, 69, 13);
+}

@@ -65,3 +65,8 @@ function parOuImpar(listaDeValores){
     mostraResultados(vetPares, vetImpares)
 }
 
+function mostraResultados(lstPar, LstImpar){
+    let divResultado = document.querySelector('div#resultado')
+
+    divResultado.innerHTML = `<h2>No total introduziu <span class='foco'>${vetValores.length}</span> números</h2>`
+}
