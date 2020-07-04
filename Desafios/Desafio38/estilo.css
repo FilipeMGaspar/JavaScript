@@ -41,8 +41,9 @@ fieldset{
     width: 180px;
     display: inline-block;
     margin-left: 25px;
-    
+    text-align: center;    
 }
+
 select{
     width: 145px;
 }
