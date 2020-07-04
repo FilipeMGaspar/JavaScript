@@ -41,3 +41,6 @@ function estanaLista(nr, lstValores){
     }
 }
 
+function verificar(){
+    
+}
