@@ -19,13 +19,22 @@ footer{
     margin-top: 25px;
 }
 
+fieldset.numero{
+    width: 180px;
+}
+
 input#CxNum{
     width: 70px;
     margin-right: 15px;
+    display: inline-block;
+    margin-top: 15px;
+    
 }
 
 .btnAdic{
+    margin-top: 10px;
     margin-right: 15px;
+    display: inline-block;
 }
 
 fieldset{
