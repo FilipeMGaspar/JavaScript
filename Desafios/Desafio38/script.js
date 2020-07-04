@@ -1,4 +1,5 @@
 let CxNum = document.querySelector('input#CxNum')
+let cSelNum = document.querySelector('select#cSelNum')
 
 document.onload = iniciar()
 
@@ -12,6 +13,10 @@ function Adicionar(){
         alert('!![ERRO]!! Número não foi informado!')
         iniciar()
     }else{
-        alert ('Tudo ok podemos continuar!')
+        adicionarNaLista(Number(CxNum.value))
     }
+}
+
+function adicionarNaLista(num){
+    
 }
