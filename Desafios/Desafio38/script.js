@@ -42,5 +42,10 @@ function estanaLista(nr, lstValores){
 }
 
 function verificar(){
-    
+    if(vetValores.length == 0){
+        alert('!![ERRO]!! A lista não contém valores!')
+        iniciar()
+    }else{
+        alert('tudo ok podemos continuar')
+    }
 }
