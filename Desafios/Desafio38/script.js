@@ -6,3 +6,4 @@ function iniciar(){
     CxNum.focus()
     CxNum.value = ''
 }
+
