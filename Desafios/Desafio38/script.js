@@ -27,7 +27,7 @@ function adicionarNaLista(num){
         vetValores.push(num)
         iniciar()
     }else{
-        alert(`!![ERRO]!! O valor ${num} já se encontra na lista!`)
+        alert(`!![ERRO]!! O número ${num} já se encontra na lista!`)
         iniciar()
     }
 }
