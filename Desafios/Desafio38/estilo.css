@@ -35,6 +35,7 @@ input#CxNum{
     margin-top: 30px;
     margin-right: 15px;
     display: inline-block;
+    margin-bottom: 3px;
 }
 
 fieldset{
