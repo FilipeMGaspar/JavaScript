@@ -21,7 +21,7 @@ function Adicionar(){
 function adicionarNaLista(num){
     let intenOption = document.createElement('option')
 
-    if (estanaLista(num)){
+    if (estanaLista(num, vetValores)){
         intenOption.text = `Nº: ${num}`
         cSelNum.appendChild(intenOption)
         vetValores.push(num)
@@ -32,3 +32,11 @@ function adicionarNaLista(num){
     }
 }
 
+function estanaLista(nr, lstValores){
+
+    if(lstValores.indexOf(nr)==-1){
+        return true
+    }else{
+        return false
+    }
+}
