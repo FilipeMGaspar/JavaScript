@@ -38,9 +38,10 @@ input#CxNum{
 }
 
 fieldset{
-    width: 150px;
+    width: 180px;
     display: inline-block;
     margin-left: 25px;
+    
 }
 select{
     width: 145px;
