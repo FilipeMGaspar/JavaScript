@@ -46,6 +46,21 @@ function verificar(){
         alert('!![ERRO]!! A lista de detalhes não contém valores!')
         iniciar()
     }else{
-        alert('tudo ok podemos continuar')
+        parOuImpar(vetValores)
     }
+}
+
+function parOuImpar(listaDeValores){
+    let vetPares = []
+    let vetImpares = []
+
+    for (pos in listaDeValores){
+        if (listaDeValores%2==0){
+            vetPares.push(listaDeValores[pos])
+        }else{
+            vetImpares.push(listaDeValores[pos])
+        }
+    }
+
+    
 }
