@@ -18,5 +18,8 @@ function Adicionar(){
 }
 
 function adicionarNaLista(num){
-    
+    let intenOption = document.createElement('option')
+
+    intenOption.text = `Nº: ${num}`
+    cSelNum.appendChild(intenOption)
 }
