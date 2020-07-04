@@ -62,5 +62,6 @@ function parOuImpar(listaDeValores){
         }
     }
 
-    
+    mostraResultados(vetPares, vetImpares)
 }
+
