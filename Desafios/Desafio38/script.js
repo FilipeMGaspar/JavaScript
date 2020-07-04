@@ -43,7 +43,7 @@ function estanaLista(nr, lstValores){
 
 function verificar(){
     if(vetValores.length == 0){
-        alert('!![ERRO]!! A lista não contém valores!')
+        alert('!![ERRO]!! A lista de detalhes não contém valores!')
         iniciar()
     }else{
         alert('tudo ok podemos continuar')
