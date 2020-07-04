@@ -8,5 +8,8 @@ function iniciar(){
 }
 
 function Adicionar(){
-    
+    if(CxNum.value.length == 0){
+        alert('!![ERRO]!! Número não foi informado!')
+        iniciar()
+    }
 }
