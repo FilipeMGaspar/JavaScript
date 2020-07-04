@@ -21,7 +21,14 @@ function Adicionar(){
 function adicionarNaLista(num){
     let intenOption = document.createElement('option')
 
-    intenOption.text = `Nº: ${num}`
-    cSelNum.appendChild(intenOption)
-    vetValores.push(num)
+    if (estanaLista(num)){
+        intenOption.text = `Nº: ${num}`
+        cSelNum.appendChild(intenOption)
+        vetValores.push(num)
+        iniciar()
+    }else{
+        alert(`!![ERRO]!! O valor ${num} já se encontra na lista!`)
+        iniciar()
+    }
 }
+
