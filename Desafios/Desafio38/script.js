@@ -73,4 +73,5 @@ function mostraResultados(lstPar, LstImpar){
     divResultado.innerHTML += `<h4>São eles o Nr: <span clsss='foco'>${lstPar}</span></h4>`
     
     divResultado.innerHTML += `<h3>Total de números impares: <span class='foco'>${LstImpar.length}</span<h3>`
+    divResultado.innerHTML += `<h4>São eles o Nr: <span clsss='foco'>${LstImpar}</span></h4>`
 }
