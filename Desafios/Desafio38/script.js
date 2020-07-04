@@ -1,5 +1,6 @@
 let CxNum = document.querySelector('input#CxNum')
 let cSelNum = document.querySelector('select#cSelNum')
+let vetValores = []
 
 document.onload = iniciar()
 
@@ -22,4 +23,5 @@ function adicionarNaLista(num){
 
     intenOption.text = `Nº: ${num}`
     cSelNum.appendChild(intenOption)
+    vetValores.push(num)
 }
