@@ -70,5 +70,5 @@ function mostraResultados(lstPar, LstImpar){
 
     divResultado.innerHTML = `<h2>No total introduziu <span class='foco'>${vetValores.length}</span> números</h2>`
     divResultado.innerHTML += `<h3>Total de números pares: <span class='foco'>${lstPar.length}</span></h3>`
-    divResultado.innerHTML += `<h4></h4>`
+    divResultado.innerHTML += `<h4>São eles o Nr: <span clsss='foco'>${lstPar}</span></h4>`
 }
