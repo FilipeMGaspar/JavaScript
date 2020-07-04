@@ -55,7 +55,7 @@ function parOuImpar(listaDeValores){
     let vetImpares = []
 
     for (pos in listaDeValores){
-        if (listaDeValores%2==0){
+        if (listaDeValores[pos]%2==0){
             vetPares.push(listaDeValores[pos])
         }else{
             vetImpares.push(listaDeValores[pos])
@@ -69,4 +69,5 @@ function mostraResultados(lstPar, LstImpar){
     let divResultado = document.querySelector('div#resultado')
 
     divResultado.innerHTML = `<h2>No total introduziu <span class='foco'>${vetValores.length}</span> números</h2>`
+    divResultado.innerHTML += `<h3>Total de números pares: <span class='foco'>${lstPar.length}</span></h3>`
 }
