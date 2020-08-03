@@ -18,3 +18,7 @@ footer{
     text-align: center;
     margin-top: 25px;
 }
+
+input#CxSal{
+    width: 75px;
+}
