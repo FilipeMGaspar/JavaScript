@@ -13,12 +13,16 @@ function Envia(){
         alert('!![ERRO]!! Salário não foi informado!')
         iniciar()
     }else{
-        adicionarNaLista(Number(CxSal.value),Number(NrDeFilhos.value))
+        if (salariCorrecto(Number(CxSal.value))){
+            adicionarNaLista(Number(CxSal.value),Number(NrDeFilhos.value))
+        }else{
+            alert ()
+        }
     }
 }
 
 function adicionarNaLista(salario, numDeFilhos){
     let salarios = []
 
-    
+
 }
