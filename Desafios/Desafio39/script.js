@@ -18,5 +18,7 @@ function Envia(){
 }
 
 function adicionarNaLista(salario, numDeFilhos){
+    let salarios = []
+
     
 }
