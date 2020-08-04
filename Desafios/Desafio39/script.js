@@ -23,8 +23,10 @@ function Envia(){
 }
 
 function salariCorrecto(valorDoSalario){
-    if(valorDoSalario>0){
-        
+    if(valorDoSalario >= 100){
+        return true
+    }else{
+        return false
     }
 }
 
