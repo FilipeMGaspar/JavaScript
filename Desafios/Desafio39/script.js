@@ -13,6 +13,6 @@ function Envia(){
         alert('!![ERRO]!! Salário não foi informado!')
         iniciar()
     }else{
-        alert('Número de Filhos ' + Number(NrDeFilhos.value))
+        adicionarNaLista(Number(CxSal.value),Number(NrDeFilhos.value))
     }
 }
