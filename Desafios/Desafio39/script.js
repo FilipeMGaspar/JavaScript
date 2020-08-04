@@ -1,4 +1,5 @@
 let CxSal = document.querySelector('input#CxSal')
+let NrDeFilhos = document.querySelector('input#NrDeFilhos')
 
 document.onload = iniciar()
 
@@ -12,6 +13,6 @@ function Envia(){
         alert('!![ERRO]!! Salário não foi informado!')
         iniciar()
     }else{
-        
+        alert('Tudo ok Podemos continuar')
     }
 }
