@@ -16,8 +16,9 @@ function Envia(){
         if (salariCorrecto(Number(CxSal.value))){
             adicionarNaLista(Number(CxSal.value),Number(NrDeFilhos.value))
         }else{
-            alert ()
-        }
+            alert (`!![ERRO]!! O salário de ${Number(CxSal.value)}€ não é válido`)
+            iniciar()
+         }
     }
 }
 
