@@ -7,4 +7,8 @@ function iniciar(){
     CxSal.value = ''
 }
 
-function
+function Envia(){
+    if(CxSal.value.length == 0){
+        
+    }
+}
