@@ -16,3 +16,7 @@ function Envia(){
         adicionarNaLista(Number(CxSal.value),Number(NrDeFilhos.value))
     }
 }
+
+function adicionarNaLista(salario, numDeFilhos){
+    
+}
