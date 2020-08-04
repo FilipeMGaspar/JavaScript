@@ -22,3 +22,7 @@ footer{
 input#CxSal{
     width: 75px;
 }
+
+input.btnEnviar{
+    margin-left: 25px;
+}
