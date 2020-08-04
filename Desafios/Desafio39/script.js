@@ -9,6 +9,7 @@ function iniciar(){
 
 function Envia(){
     if(CxSal.value.length == 0){
-        
+        alert('!![ERRO]!! Salário não foi informado!')
+        iniciar()
     }
 }
