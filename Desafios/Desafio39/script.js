@@ -22,6 +22,12 @@ function Envia(){
     }
 }
 
+function salariCorrecto(valorDoSalario){
+    if(valorDoSalario>0){
+        
+    }
+}
+
 function adicionarNaLista(salario, numDeFilhos){
    // let salarios = []
 alert (salario + numDeFilhos)
