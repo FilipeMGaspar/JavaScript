@@ -23,7 +23,7 @@ function Envia(){
 }
 
 function salariCorrecto(valorDoSalario){
-    if(valorDoSalario >= 100){
+    if(valorDoSalario > 0){
         return true
     }else{
         return false
@@ -32,6 +32,6 @@ function salariCorrecto(valorDoSalario){
 
 function adicionarNaLista(salario, numDeFilhos){
    // let salarios = []
-alert (salario + numDeFilhos)
+alert (salario +' '+ numDeFilhos)
 
 }
