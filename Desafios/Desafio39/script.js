@@ -49,6 +49,8 @@ function adicionarNaLista(salario, numDeFilhos){
     mediaSalario = mediaSalario.toFixed(2)
     divresult.innerHTML = `Para uma população de ${vetSalarios.length} pessoas.`
     divresult.innerHTML += `<p>A Média de Salário é: ${mediaSalario}€ </p>`
+
+    
     //divresult.innerHTML += `<p> ${vetFilhos} </p>`
 
 }
