@@ -69,6 +69,6 @@ function adicionarNaLista(salario, numDeFilhos){
 
     divresult.innerHTML += `<p>Maior Salário indicado: <strong>${maiorSalario}</strong>€</p>` 
     
-    divresult.innerHTML += `<p>Percentagem de pessoas com salário inferior a 150€: ${menosDe150Euros} contagem </p>`
+    divresult.innerHTML += `<p>Percentagem de pessoas com salário inferior a 150€: <strong>${(menosDe150Euros/vetSalarios.length)*100}</strong> % </p>`
 
 }
