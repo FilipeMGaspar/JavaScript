@@ -31,8 +31,13 @@ function salariCorrecto(valorDoSalario){
 }
 
 function adicionarNaLista(salario, numDeFilhos){
-   let salarios = []
-   let filhos = []
+   let vetSalarios = []
+   let vetFilhos = []
+
+   vetSalarios.push(salario)
+
+   vetFilhos.push(numDeFilhos)
+   
 alert (salario +' '+ numDeFilhos)
 
 }
