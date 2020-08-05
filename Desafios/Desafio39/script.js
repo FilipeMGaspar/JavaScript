@@ -33,8 +33,9 @@ function salariCorrecto(valorDoSalario){
 }
 
 function adicionarNaLista(salario, numDeFilhos){
-    let mediaSalario = 0
-    let somaSalario = 0
+    let mediaSalario = 0, mediaFilhos = 0
+    let somaSalario = 0, SomaFilhos = 0
+
     let divresult = document.querySelector('div#result')
 
    vetSalarios.push(salario)
@@ -49,6 +50,10 @@ function adicionarNaLista(salario, numDeFilhos){
     mediaSalario = mediaSalario.toFixed(2)
     divresult.innerHTML = `Para uma população de ${vetSalarios.length} pessoas.`
     divresult.innerHTML += `<p>A Média de Salário é: ${mediaSalario}€ </p>`
+
+    for (ind in vetFilhos){
+        SomaFilhos += vetFilhos[ind]
+    }
 
     
     //divresult.innerHTML += `<p> ${vetFilhos} </p>`
