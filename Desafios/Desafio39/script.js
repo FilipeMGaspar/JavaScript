@@ -71,6 +71,5 @@ function adicionarNaLista(salario, numDeFilhos){
     
     let percentMenosde150Euros = (menosDe150Euros/vetSalarios.length)*100
     percentMenosde150Euros = percentMenosde150Euros.toFixed(2)
-    divresult.innerHTML += `<p>Percentagem de pessoas com salário inferior a 150€: <strong>${percentMenosde150Euros}</strong> % </p>`
-
+    divresult.innerHTML += `<p>Percentagem de salários menores que 150€: <strong>${percentMenosde150Euros}</strong> % </p>`
 }
