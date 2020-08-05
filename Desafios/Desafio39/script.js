@@ -33,15 +33,18 @@ function salariCorrecto(valorDoSalario){
 }
 
 function adicionarNaLista(salario, numDeFilhos){
-  
-   let divresult = document.querySelector('div#result')
+    let media = 0
+    let somaSalario = 0
+    let divresult = document.querySelector('div#result')
 
    vetSalarios.push(salario)
 
    vetFilhos.push(numDeFilhos)
-   
 
-    /*divresult.innerHTML = `<p> ${vetSalarios}€ </p>`
-    divresult.innerHTML += `<p> ${vetFilhos} </p>`*/
+    for (pos in vetSalarios){
+        somaSalario += vetSalarios[pos]
+    }
+    divresult.innerHTML = `<p> ${somaSalario}€ </p>`
+    //divresult.innerHTML += `<p> ${vetFilhos} </p>`
 
 }
