@@ -1,5 +1,7 @@
 let CxSal = document.querySelector('input#CxSal')
 let NrDeFilhos = document.querySelector('input#NrDeFilhos')
+let vetSalarios = []
+let vetFilhos = []
 
 document.onload = iniciar()
 
@@ -31,8 +33,7 @@ function salariCorrecto(valorDoSalario){
 }
 
 function adicionarNaLista(salario, numDeFilhos){
-   let vetSalarios = []
-   let vetFilhos = []
+  
    let divresult = document.querySelector('div#result')
 
    vetSalarios.push(salario)
