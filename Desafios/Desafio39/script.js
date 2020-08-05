@@ -37,7 +37,7 @@ function adicionarNaLista(salario, numDeFilhos){
    vetSalarios.push(salario)
 
    vetFilhos.push(numDeFilhos)
-   
-alert (salario +' '+ numDeFilhos)
+
+    
 
 }
