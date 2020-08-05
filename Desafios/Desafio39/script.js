@@ -32,6 +32,7 @@ function salariCorrecto(valorDoSalario){
 
 function adicionarNaLista(salario, numDeFilhos){
    // let salarios = []
+   let filhos = []
 alert (salario +' '+ numDeFilhos)
 
 }
