@@ -40,6 +40,6 @@ function adicionarNaLista(salario, numDeFilhos){
    vetFilhos.push(numDeFilhos)
 
     divresult.innerHTML = `<p> ${vetSalarios}€ </p>`
-    divresult.innerHTML = `<p> ${vetFilhos} </p>`
+    divresult.innerHTML += `<p> ${vetFilhos} </p>`
 
 }
