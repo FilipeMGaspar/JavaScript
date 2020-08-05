@@ -48,8 +48,8 @@ function adicionarNaLista(salario, numDeFilhos){
 
     mediaSalario = somaSalario/vetSalarios.length
     mediaSalario = mediaSalario.toFixed(2)
-    divresult.innerHTML = `Para uma população de ${vetSalarios.length} pessoas.`
-    divresult.innerHTML += `<p>A Média de Salário é: ${mediaSalario}€ </p>`
+    divresult.innerHTML = `Para uma população de <strong>${vetSalarios.length}</strong> pessoas.`
+    divresult.innerHTML += `<p>A Média de Salário é: <strong>${mediaSalario}</strong>€ </p>`
 
     for (ind in vetFilhos){
         SomaFilhos += vetFilhos[ind]
@@ -57,7 +57,7 @@ function adicionarNaLista(salario, numDeFilhos){
 
     mediaFilhos = SomaFilhos/vetFilhos.length
     mediaFilhos = mediaFilhos.toFixed(2)
-    
+    divresult.innerHTML += `<p>A Média de Filhos é: <strong>${mediaFilhos}</strong></p>`
     //divresult.innerHTML += `<p> ${vetFilhos} </p>`
 
 }
