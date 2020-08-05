@@ -57,7 +57,7 @@ function adicionarNaLista(salario, numDeFilhos){
 
     mediaFilhos = SomaFilhos/vetFilhos.length
     mediaFilhos = mediaFilhos.toFixed(2)
-    divresult.innerHTML += `<p>A Média de Filhos é: <strong>${mediaFilhos}</strong></p>`
+    divresult.innerHTML += `<p>A Média de Filhos é: <strong>${mediaFilhos}</strong> por habitante</p>`
     //divresult.innerHTML += `<p> ${vetFilhos} </p>`
 
 }
