@@ -33,11 +33,13 @@ function salariCorrecto(valorDoSalario){
 function adicionarNaLista(salario, numDeFilhos){
    let vetSalarios = []
    let vetFilhos = []
+   let divresult = document.querySelector('div#result')
 
    vetSalarios.push(salario)
 
    vetFilhos.push(numDeFilhos)
 
-    
+    divresult.innerHTML = `<p> ${vetSalarios}€ </p>`
+    divresult.innerHTML = `<p> ${vetFilhos} </p>`
 
 }
