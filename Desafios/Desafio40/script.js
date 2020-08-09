@@ -18,5 +18,9 @@ function inserir(){
 }
 
 function adicionarNaLista(nome){
-    
+    let cDtlNomes = document.querySelector('select#cDtlNomes')
+    let itenOption = document.createElement('option')
+
+    itenOption.text = `NOME: ${nome}`
+    cDtlNomes.appendChild(itenOption)
 }
