@@ -28,3 +28,6 @@ div.dir{
     margin-left: 20px;
 }
 
+select#cDtlNomes{
+    width: 120px;
+}
