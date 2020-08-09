@@ -22,7 +22,11 @@ function adicionarNaLista(nome){
     let cDtlNomes = document.querySelector('select#cDtlNomes')
     let itenOption = document.createElement('option')
 
+    let result = document.querySelector('div#result')
+
     vetNomes.push('nome')
     itenOption.text = `NOME: ${nome}`
     cDtlNomes.appendChild(itenOption)
+
+    result.innerHTML = `<p>${vetNomes}</p>`
 }
