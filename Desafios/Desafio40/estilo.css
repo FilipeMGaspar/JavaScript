@@ -21,6 +21,12 @@ footer{
 
 div.esq{
     display: inline-block;
+    vertical-align: top;
+}
+
+input.btnInsert{
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 div.dir{
