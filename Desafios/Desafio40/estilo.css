@@ -24,9 +24,14 @@ div.esq{
     vertical-align: top;
 }
 
+p.alingEsq{
+    margin-top: 10px;
+}
+
 input.btnInsert{
     margin-top: 15px;
     margin-bottom: 10px;
+    margin-left: 100px;
 }
 
 div.dir{
