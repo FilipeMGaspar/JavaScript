@@ -1,4 +1,5 @@
 let CxNome = document.querySelector('input#CxNome')
+let vetNomes = []
 
 document.onload = iniciar()
 
@@ -21,6 +22,7 @@ function adicionarNaLista(nome){
     let cDtlNomes = document.querySelector('select#cDtlNomes')
     let itenOption = document.createElement('option')
 
+    vetNomes.push('nome')
     itenOption.text = `NOME: ${nome}`
     cDtlNomes.appendChild(itenOption)
 }
