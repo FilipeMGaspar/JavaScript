@@ -32,6 +32,6 @@ function adicionarNaLista(nome){
         result.innerHTML = `<p>${vetNomes}</p>`
     }else{
         btnInserir.value = 'Procurar'
-  
+        iniciar()
     }
 }
