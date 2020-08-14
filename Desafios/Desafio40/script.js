@@ -39,6 +39,6 @@ function adicionarNaLista(nome){
 }
 
 function pesquisarNome(procNome){
-    alert(`Vou pesquisar: ${procNome}`);
+    alert(`Vou pesquisar por: ${procNome}`);
     btnInserir.style.display = 'none'
 }
