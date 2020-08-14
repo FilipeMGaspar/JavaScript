@@ -30,6 +30,6 @@ function adicionarNaLista(nome){
         cDtlNomes.appendChild(itenOption)
         result.innerHTML = `<p>${vetNomes}</p>`
     }else{
-        alert ('5 vezes toma!!!!')
+        
     }
 }
