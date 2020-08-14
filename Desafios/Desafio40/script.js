@@ -30,6 +30,7 @@ function adicionarNaLista(nome){
         itenOption.text = `NOME -> ${nome}`
         cDtlNomes.appendChild(itenOption)
         result.innerHTML = `<p>${vetNomes}</p>`
+        iniciar()
     }else{
         btnInserir.value = 'Procurar'
         iniciar()
