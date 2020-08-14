@@ -33,8 +33,8 @@ function adicionarNaLista(nome){
         iniciar()
     }else{
         btnInserir.value = 'Procurar'
-        iniciar()
         pesquisarNome(CxNome.value)
+        iniciar()        
     }
 }
 
