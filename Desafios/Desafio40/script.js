@@ -34,5 +34,7 @@ function adicionarNaLista(nome){
     }else{
         btnInserir.value = 'Procurar'
         iniciar()
+        pesquisarNome(CxNome.value)
     }
 }
+
