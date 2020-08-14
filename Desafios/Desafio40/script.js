@@ -38,3 +38,7 @@ function adicionarNaLista(nome){
     }
 }
 
+function pesquisarNome(procNome){
+    alert(`Vou pesquisar: ${procNome}`);
+    btnInserir.style.display = 'none'
+}
