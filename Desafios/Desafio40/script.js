@@ -23,6 +23,7 @@ function adicionarNaLista(nome){
     let itenOption = document.createElement('option')
 
     let result = document.querySelector('div#result')
+    let btnInserir = document.querySelector('input#btnInserir')
 
     if(vetNomes.length<5){
         vetNomes.push(nome)
@@ -30,6 +31,7 @@ function adicionarNaLista(nome){
         cDtlNomes.appendChild(itenOption)
         result.innerHTML = `<p>${vetNomes}</p>`
     }else{
-        
+        btnInserir.value = 'Procurar'
+  
     }
 }
