@@ -24,9 +24,11 @@ function adicionarNaLista(nome){
 
     let result = document.querySelector('div#result')
 
-    vetNomes.push(nome)
-    itenOption.text = `NOME -> ${nome}`
-    cDtlNomes.appendChild(itenOption)
+    if(){
+        vetNomes.push(nome)
+        itenOption.text = `NOME -> ${nome}`
+        cDtlNomes.appendChild(itenOption)
 
-    result.innerHTML = `<p>${vetNomes}</p>`
+        result.innerHTML = `<p>${vetNomes}</p>`
+    }
 }
