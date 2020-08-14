@@ -24,11 +24,13 @@ function adicionarNaLista(nome){
 
     let result = document.querySelector('div#result')
 
-    if(){
+    if(vetNomes.length<5){
         vetNomes.push(nome)
         itenOption.text = `NOME -> ${nome}`
         cDtlNomes.appendChild(itenOption)
 
         result.innerHTML = `<p>${vetNomes}</p>`
+    }else{
+        alert ('5 vezes toma!!!!')
     }
 }
